@@ -1,0 +1,841 @@
+table, pre code, .container, .nav-container, main p,
+main nav,
+main div.post-info,
+main div.post-details,
+main blockquote,
+main div.catalogue,
+main form#manual-webmention,
+main details,
+main figure, main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6, main ul,
+main ol, footer, .pagination {
+  /* Viewers on smaller screens should have 20% of the screen as whitespace
+   * to give them some breathing room
+   */
+  /* When you're on a huge screen, you don't want to be looking _too_ far
+   * across the page, so we should limit this to an arbitrary width of
+   * 1100px. Anyone at 1200px will see it a little cramped, but it's not as
+   * bad as before!
+   */ }
+  @media (max-width: 1200px) {
+    table, pre code, .container, .nav-container, main p,
+    main nav,
+    main div.post-info,
+    main div.post-details,
+    main blockquote,
+    main div.catalogue,
+    main form#manual-webmention,
+    main details,
+    main figure, main h1,
+    main h2,
+    main h3,
+    main h4,
+    main h5,
+    main h6, main ul,
+    main ol, footer, .pagination {
+      max-width: 80%; } }
+  @media (min-width: 1200px) {
+    table, pre code, .container, .nav-container, main p,
+    main nav,
+    main div.post-info,
+    main div.post-details,
+    main blockquote,
+    main div.catalogue,
+    main form#manual-webmention,
+    main details,
+    main figure, main h1,
+    main h2,
+    main h3,
+    main h4,
+    main h5,
+    main h6, main ul,
+    main ol, footer, .pagination {
+      max-width: 1100px; } }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5; }
+
+html,
+body {
+  color: #555;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: "EB Garamond", serif;
+  font-size: 14px;
+  overflow-y: scroll; }
+  @media (min-width: 600px) {
+    html {
+      font-size: 1.2rem; } }
+
+body {
+  -webkit-text-size-adjust: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #555;
+  font-family: "FiraGo", "Fira-Sans", sans-serif;
+  line-height: normal; }
+
+a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #b324d4;
+  text-decoration: none; }
+  a:hover, a:focus {
+    opacity: .6; }
+
+blockquote {
+  border-left: 0.25rem solid #e5e5e5;
+  color: #979797;
+  margin: .8rem 0;
+  padding: .5rem 1rem; }
+  blockquote p:last-child {
+    margin-bottom: 0;
+    margin-left: 0; }
+  @media (min-width: 600px) {
+    blockquote {
+      padding: 0 1.25rem 0 1.25rem; } }
+
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%; }
+
+td {
+  vertical-align: top; }
+
+table {
+  margin-left: auto;
+  margin-right: auto; }
+
+pre,
+code {
+  font-family: "Fira Code", Menlo, Monaco, monospace; }
+
+pre {
+  overflow-x: auto;
+  /* from _syntax.scss */
+  background: #282828;
+  color: #ebdbb2;
+  background-color: #282828;
+  border-radius: 3px;
+  line-height: 1.4;
+  padding: 1rem; }
+
+code {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  color: #bf616a;
+  font-size: 85%;
+  padding: .25em .5em; }
+  code a {
+    color: #e8afda; }
+
+/* TODO: is this a non-highlighted?
+ */
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+  display: block;
+  margin: 0 auto; }
+
+.highlight .lineno {
+  color: #aaa;
+  display: inline-block;
+  padding: 0 .75rem 0 .25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.post {
+  padding: 1rem 0; }
+  .post:hover .post-line,
+  .post:focus .post-line {
+    width: 5rem; }
+  .post-info {
+    color: #aaa;
+    font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+    font-size: .9rem;
+    letter-spacing: 0.5px;
+    text-align: center; }
+    .post-info span {
+      font-style: italic; }
+  .post-title {
+    color: #555;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center; }
+  .post-line {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-top: 0.2rem solid #e5e5e5;
+    display: block;
+    width: 2rem;
+    margin: auto; }
+  .post p {
+    margin: 1rem auto 1rem;
+    text-align: justify; }
+  .post blockquote p {
+    margin-left: 0;
+    max-width: none; }
+  .post a:hover {
+    text-decoration: none; }
+  .post img {
+    margin: 0 auto 0.5rem; }
+  .post img + em {
+    color: #aaa;
+    display: block;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: center; }
+  .post img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0; }
+  .post-details {
+    padding-top: 1rem;
+    border-top: 0.5px solid #e5e5e5; }
+
+.highlight .hll {
+  background-color: #ffffcc; }
+
+.highlight {
+  background: #282828;
+  color: #ebdbb2;
+  background-color: #282828; }
+
+.highlight .c {
+  color: #928374;
+  font-style: italic;
+  background-color: #282828; }
+
+/* Comment */
+.highlight .err {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Error */
+.highlight .esc {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Escape */
+.highlight .g {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Generic */
+.highlight .k {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Keyword */
+.highlight .l {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Literal */
+.highlight .n {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name */
+.highlight .o {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Operator */
+.highlight .x {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Other */
+.highlight .p {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Punctuation */
+.highlight .ch {
+  color: #928374;
+  font-style: italic;
+  background-color: #282828; }
+
+/* Comment.Hashbang */
+.highlight .cm {
+  color: #928374;
+  font-style: italic;
+  background-color: #282828; }
+
+/* Comment.Multiline */
+.highlight .cp {
+  color: #8ec07c;
+  background-color: #282828; }
+
+/* Comment.Preproc */
+.highlight .c1 {
+  color: #928374;
+  font-style: italic;
+  background-color: #282828; }
+
+/* Comment.Single */
+.highlight .cs {
+  color: #928374;
+  font-style: italic;
+  background-color: #282828; }
+
+/* Comment.Special */
+.highlight .gd {
+  color: #282828;
+  background-color: #fb4934; }
+
+/* Generic.Deleted */
+.highlight .ge {
+  color: #83a598;
+  text-decoration: underline;
+  background-color: #282828; }
+
+/* Generic.Emph */
+.highlight .gr {
+  color: #ebdbb2;
+  font-weight: bold;
+  background-color: #fb4934; }
+
+/* Generic.Error */
+.highlight .gh {
+  color: #b8bb26;
+  font-weight: bold;
+  background-color: #282828; }
+
+/* Generic.Heading */
+.highlight .gi {
+  color: #282828;
+  background-color: #b8bb26; }
+
+/* Generic.Inserted */
+.highlight .go {
+  color: #504945;
+  background-color: #282828; }
+
+/* Generic.Output */
+.highlight .gp {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Generic.Prompt */
+.highlight .gs {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Generic.Strong */
+.highlight .gu {
+  color: #b8bb26;
+  font-weight: bold;
+  background-color: #282828; }
+
+/* Generic.Subheading */
+.highlight .gt {
+  color: #ebdbb2;
+  font-weight: bold;
+  background-color: #fb4934; }
+
+/* Generic.Traceback */
+.highlight .kc {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Keyword.Constant */
+.highlight .kd {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Keyword.Declaration */
+.highlight .kn {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Keyword.Namespace */
+.highlight .kp {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Keyword.Pseudo */
+.highlight .kr {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Keyword.Reserved */
+.highlight .kt {
+  color: #fabd2f;
+  background-color: #282828; }
+
+/* Keyword.Type */
+.highlight .ld {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Literal.Date */
+.highlight .m {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number */
+.highlight .s {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String */
+.highlight .na {
+  color: #b8bb26;
+  font-weight: bold;
+  background-color: #282828; }
+
+/* Name.Attribute */
+.highlight .nb {
+  color: #fabd2f;
+  background-color: #282828; }
+
+/* Name.Builtin */
+.highlight .nc {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Class */
+.highlight .no {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Name.Constant */
+.highlight .nd {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Decorator */
+.highlight .ni {
+  color: #fabd2f;
+  background-color: #282828; }
+
+/* Name.Entity */
+.highlight .ne {
+  color: #fb4934;
+  background-color: #282828; }
+
+/* Name.Exception */
+.highlight .nf {
+  color: #fabd2f;
+  background-color: #282828; }
+
+/* Name.Function */
+.highlight .nl {
+  color: #fb4934;
+  background-color: #282828; }
+
+/* Name.Label */
+.highlight .nn {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Namespace */
+.highlight .nx {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Other */
+.highlight .py {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Property */
+.highlight .nt {
+  color: #fb4934;
+  background-color: #282828; }
+
+/* Name.Tag */
+.highlight .nv {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Variable */
+.highlight .ow {
+  color: #fe8019;
+  background-color: #282828; }
+
+/* Operator.Word */
+.highlight .w {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Text.Whitespace */
+.highlight .mb {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number.Bin */
+.highlight .mf {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number.Float */
+.highlight .mh {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number.Hex */
+.highlight .mi {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number.Integer */
+.highlight .mo {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number.Oct */
+.highlight .sb {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Backtick */
+.highlight .sc {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Char */
+.highlight .sd {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Doc */
+.highlight .s2 {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Double */
+.highlight .se {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Escape */
+.highlight .sh {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Heredoc */
+.highlight .si {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Interpol */
+.highlight .sx {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Other */
+.highlight .sr {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Regex */
+.highlight .s1 {
+  color: #b8bb26;
+  background-color: #282828; }
+
+/* Literal.String.Single */
+.highlight .ss {
+  color: #83a598;
+  background-color: #282828; }
+
+/* Literal.String.Symbol */
+.highlight .bp {
+  color: #fabd2f;
+  background-color: #282828; }
+
+/* Name.Builtin.Pseudo */
+.highlight .vc {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Variable.Class */
+.highlight .vg {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Variable.Global */
+.highlight .vi {
+  color: #ebdbb2;
+  background-color: #282828; }
+
+/* Name.Variable.Instance */
+.highlight .il {
+  color: #d3869b;
+  background-color: #282828; }
+
+/* Literal.Number.Integer.Long */
+.css .o,
+.css .o + .nt,
+.css .nt + .nt {
+  color: #999; }
+
+.container {
+  margin: 0 auto; }
+
+main,
+footer,
+.nav-container {
+  display: block;
+  margin: 0 auto; }
+
+/* TODO
+ */
+main {
+  margin-top: auto;
+  /* Any lists within <nav>s (i.e. our Table of Contents) shouldn't have any
+   * `margin`, otherwise they'll display poorly, with lots of spacing between
+   * items and the whole <ul>
+   */
+  /* The first occurance of a regular list should automagically pick up their
+   * `margin` so as not to override anything else we need
+   */
+  /* However, any nested lists should instead have no margin, to ensure that
+   * there are no extra spaces around it, as well as ensure that a nested list
+   * use the full width of the parent list, instead of shrinking the max-width
+   * each time
+   */ }
+  main p,
+  main nav,
+  main div.post-info,
+  main div.post-details,
+  main blockquote,
+  main div.catalogue,
+  main form#manual-webmention,
+  main details,
+  main figure {
+    margin: auto; }
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6 {
+    margin-left: auto;
+    margin-right: auto; }
+  main nav ul {
+    margin: 0; }
+  main ul,
+  main ol {
+    margin: auto; }
+  main ul ul,
+  main ol ol {
+    margin: 0;
+    max-width: 100%; }
+
+.h-feed .h-entry ul {
+  margin: 0; }
+
+.nav {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  overflow: auto; }
+  .nav-container {
+    margin: 1rem auto;
+    position: relative; }
+  .nav-title {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #555;
+    display: inline-block;
+    margin: 0;
+    padding-right: .2rem;
+    font-size: 2rem; }
+    .nav-title:hover, .nav-title:focus {
+      opacity: .6; }
+  .nav ul {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0; }
+  .nav li {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #555;
+    display: inline-block;
+    opacity: 1;
+    padding: 0 0.25rem 0 0; }
+    .nav li:last-child {
+      padding-right: 0; }
+    .nav li:hover, .nav li:focus {
+      opacity: .6; }
+  .nav a {
+    color: #b324d4;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1rem; }
+
+@media (min-width: 600px) {
+  .nav-container {
+    text-align: left; }
+  .nav ul {
+    bottom: 0;
+    right: 0; } }
+
+h-card {
+  margin: auto;
+  display: inline-block;
+  font-family: "EB Garamond", serif; }
+
+.mammoth-hcard {
+  margin: 1rem auto;
+  font-family: "EB Garamond", serif; }
+  .mammoth-hcard .u-photo {
+    display: inline-block;
+    margin: auto; }
+
+footer {
+  margin: auto;
+  font-family: "FiraGo", "Fira-Sans", sans-serif;
+  padding-top: 1rem;
+  border-top: 0.5px solid #e5e5e5;
+  /* remember that this should be $monospaced*/ }
+  footer .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1rem; }
+  footer span {
+    color: #555;
+    font-family: "EB Garamond", serif;
+    font-size: 1rem; }
+  footer span#contact ul {
+    list-style: none;
+    font-size: 1rem; }
+  footer span.monospace {
+    font-family: "EB Garamond", serif;
+    font-size: 1rem; }
+  footer .hidden {
+    display: none; }
+  footer video {
+    height: 100%;
+    width: 100%;
+    max-width: 400px; }
+
+.pagination {
+  margin: 1rem auto 1rem;
+  font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+  padding-top: 3rem;
+  text-align: center;
+  list-style: none; }
+  .pagination li {
+    list-style: none;
+    display: inline-block; }
+  .pagination span {
+    color: #353535;
+    font-size: .8rem; }
+  .pagination .top {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #555;
+    font-family: "EB Garamond", serif;
+    font-size: .8rem;
+    opacity: 1; }
+    .pagination .top:hover {
+      opacity: .6; }
+
+.catalogue {
+  padding: 1rem 0; }
+  .catalogue-item:hover .catalogue-line,
+  .catalogue-item:focus .catalogue-line {
+    width: 5rem; }
+  .catalogue-item:last-child {
+    border: 0; }
+  .catalogue-time, .catalogue-metadata {
+    color: #aaa;
+    font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+    font-size: .9rem;
+    letter-spacing: 0.5px;
+    text-align: center; }
+  .catalogue-title {
+    color: #555;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center; }
+  .catalogue-line {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-top: 0.2rem solid #e5e5e5;
+    display: block;
+    width: 2rem;
+    margin: auto; }
+  .catalogue p {
+    margin: 1rem auto 1rem;
+    text-align: justify; }
+  .catalogue-time, .catalogue-metadata, .catalogue-title, .catalogue-line {
+    max-width: 100%; }
+
+/*.mammoth-hcard {
+  img {
+    display: inline-block;
+    margin: 0;
+  }
+}
+.mammoth-hcard {
+a {
+  color: $purple;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+}
+}*/
+/* Only mark up for i.e. /mf2/ entries
+.mf2 .e-content {
+ Remove huge spacing that appears when using `.e-content`s
+line-height: 0px;
+https://stackoverflow.com/a/39325471
+white-space: pre-line;
+}           */
+/* .h-entry,
+.h-measure {
+  .p-author {
+    img.u-photo {
+      display: none;
+    }
+  }
+} */
+/* .p-bridgy-twitter-content {
+  display: none;
+}*/
+/* .h-entry .photos .u-photo {
+  display: inline-block;
+  max-height: 400px;
+} */
+
+/*# sourceMappingURL=style.css.map */

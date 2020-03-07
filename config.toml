@@ -1,0 +1,119 @@
+baseURL = "/"
+
+theme = "tale"
+
+title = "wooly mammoth's mighty absence"
+
+languageCode = "en-US"
+
+# allow fenced code blocks, instead of `{{< highlight ... >}}` shortcodes,
+# which are unwieldly and less fun than using pure Markdown syntax
+pygmentsCodeFences = true
+# allow us to hook in custom CSS to render the site's styles
+pygmentsUseClasses = true
+
+# get information about the Git repo, such as last commit to a file
+# enableGitInfo = true
+
+paginate = "5"
+
+enableEmoji = "true"
+
+[params]
+  author = "marshall"
+  image = "/img/me.jpg"
+  # DateForm = "mon jan 2, 2006 | 03:04PM"
+  WebMentionDomain = "www.absentmammoth.org"
+  MaxWebmentions = "100"
+  AuthorizationEndpoint = "https://indieauth.com/auth"
+  TokenEndpoint = "https://tokens.indieauth.com/token"
+  Auth = "https://indieauth.com/auth"
+  # MicroSubEndpoint = "https://aperture.p3k.io/microsub/262"
+  # MicroPubEndpoint = "https://www-api.jvt.me/micropub"
+  # IgnoreInFeeds = "blogroll"
+
+[frontmatter]
+  date = ["publishDate", "date", "lastmod"]
+  lastmod = ["lastmod", "date", "publishDate"]
+  # can also use '":fileModTime", ":git",'
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
+
+[permalinks]
+# mf2 = "/mf2/:slug/"
+  posts = "/posts/:year/:month/:day/:slug/"
+  tags = "/tags/:title/"
+  kinds = "/kind/:title/"
+
+[taxonomies]
+  kind = "kind"
+  tag = "tags"
+  series = "series"
+
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+page = ["HTML"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+isPlainText = true
+notAlternative = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = false
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "now"
+    name = "/now"
+    title = "/now"
+    url = "/now/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 10
+#  [[menu.main]]
+#    identifier = "links"
+#    name = "links"
+#    title = "links"
+#   url = "/kind/bookmarks/"
+#    weight = 11
+  [[menu.main]]
+    identifier = "kinds"
+    name = "kinds"
+    title = "kinds"
+    url = "/kind/"
+    weight = 30
+  [[menu.main]]
+    identifier = "blogroll"
+    name = "blogroll"
+    title = "blogroll"
+    url = "/blogroll/"
+    weight = 40
+  [[menu.main]]
+  identifier = "rss"
+  title = "rss"
+  pre = "<label>rss</label><i class='fa fa-rss fa-fw'></i>"
+  url = "/feed.xml"
+  weight= 50
+#  [[menu.main]]
+#    identifier = "search"
+#    name = "search"
+#    title = "search"
+#    url = "/search/"
+#    weight = 50

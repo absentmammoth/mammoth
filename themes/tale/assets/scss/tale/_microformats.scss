@@ -1,0 +1,43 @@
+/*.mammoth-hcard {
+  img {
+    display: inline-block;
+    margin: 0;
+  }
+}
+.mammoth-hcard {
+a {
+  color: $purple;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+}
+}*/
+
+/* Only mark up for i.e. /mf2/ entries
+.mf2 .e-content {
+ Remove huge spacing that appears when using `.e-content`s
+line-height: 0px;
+https://stackoverflow.com/a/39325471
+white-space: pre-line;
+}           */
+
+/* .h-entry,
+.h-measure {
+  .p-author {
+    img.u-photo {
+      display: none;
+    }
+  }
+} */
+
+/* .p-bridgy-twitter-content {
+  display: none;
+}*/
+
+/* .h-entry .photos .u-photo {
+  display: inline-block;
+  max-height: 400px;
+} */

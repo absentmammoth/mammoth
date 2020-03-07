@@ -1,0 +1,11 @@
+<div>
+        <a href="{{ .Permalink }}" class="catalogue-item post">
+
+        {{ partial "single/posts/post-info.html" . }}
+        {{ partial "single/title.html" . }}
+        </a>
+        <p>
+            {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | markdownify }}{{ end }}
+        </p>
+</div>
+

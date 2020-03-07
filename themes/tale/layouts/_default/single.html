@@ -1,0 +1,28 @@
+{{define "main"}}
+
+<main>
+	<a name="top"></a>
+	<div class="h-entry">
+		<div class="post">
+			{{ partial "single/posts/post-info.html" . }}
+			{{ partial "single/title.html" . }}
+
+			{{ partial "single/header.html" . }}
+
+			{{ .Content }}
+
+			{{ partial "single/footer.html" . }}
+		</div>
+		<div class="pagination">
+				{{- if .PrevPage }}
+				<a href="{{ .PrevPage.URL }}" class="left arrow">&#8592;</a>
+				{{- end }}
+				{{- if .NextPage }}
+				<a href="{{ .NextPage.URL }}" class="right arrow">&#8594;</a>
+				{{- end }}
+			
+				<a href="#top" class="top">top</a>
+		</div>
+</main>
+			
+{{ end }}
