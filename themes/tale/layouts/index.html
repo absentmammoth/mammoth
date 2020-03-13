@@ -3,7 +3,7 @@
 <main>
 	{{ partial "index/introduction.html" . }}
 
-	<div class="catalogue">
+	<div class="catalogue h-feed">
 		{{ range where (.Paginate .Site.RegularPages).Pages.ByLastmod.Reverse "Section" "posts" }}
 			{{ .Render "summary" }}
 		{{ end }}

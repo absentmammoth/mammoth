@@ -63,6 +63,10 @@ isPlainText = true
 notAlternative = true
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 3
   [markup.goldmark]
     [markup.goldmark.extensions]
       footnote = true
@@ -73,6 +77,7 @@ notAlternative = true
       typographer = false
     [markup.goldmark.renderer]
       unsafe = true
+
 
 [menu]
   [[menu.main]]
@@ -107,10 +112,11 @@ notAlternative = true
     weight = 40
   [[menu.main]]
   identifier = "rss"
+  name = "rss" 
   title = "rss"
-  pre = "<label>rss</label><i class='fa fa-rss fa-fw'></i>"
   url = "/feed.xml"
   weight= 50
+# "<label>rss</label><i class='fa fa-rss fa-fw'></i>" code will include rss icon
 #  [[menu.main]]
 #    identifier = "search"
 #    name = "search"

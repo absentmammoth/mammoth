@@ -1,0 +1,10 @@
+{{ if .Params.toc }}
+   <style>
+        p {margin-bottom: -15px;}
+        li {list-style-type: none;}
+   </style>
+    <aside>
+        <p>toc</p>
+        <li>{{ .TableOfContents }}</li>
+    </aside>
+{{ end }}

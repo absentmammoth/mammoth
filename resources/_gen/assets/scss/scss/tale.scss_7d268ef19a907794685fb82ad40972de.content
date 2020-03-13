@@ -1,4 +1,18 @@
-footer, .pagination, pre code {
+table, pre code, .container, .nav-container, main p,
+main nav,
+main div.post-info,
+main div.post-details,
+main blockquote,
+main div.catalogue,
+main form#manual-webmention,
+main details,
+main figure, main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6, main ul,
+main ol, footer, .pagination {
   /* Viewers on smaller screens should have 20% of the screen as whitespace
    * to give them some breathing room
    */
@@ -8,65 +22,72 @@ footer, .pagination, pre code {
    * bad as before!
    */ }
   @media (max-width: 1200px) {
-    footer, .pagination, pre code {
+    table, pre code, .container, .nav-container, main p,
+    main nav,
+    main div.post-info,
+    main div.post-details,
+    main blockquote,
+    main div.catalogue,
+    main form#manual-webmention,
+    main details,
+    main figure, main h1,
+    main h2,
+    main h3,
+    main h4,
+    main h5,
+    main h6, main ul,
+    main ol, footer, .pagination {
       max-width: 80%; } }
   @media (min-width: 1200px) {
-    footer, .pagination, pre code {
+    table, pre code, .container, .nav-container, main p,
+    main nav,
+    main div.post-info,
+    main div.post-details,
+    main blockquote,
+    main div.catalogue,
+    main form#manual-webmention,
+    main details,
+    main figure, main h1,
+    main h2,
+    main h3,
+    main h4,
+    main h5,
+    main h6, main ul,
+    main ol, footer, .pagination {
       max-width: 1100px; } }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 html,
 body {
   color: #555;
+  margin: 0;
   padding: 0; }
 
 html {
-  font-size: 1.3vw;
   font-family: "EB Garamond", serif;
-  overflow-y: scroll;
-  height: 100%; }
-
-@media all and (min-width: 1000px) {
-  html {
-    font-size: 1.19rem; } }
-
-@media all and (max-width: 520px) {
-  html {
-    font-size: 1rem; } }
+  font-size: 14px;
+  overflow-y: scroll; }
+  @media (min-width: 600px) {
+    html {
+      font-size: 1.2rem; } }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 70vw;
-  min-height: 100%;
-  position: relative;
-  z-index: -10000;
-  -webkit-font-smoothing: subpixel-antialiased; }
+  -webkit-text-size-adjust: 100%; }
 
-h1 {
-  color: #555;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "linux_biolinum_oregular", sans-serif;
-  margin-top: .5rem; }
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: #555;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "linux_biolinum_oregular", sans-serif;
-  margin-top: .5rem;
-  font-weight: 100; }
+  font-family: "FiraGo", "Fira-Sans", sans-serif;
+  line-height: normal; }
 
 a {
   -webkit-transition: all 0.2s ease-out;
@@ -77,47 +98,6 @@ a {
   a:hover, a:focus {
     opacity: .6; }
 
-/* 
-items in header.html (site title, main menu, shadow/border) 
-*/
-.nav {
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-  overflow: auto; }
-  .nav-container {
-    position: relative; }
-  .nav-title {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    color: #555;
-    display: block;
-    margin: .5rem 0 .5rem 0 !important;
-    padding-right: .2rem;
-    font-size: 2.5rem;
-    font-weight: 100; }
-    .nav-title:hover, .nav-title:focus {
-      opacity: .6; }
-  .nav ul {
-    list-style-type: none;
-    padding: 0; }
-  .nav li {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    color: #555;
-    display: inline-block;
-    opacity: 1;
-    padding: 0 0.30rem 0 0; }
-    .nav li:hover, .nav li:focus {
-      opacity: .6; }
-  .nav a {
-    font-family: "EB Garamond", serif;
-    font-size: 1.5rem;
-    font-weight: 100; }
-
-/*
-self explanatory
-*/
 blockquote {
   border-left: 0.25rem solid #e5e5e5;
   color: #979797;
@@ -130,9 +110,6 @@ blockquote {
     blockquote {
       padding: 0 1.25rem 0 1.25rem; } }
 
-/*
-doublecheck these three if i have image/table problems later
-*/
 img {
   display: block;
   margin: 0 0 1rem;
@@ -145,232 +122,6 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
-/*
-not sure what these apply to, commenting them out for now
-
-.container {
-  margin: 0 auto;
-  @extend %max-width;
-}
-
-main,
-footer,
-.nav-container {
-  display: block;
-  margin: 0 auto;
-}
-
-.nav-container {
-  @extend %max-width;
-}
-*/
-/*
-items from taxonomy & list html. commenting out for rn, not sure they are necessary.
-
-
-.h-feed {
-  .h-entry {
-    ul {
-      margin: 0;
-    }
-  }
-}
-*/
-/* seems like this would 
-apply to the title area as well but doesn't seem to do anything if I take it away?
-
-@media (min-width: 600px) {
-  .nav {
-    &-container {
-      text-align: left;
-    }
-
-    ul {
-      bottom: 0;
-      right: 0;
-    }
-  }
-}
-*/
-/* 
-this is for the h-card info in introduction.html. u-photo needs inline-block and margin:auto or 
-it goes nuts.
-*/
-h-card {
-  display: inline-block;
-  font-family: "EB Garamond", serif; }
-
-.mammoth-hcard {
-  font-family: "EB Garamond", serif;
-  font-size: 1.1rem; }
-  .mammoth-hcard .u-photo {
-    display: inline-block;
-    transform: none;
-    margin: auto; }
-
-/*
-footer styling and flex boxes for side-by-side contact info/h-card.
-not sure why the video css is there.
-*/
-footer {
-  font-family: "EB Garamond", serif;
-  padding-top: 1rem;
-  border-top: 0.5px solid #e5e5e5;
-  font-size: 1.1rem;
-  /* remember that this should be $monospaced*/ }
-  footer .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    font-family: "EB Garamond", serif; }
-  footer span {
-    color: #555;
-    font-family: "EB Garamond", serif; }
-  footer span#contact ul {
-    list-style: none; }
-  footer span.monospace {
-    font-family: "EB Garamond", serif; }
-  footer .hidden {
-    display: none; }
-  footer video {
-    height: 100%;
-    width: 100%;
-    max-width: 400px; }
-
-/*
-this is all the catalogue info. it shows up in list, taxonomy, terms, and index htmls.
-a lot of this may be redundant because of how much of it i moved into _posts.scss?
-*/
-.catalogue {
-  padding: .5rem 0; }
-  .catalogue-item:hover .catalogue-line,
-  .catalogue-item:focus .catalogue-line {
-    width: 5rem; }
-  .catalogue-item:last-child {
-    border: 0; }
-  .catalogue-time, .catalogue-metadata {
-    color: #aaa;
-    font-family: "EB Garamond", serif;
-    font-size: 1.1rem;
-    letter-spacing: .08rem;
-    text-align: center; }
-  .catalogue-title {
-    color: #555;
-    font-family: "linux_biolinum_oregular", sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.05rem;
-    text-align: center; }
-  .catalogue-line {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    border-top: 0.2rem solid #e5e5e5;
-    display: block;
-    width: 2rem; }
-  .catalogue h2,
-  .catalogue h3,
-  .catalogue h4,
-  .catalogue h5 {
-    text-align: center; }
-  .catalogue p {
-    text-align: justify;
-    font-size: 1.19rem; }
-  .catalogue-time, .catalogue-metadata, .catalogue-title, .catalogue-line {
-    max-width: 100%; }
-
-/*
-post styles
-*/
-.post {
-  padding: 1rem 0; }
-  .post:hover .post-line,
-  .post:focus .post-line {
-    width: 5rem; }
-  .post-info {
-    color: #aaa;
-    font-family: "EB Garamond", serif;
-    font-size: .9rem;
-    letter-spacing: .08rem;
-    text-align: center; }
-    .post-info span {
-      font-style: italic; }
-  .post-title {
-    color: #555;
-    font-family: "linux_biolinum_oregular", sans-serif;
-    letter-spacing: .05rem;
-    font-size: 2.2rem;
-    text-align: center;
-    font-weight: 100;
-    margin: -4px 0 4px; }
-  .post-line {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    border-top: 0.2rem solid #e5e5e5;
-    display: block;
-    width: 2rem;
-    margin: auto; }
-  .post h3,
-  .post h4,
-  .post h5 {
-    text-align: center; }
-  .post p {
-    text-align: justify;
-    font-size: 1.19rem; }
-  .post blockquote p {
-    margin-left: 0;
-    max-width: none; }
-  .post a:hover {
-    text-decoration: none; }
-  .post img {
-    margin: 0 auto 0.5rem; }
-  .post img + em {
-    color: #aaa;
-    display: block;
-    font-family: "linux_biolinum_oregular", sans-serif;
-    font-size: 0.9rem;
-    font-style: normal;
-    text-align: center; }
-  .post img.emoji {
-    display: inline-block;
-    left: 0;
-    transform: none;
-    width: 1rem;
-    height: 1rem;
-    vertical-align: text-top;
-    padding: 0;
-    margin: 0; }
-  .post-details {
-    padding-top: 1rem;
-    border-top: 0.5px solid #e5e5e5; }
-
-/* 
-
-pagination rules 
-
-*/
-.pagination {
-  margin: 1rem auto 1rem;
-  font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
-  padding-top: 3rem;
-  text-align: center;
-  list-style: none; }
-  .pagination li {
-    list-style: none;
-    display: inline-block; }
-  .pagination .top {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    color: #b324d4;
-    font-family: "EB Garamond", serif;
-    font-size: .8rem;
-    opacity: 1; }
-    .pagination .top:hover {
-      opacity: .6; }
-
-/* rules for the code blocks */
 pre,
 code {
   font-family: "Fira Code", Menlo, Monaco, monospace; }
@@ -411,6 +162,63 @@ pre code {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none; }
+
+.post {
+  padding: 1rem 0; }
+  .post:hover .post-line,
+  .post:focus .post-line {
+    width: 5rem; }
+  .post-info {
+    color: #aaa;
+    font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+    font-size: .9rem;
+    letter-spacing: 0.5px;
+    text-align: center; }
+    .post-info span {
+      font-style: italic; }
+  .post-title {
+    color: #555;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center; }
+  .post-line {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-top: 0.2rem solid #e5e5e5;
+    display: block;
+    width: 2rem;
+    margin: auto; }
+  .post p {
+    margin: 1rem auto 1rem;
+    text-align: justify; }
+  .post blockquote p {
+    margin-left: 0;
+    max-width: none; }
+  .post a:hover {
+    text-decoration: none; }
+  .post img {
+    margin: 0 auto 0.5rem; }
+  .post img + em {
+    color: #aaa;
+    display: block;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: center; }
+  .post img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0; }
+  .post-details {
+    padding-top: 1rem;
+    border-top: 0.5px solid #e5e5e5; }
 
 .highlight .hll {
   background-color: #ffffcc; }
@@ -791,4 +599,243 @@ pre code {
 .css .nt + .nt {
   color: #999; }
 
-/*# sourceMappingURL=style.css.map */
+.container {
+  margin: 0 auto; }
+
+main,
+footer,
+.nav-container {
+  display: block;
+  margin: 0 auto; }
+
+/* TODO
+ */
+main {
+  margin-top: auto;
+  /* Any lists within <nav>s (i.e. our Table of Contents) shouldn't have any
+   * `margin`, otherwise they'll display poorly, with lots of spacing between
+   * items and the whole <ul>
+   */
+  /* The first occurance of a regular list should automagically pick up their
+   * `margin` so as not to override anything else we need
+   */
+  /* However, any nested lists should instead have no margin, to ensure that
+   * there are no extra spaces around it, as well as ensure that a nested list
+   * use the full width of the parent list, instead of shrinking the max-width
+   * each time
+   */ }
+  main p,
+  main nav,
+  main div.post-info,
+  main div.post-details,
+  main blockquote,
+  main div.catalogue,
+  main form#manual-webmention,
+  main details,
+  main figure {
+    margin: auto; }
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6 {
+    margin-left: auto;
+    margin-right: auto; }
+  main nav ul {
+    margin: 0; }
+  main ul,
+  main ol {
+    margin: auto; }
+  main ul ul,
+  main ol ol {
+    margin: 0;
+    max-width: 100%; }
+
+.h-feed .h-entry ul {
+  margin: 0; }
+
+.nav {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  overflow: auto; }
+  .nav-container {
+    margin: 1rem auto;
+    position: relative; }
+  .nav-title {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #555;
+    display: inline-block;
+    margin: 0;
+    padding-right: .2rem;
+    font-size: 2rem; }
+    .nav-title:hover, .nav-title:focus {
+      opacity: .6; }
+  .nav ul {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0; }
+  .nav li {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #555;
+    display: inline-block;
+    opacity: 1;
+    padding: 0 0.25rem 0 0; }
+    .nav li:last-child {
+      padding-right: 0; }
+    .nav li:hover, .nav li:focus {
+      opacity: .6; }
+  .nav a {
+    color: #b324d4;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1rem; }
+
+@media (min-width: 600px) {
+  .nav-container {
+    text-align: left; }
+  .nav ul {
+    bottom: 0;
+    right: 0; } }
+
+h-card {
+  margin: auto;
+  display: inline-block;
+  font-family: "EB Garamond", serif; }
+
+.mammoth-hcard {
+  margin: 1rem auto;
+  font-family: "EB Garamond", serif; }
+  .mammoth-hcard .u-photo {
+    display: inline-block;
+    margin: auto; }
+
+footer {
+  margin: auto;
+  font-family: "FiraGo", "Fira-Sans", sans-serif;
+  padding-top: 1rem;
+  border-top: 0.5px solid #e5e5e5;
+  /* remember that this should be $monospaced*/ }
+  footer .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1rem; }
+  footer span {
+    color: #555;
+    font-family: "EB Garamond", serif;
+    font-size: 1rem; }
+  footer span#contact ul {
+    list-style: none;
+    font-size: 1rem; }
+  footer span.monospace {
+    font-family: "EB Garamond", serif;
+    font-size: 1rem; }
+  footer .hidden {
+    display: none; }
+  footer video {
+    height: 100%;
+    width: 100%;
+    max-width: 400px; }
+
+.pagination {
+  margin: 1rem auto 1rem;
+  font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+  padding-top: 3rem;
+  text-align: center;
+  list-style: none; }
+  .pagination li {
+    list-style: none;
+    display: inline-block; }
+  .pagination span {
+    color: #353535;
+    font-size: .8rem; }
+  .pagination .top {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #555;
+    font-family: "EB Garamond", serif;
+    font-size: .8rem;
+    opacity: 1; }
+    .pagination .top:hover {
+      opacity: .6; }
+
+.catalogue {
+  padding: 1rem 0; }
+  .catalogue-item:hover .catalogue-line,
+  .catalogue-item:focus .catalogue-line {
+    width: 5rem; }
+  .catalogue-item:last-child {
+    border: 0; }
+  .catalogue-time, .catalogue-metadata {
+    color: #aaa;
+    font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+    font-size: .9rem;
+    letter-spacing: 0.5px;
+    text-align: center; }
+  .catalogue-title {
+    color: #555;
+    font-family: "FiraGo", "Fira-Sans", sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center; }
+  .catalogue-line {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-top: 0.2rem solid #e5e5e5;
+    display: block;
+    width: 2rem;
+    margin: auto; }
+  .catalogue p {
+    margin: 1rem auto 1rem;
+    text-align: justify; }
+  .catalogue-time, .catalogue-metadata, .catalogue-title, .catalogue-line {
+    max-width: 100%; }
+
+/*.mammoth-hcard {
+  img {
+    display: inline-block;
+    margin: 0;
+  }
+}
+.mammoth-hcard {
+a {
+  color: $purple;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+}
+}*/
+/* Only mark up for i.e. /mf2/ entries
+.mf2 .e-content {
+ Remove huge spacing that appears when using `.e-content`s
+line-height: 0px;
+https://stackoverflow.com/a/39325471
+white-space: pre-line;
+}           */
+/* .h-entry,
+.h-measure {
+  .p-author {
+    img.u-photo {
+      display: none;
+    }
+  }
+} */
+/* .p-bridgy-twitter-content {
+  display: none;
+}*/
+/* .h-entry .photos .u-photo {
+  display: inline-block;
+  max-height: 400px;
+} */
+
+/*# sourceMappingURL=style.scss.map */

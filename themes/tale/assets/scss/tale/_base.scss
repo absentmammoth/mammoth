@@ -1,38 +1,63 @@
 * {
   @include box-sizing;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 html,
 body {
   color: $default-color;
-  margin: 0;
   padding: 0;
 }
 
-html {
+html { 
+  font-size: 1.3vw; 
   font-family: $serif-primary;
-  font-size: 14px;
   overflow-y: scroll;
-
-  @media (min-width: 600px) {
-    font-size: 1.2rem;
-  }
+  height: 100%;
 }
+
+@media all and (min-width:1000px) { 
+  html { 
+    font-size: 1.19rem; 
+  } 
+}
+
+@media all and (max-width:520px) { 
+  html { 
+    font-size: 1rem; 
+  } 
+}
+
 
 body {
-  -webkit-text-size-adjust: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 70vw;
+  min-height: 100%;
+  position: relative;
+  z-index: -10000;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-h1,
+h1 {
+  color: $default-color;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $sans-serif;
+  margin-top: .5rem;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: $default-color;
+  margin-left: auto;
+  margin-right: auto;
   font-family: $sans-serif;
-  line-height: normal;
+  margin-top: .5rem;
+  font-weight: 100;
 }
 
 a {
@@ -45,6 +70,62 @@ a {
     opacity: .6;
   }
 }
+
+/* 
+items in header.html (site title, main menu, shadow/border) 
+*/
+
+.nav {
+  box-shadow: 0 2px 2px -2px $shadow-color;
+  overflow: auto;
+
+  &-container {
+    position: relative;
+  }
+
+  &-title {
+    @include transition(all .2s ease-out);
+    color: $default-color;
+    display: block;
+    margin: .5rem 0 .5rem 0 !important;
+    padding-right: .2rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    @include transition(all .2s ease-out);
+    color: $default-color;
+    display: inline-block;
+    opacity: 1;
+    padding: 0 0.30rem 0 0;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
+  }
+
+  a {
+    font-family: $serif-primary;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+
+/*
+self explanatory
+*/
 
 blockquote {
   border-left: .25rem solid $grey-2;
@@ -62,6 +143,10 @@ blockquote {
   }
 }
 
+/*
+doublecheck these three if i have image/table problems later
+*/
+
 img {
   display: block;
   margin: 0 0 1rem;
@@ -73,7 +158,381 @@ td {
 }
 
 table {
-  @extend %max-width;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/*
+not sure what these apply to, commenting them out for now
+
+.container {
+  margin: 0 auto;
+  @extend %max-width;
+}
+
+main,
+footer,
+.nav-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-container {
+  @extend %max-width;
+}
+*/
+
+/*
+items from taxonomy & list html. commenting out for rn, not sure they are necessary.
+
+
+.h-feed {
+  .h-entry {
+    ul {
+      margin: 0;
+    }
+  }
+}
+*/
+
+
+/* seems like this would 
+apply to the title area as well but doesn't seem to do anything if I take it away?
+
+@media (min-width: 600px) {
+  .nav {
+    &-container {
+      text-align: left;
+    }
+
+    ul {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+*/
+
+/* 
+this is for the h-card info in introduction.html. u-photo needs inline-block and margin:auto or 
+it goes nuts.
+*/
+
+h-card {
+  display: inline-block;
+  font-family: $serif-primary;
+}
+
+.mammoth-hcard {
+  font-family: $serif-primary;
+  font-size: 1.1rem;
+
+  .u-photo {
+    display: inline-block;
+    transform: none;
+    margin: auto;
+  }
+}
+
+/*
+footer styling and flex boxes for side-by-side contact info/h-card.
+not sure why the video css is there.
+*/
+
+footer {
+  font-family: $serif-primary;
+  padding-top: 1rem;
+  border-top: .5px solid $grey-2;
+  font-size: 1.1rem;
+  @extend %max-width;
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: $serif-primary;
+    
+  }
+
+  span {
+    color: $default-color;
+    font-family: $serif-primary;
+  }
+
+  span#contact ul {
+    list-style: none;
+  }
+
+  /* remember that this should be $monospaced*/
+  
+  span.monospace {
+    font-family: $serif-primary;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/*
+this is all the catalogue info. it shows up in list, taxonomy, terms, and index htmls.
+a lot of this may be redundant because of how much of it i moved into _posts.scss?
+*/
+
+.catalogue {
+  padding: .5rem 0;
+
+  &-item {
+
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 5rem;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time,
+  &-metadata {
+    color: $default-tint;
+    font-family: $serif-primary;
+    font-size: 1.1rem;
+    letter-spacing: .08rem;
+    text-align: center;
+  }
+
+  &-title {
+    color: $default-color;
+    font-family: $sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+
+  &-line {
+    @include transition(all .3s ease-out);
+    border-top: .2rem solid $grey-2;
+    display: block;
+    width: 2rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+     text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 1.19rem;
+  }
+  &-time,
+  &-metadata,
+  &-title,
+  &-line {
+    max-width: 100%;
+  }
+}
+
+/*
+post styles
+*/
+
+.post {
+  padding: 1rem 0;
+
+    &:hover .post-line,
+    &:focus .post-line {
+      width: 5rem;
+  }
+
+  &-info {
+    color: $default-tint;
+    font-family: $serif-primary;
+    font-size: .9rem;
+    letter-spacing: .08rem;
+    text-align: center;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &-title {
+    color: $default-color;
+    font-family: $sans-serif;
+    letter-spacing: .05rem;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 100;
+    margin: -4px 0 4px;
+  }
+
+  &-line {
+    @include transition(all .3s ease-out);
+    border-top: .2rem solid $grey-2;
+    display: block;
+    width: 2rem;
+    margin: auto;
+  }
+
+  h3,
+  h4,
+  h5 {
+     text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 1.19rem;
+  }
+
+  & blockquote p {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  img {
+    margin: 0 auto 0.5rem;
+  }
+
+  img+em {
+    color: $default-tint;
+    display: block;
+    font-family: $sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: center;
+  }
+
+  // CSS for making emoji inline
+  img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-details {
+    padding-top: 1rem;
+    border-top: .5px solid $grey-2;
+  }
+}
+
+
+/* 
+
+pagination rules 
+
+*/
+
+.pagination {
+  margin: 1rem auto 1rem;
+  @extend %max-width;
+
+  font-family: $serif-secondary;
+  padding-top: 3rem;
+  text-align: center;
+
+  list-style: none;
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .top {
+    @include transition(all .2s ease-out);
+    color: $purple;
+    font-family: $serif-primary;
+    font-size: .8rem;
+    opacity: 1;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+
+
+
+
+
+/* rules for the code blocks */
+
+pre,
+code {
+  font-family: $monospaced;
+}
+
+%code-block {
+  overflow-x: auto;
+  /* from _syntax.scss */
+  background: #282828;
+  color: #ebdbb2;
+  background-color: #282828;
+
+  border-radius: 3px;
+  line-height: 1.4;
+  padding: 1rem;
+}
+
+code {
+  background-color: $grey-3;
+  border-radius: 3px;
+  color: $code-color;
+  font-size: 85%;
+  padding: .25em .5em;
+
+  & a {
+      color: $code-color-link;
+  }
+}
+
+pre {
+  @extend %code-block;
+}
+
+
+/* TODO: is this a non-highlighted?
+ */
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  @extend %max-width;
+}
+
+.highlight {
+  .lineno {
+    color: $default-tint;
+    display: inline-block; // Ensures the null space also isn't selectable
+    padding: 0 .75rem 0 .25rem;
+    // Make sure numbers aren't selectable
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
 }
