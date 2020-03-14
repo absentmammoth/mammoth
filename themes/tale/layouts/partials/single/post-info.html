@@ -1,18 +1,16 @@
 <div class="post-info">
-    <time datetime><span>written by</span>
+    <span>written by</span>
     {{- if .Params.Author }}
     {{ .Params.Author }}
     {{- else }}
     {{ .Site.Params.Author }}
     {{- end }}
-    <i class="fas fa-crow fa-fw" style="color:#353535"></i>
+    <i class="fa fa-crow fa-fw" style="color:#353535"></i>
     <br>
     {{ if eq .PublishDate .Lastmod }}
-    <span>on&nbsp;</span>{{ .PublishDate.Format "mon, jan 2, 2006 | 03:04PM" }}<br>
+    <span>on&nbsp;</span> {{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
     {{ else }}
-    <span>on&nbsp;</span>{{ .PublishDate.Format "mon, jan 2, 2006 | 03:04PM" }}<br>
-    <span>and last updated</span>&nbsp;{{ .Lastmod.Format "mon, jan 2, 2006 | 03:04PM" }}
-    {{ end }}</time>
-    <br />
-</span>
+    <span>on&nbsp;</span> {{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
+    <span>and last updated</span>&nbsp; {{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
+    {{ end }}
 </div>

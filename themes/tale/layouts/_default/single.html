@@ -4,10 +4,10 @@
 	<a name="top"></a>
 	<div class="h-entry">
 		<div class="post">
+			{{ partial "single/header.html" . }}
 			{{ partial "single/posts/post-info.html" . }}
 			{{ partial "single/title.html" . }}
 			{{ partial "single/table-of-contents.html" . }}
-			{{ partial "single/header.html" . }}
 
 			{{ .Content }}
 

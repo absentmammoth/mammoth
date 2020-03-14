@@ -1,30 +1,27 @@
 * {
   @include box-sizing;
   line-height: 1.4;
-}
-
-html,
-body {
-  color: $default-color;
+  margin: 0;
   padding: 0;
 }
 
 html { 
-  font-size: 1.3vw; 
+  font-size: 62.5%; 
   font-family: $serif-primary;
+  color: $default-color;
   overflow-y: scroll;
   height: 100%;
 }
 
 @media all and (min-width:1000px) { 
   html { 
-    font-size: 1.19rem; 
+    font-size: 1.7vw; 
   } 
 }
 
 @media all and (max-width:520px) { 
   html { 
-    font-size: 1rem; 
+    font-size: 1.1rem; 
   } 
 }
 
@@ -42,10 +39,9 @@ body {
 
 h1 {
   color: $default-color;
-  margin-left: auto;
-  margin-right: auto;
   font-family: $sans-serif;
-  margin-top: .5rem;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
 }
 h2,
 h3,
@@ -53,10 +49,8 @@ h4,
 h5,
 h6 {
   color: $default-color;
-  margin-left: auto;
-  margin-right: auto;
   font-family: $sans-serif;
-  margin-top: .5rem;
+  margin-top: .8rem;
   font-weight: 100;
 }
 
@@ -78,6 +72,8 @@ items in header.html (site title, main menu, shadow/border)
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   &-container {
     position: relative;
@@ -87,7 +83,7 @@ items in header.html (site title, main menu, shadow/border)
     @include transition(all .2s ease-out);
     color: $default-color;
     display: block;
-    margin: .5rem 0 .5rem 0 !important;
+    margin: .8rem 0 0 0;
     padding-right: .2rem;
     font-size: 2.5rem;
     font-weight: 100;
@@ -109,6 +105,8 @@ items in header.html (site title, main menu, shadow/border)
     display: inline-block;
     opacity: 1;
     padding: 0 0.30rem 0 0;
+    margin-bottom: .8rem;
+    margin-top: .8rem;
 
     &:hover,
     &:focus {
@@ -119,7 +117,6 @@ items in header.html (site title, main menu, shadow/border)
   a {
     font-family: $serif-primary;
     font-size: 1.5rem;
-    font-weight: 100;
   }
 }
 
@@ -138,7 +135,7 @@ blockquote {
     margin-left: 0;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 520px) {
     padding: 0 1.25rem 0 1.25rem;
   }
 }
@@ -221,12 +218,15 @@ it goes nuts.
 
 h-card {
   display: inline-block;
-  font-family: $serif-primary;
 }
 
 .mammoth-hcard {
   font-family: $serif-primary;
-  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: .8rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 
   .u-photo {
     display: inline-block;
@@ -242,18 +242,18 @@ not sure why the video css is there.
 
 footer {
   font-family: $serif-primary;
-  padding-top: 1rem;
   border-top: .5px solid $grey-2;
-  font-size: 1.1rem;
-  @extend %max-width;
+  border-width: 100%;
+  font-size: 1.2rem;
+  display: inline-block;
 
   .flex-container {
+    margin-top: .5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
     font-family: $serif-primary;
-    
   }
 
   span {
@@ -283,74 +283,10 @@ footer {
 }
 
 /*
-this is all the catalogue info. it shows up in list, taxonomy, terms, and index htmls.
-a lot of this may be redundant because of how much of it i moved into _posts.scss?
-*/
-
-.catalogue {
-  padding: .5rem 0;
-
-  &-item {
-
-    &:hover .catalogue-line,
-    &:focus .catalogue-line {
-      width: 5rem;
-    }
-
-    &:last-child {
-      border: 0;
-    }
-  }
-
-  &-time,
-  &-metadata {
-    color: $default-tint;
-    font-family: $serif-primary;
-    font-size: 1.1rem;
-    letter-spacing: .08rem;
-    text-align: center;
-  }
-
-  &-title {
-    color: $default-color;
-    font-family: $sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.05rem;
-    text-align: center;
-  }
-
-  &-line {
-    @include transition(all .3s ease-out);
-    border-top: .2rem solid $grey-2;
-    display: block;
-    width: 2rem;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5 {
-     text-align: center;
-  }
-
-  p {
-    text-align: justify;
-    font-size: 1.19rem;
-  }
-  &-time,
-  &-metadata,
-  &-title,
-  &-line {
-    max-width: 100%;
-  }
-}
-
-/*
 post styles
 */
 
 .post {
-  padding: 1rem 0;
 
     &:hover .post-line,
     &:focus .post-line {
@@ -360,9 +296,13 @@ post styles
   &-info {
     color: $default-tint;
     font-family: $serif-primary;
-    font-size: .9rem;
+    font-size: .8rem;
     letter-spacing: .08rem;
     text-align: center;
+    margin-top: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -.8rem\;
 
     span {
       font-style: italic;
@@ -376,7 +316,10 @@ post styles
     font-size: 2.2rem;
     text-align: center;
     font-weight: 100;
-    margin: -4px 0 4px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
   }
 
   &-line {
@@ -384,18 +327,16 @@ post styles
     border-top: .2rem solid $grey-2;
     display: block;
     width: 2rem;
-    margin: auto;
-  }
-
-  h3,
-  h4,
-  h5 {
-     text-align: center;
-  }
+    margin-top: -.01rem;
+    margin-bottom: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+  } 
 
   p {
     text-align: justify;
-    font-size: 1.19rem;
+    margin-bottom: .8rem;
+    max-width: 100%;
   }
 
   & blockquote p {
@@ -450,7 +391,7 @@ pagination rules
   @extend %max-width;
 
   font-family: $serif-secondary;
-  padding-top: 3rem;
+  padding-top: .8rem;
   text-align: center;
 
   list-style: none;

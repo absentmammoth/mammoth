@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-<main class="h-feed">
+<div class="h-feed">
 	
-	<div class="catalogue">
+	<div class="catalogue post">
 		{{ range (.Paginate .Pages).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
@@ -18,6 +18,6 @@
 	
 		<span>{{ .Paginator.PageNumber }}</span>
 	</div>
-</main>
+</div>
 
 {{ end }}

@@ -10,11 +10,9 @@
     {{ if eq .PublishDate .Lastmod }}
     <span>on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
     {{ else }}
-    <span>on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }}<br>
+    <span>on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
     <span>and last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
     {{ end }}
-    
-
 </div>
 
 

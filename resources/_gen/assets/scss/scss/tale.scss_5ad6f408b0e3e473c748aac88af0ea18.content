@@ -1,4 +1,4 @@
-footer, .pagination, pre code {
+.pagination, pre code {
   /* Viewers on smaller screens should have 20% of the screen as whitespace
    * to give them some breathing room
    */
@@ -8,36 +8,34 @@ footer, .pagination, pre code {
    * bad as before!
    */ }
   @media (max-width: 1200px) {
-    footer, .pagination, pre code {
+    .pagination, pre code {
       max-width: 80%; } }
   @media (min-width: 1200px) {
-    footer, .pagination, pre code {
+    .pagination, pre code {
       max-width: 1100px; } }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 1.4; }
-
-html,
-body {
-  color: #555;
+  line-height: 1.4;
+  margin: 0;
   padding: 0; }
 
 html {
-  font-size: 1.3vw;
+  font-size: 62.5%;
   font-family: "EB Garamond", serif;
+  color: #555;
   overflow-y: scroll;
   height: 100%; }
 
 @media all and (min-width: 1000px) {
   html {
-    font-size: 1.19rem; } }
+    font-size: 1.7vw; } }
 
 @media all and (max-width: 520px) {
   html {
-    font-size: 1rem; } }
+    font-size: 1.1rem; } }
 
 body {
   margin-left: auto;
@@ -51,10 +49,9 @@ body {
 
 h1 {
   color: #555;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "linux_biolinum_oregular", sans-serif;
-  margin-top: .5rem; }
+  margin-top: .8rem;
+  margin-bottom: .8rem; }
 
 h2,
 h3,
@@ -62,17 +59,15 @@ h4,
 h5,
 h6 {
   color: #555;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "linux_biolinum_oregular", sans-serif;
-  margin-top: .5rem;
+  margin-top: .8rem;
   font-weight: 100; }
 
 a {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #b324d4;
+  color: #B07ADE;
   text-decoration: none; }
   a:hover, a:focus {
     opacity: .6; }
@@ -82,7 +77,9 @@ items in header.html (site title, main menu, shadow/border)
 */
 .nav {
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-  overflow: auto; }
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto; }
   .nav-container {
     position: relative; }
   .nav-title {
@@ -91,7 +88,7 @@ items in header.html (site title, main menu, shadow/border)
     transition: all 0.2s ease-out;
     color: #555;
     display: block;
-    margin: .5rem 0 .5rem 0 !important;
+    margin: .8rem 0 0 0;
     padding-right: .2rem;
     font-size: 2.5rem;
     font-weight: 100; }
@@ -107,13 +104,14 @@ items in header.html (site title, main menu, shadow/border)
     color: #555;
     display: inline-block;
     opacity: 1;
-    padding: 0 0.30rem 0 0; }
+    padding: 0 0.30rem 0 0;
+    margin-bottom: .8rem;
+    margin-top: .8rem; }
     .nav li:hover, .nav li:focus {
       opacity: .6; }
   .nav a {
     font-family: "EB Garamond", serif;
-    font-size: 1.5rem;
-    font-weight: 100; }
+    font-size: 1.5rem; }
 
 /*
 self explanatory
@@ -126,7 +124,7 @@ blockquote {
   blockquote p:last-child {
     margin-bottom: 0;
     margin-left: 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 520px) {
     blockquote {
       padding: 0 1.25rem 0 1.25rem; } }
 
@@ -197,12 +195,15 @@ this is for the h-card info in introduction.html. u-photo needs inline-block and
 it goes nuts.
 */
 h-card {
-  display: inline-block;
-  font-family: "EB Garamond", serif; }
+  display: inline-block; }
 
 .mammoth-hcard {
   font-family: "EB Garamond", serif;
-  font-size: 1.1rem; }
+  display: inline-block;
+  margin-top: .8rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0; }
   .mammoth-hcard .u-photo {
     display: inline-block;
     transform: none;
@@ -214,11 +215,13 @@ not sure why the video css is there.
 */
 footer {
   font-family: "EB Garamond", serif;
-  padding-top: 1rem;
   border-top: 0.5px solid #e5e5e5;
-  font-size: 1.1rem;
+  border-width: 100%;
+  font-size: 1.2rem;
+  display: inline-block;
   /* remember that this should be $monospaced*/ }
   footer .flex-container {
+    margin-top: .5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -239,111 +242,84 @@ footer {
     max-width: 400px; }
 
 /*
-this is all the catalogue info. it shows up in list, taxonomy, terms, and index htmls.
-a lot of this may be redundant because of how much of it i moved into _posts.scss?
-*/
-.catalogue {
-  padding: .5rem 0; }
-  .catalogue-item:hover .catalogue-line,
-  .catalogue-item:focus .catalogue-line {
-    width: 5rem; }
-  .catalogue-item:last-child {
-    border: 0; }
-  .catalogue-time, .catalogue-metadata {
-    color: #aaa;
-    font-family: "EB Garamond", serif;
-    font-size: 1.1rem;
-    letter-spacing: .08rem;
-    text-align: center; }
-  .catalogue-title {
-    color: #555;
-    font-family: "linux_biolinum_oregular", sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.05rem;
-    text-align: center; }
-  .catalogue-line {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    border-top: 0.2rem solid #e5e5e5;
-    display: block;
-    width: 2rem; }
-  .catalogue h2,
-  .catalogue h3,
-  .catalogue h4,
-  .catalogue h5 {
-    text-align: center; }
-  .catalogue p {
-    text-align: justify;
-    font-size: 1.19rem; }
-  .catalogue-time, .catalogue-metadata, .catalogue-title, .catalogue-line {
-    max-width: 100%; }
-
-/*
 post styles
 */
-.post {
-  padding: 1rem 0; }
-  .post:hover .post-line,
-  .post:focus .post-line {
-    width: 5rem; }
-  .post-info {
-    color: #aaa;
-    font-family: "EB Garamond", serif;
-    font-size: .9rem;
-    letter-spacing: .08rem;
-    text-align: center; }
-    .post-info span {
-      font-style: italic; }
-  .post-title {
-    color: #555;
-    font-family: "linux_biolinum_oregular", sans-serif;
-    letter-spacing: .05rem;
-    font-size: 2.2rem;
-    text-align: center;
-    font-weight: 100;
-    margin: -4px 0 4px; }
-  .post-line {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    border-top: 0.2rem solid #e5e5e5;
-    display: block;
-    width: 2rem;
-    margin: auto; }
-  .post h3,
-  .post h4,
-  .post h5 {
-    text-align: center; }
-  .post p {
-    text-align: justify;
-    font-size: 1.19rem; }
-  .post blockquote p {
-    margin-left: 0;
-    max-width: none; }
-  .post a:hover {
-    text-decoration: none; }
-  .post img {
-    margin: 0 auto 0.5rem; }
-  .post img + em {
-    color: #aaa;
-    display: block;
-    font-family: "linux_biolinum_oregular", sans-serif;
-    font-size: 0.9rem;
-    font-style: normal;
-    text-align: center; }
-  .post img.emoji {
-    display: inline-block;
-    left: 0;
-    transform: none;
-    width: 1rem;
-    height: 1rem;
-    vertical-align: text-top;
-    padding: 0;
-    margin: 0; }
-  .post-details {
-    padding-top: 1rem;
-    border-top: 0.5px solid #e5e5e5; }
+.post:hover .post-line,
+.post:focus .post-line {
+  width: 5rem; }
+
+.post-info {
+  color: #aaa;
+  font-family: "EB Garamond", serif;
+  font-size: .8rem;
+  letter-spacing: .08rem;
+  text-align: center;
+  margin-top: .8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -0.8rem\; span;
+    margin-bottom-font-style: italic; }
+
+.post-title {
+  color: #555;
+  font-family: "linux_biolinum_oregular", sans-serif;
+  letter-spacing: .05rem;
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; }
+
+.post-line {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-top: 0.2rem solid #e5e5e5;
+  display: block;
+  width: 2rem;
+  margin-top: -.01rem;
+  margin-bottom: .8rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.post p {
+  text-align: justify;
+  margin-bottom: .8rem;
+  max-width: 100%; }
+
+.post blockquote p {
+  margin-left: 0;
+  max-width: none; }
+
+.post a:hover {
+  text-decoration: none; }
+
+.post img {
+  margin: 0 auto 0.5rem; }
+
+.post img + em {
+  color: #aaa;
+  display: block;
+  font-family: "linux_biolinum_oregular", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  text-align: center; }
+
+.post img.emoji {
+  display: inline-block;
+  left: 0;
+  transform: none;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-top;
+  padding: 0;
+  margin: 0; }
+
+.post-details {
+  padding-top: 1rem;
+  border-top: 0.5px solid #e5e5e5; }
 
 /* 
 
@@ -353,7 +329,7 @@ pagination rules
 .pagination {
   margin: 1rem auto 1rem;
   font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
-  padding-top: 3rem;
+  padding-top: .8rem;
   text-align: center;
   list-style: none; }
   .pagination li {
@@ -363,7 +339,7 @@ pagination rules
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    color: #b324d4;
+    color: #B07ADE;
     font-family: "EB Garamond", serif;
     font-size: .8rem;
     opacity: 1; }
