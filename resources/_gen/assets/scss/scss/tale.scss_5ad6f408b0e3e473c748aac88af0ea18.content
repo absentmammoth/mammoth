@@ -18,7 +18,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
   padding: 0; }
 
@@ -31,7 +31,7 @@ html {
 
 @media all and (min-width: 1000px) {
   html {
-    font-size: 1.7vw; } }
+    font-size: 1.6vw; } }
 
 @media all and (max-width: 520px) {
   html {
@@ -90,7 +90,7 @@ items in header.html (site title, main menu, shadow/border)
     display: block;
     margin: .8rem 0 0 0;
     padding-right: .2rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 100; }
     .nav-title:hover, .nav-title:focus {
       opacity: .6; }
@@ -111,7 +111,7 @@ items in header.html (site title, main menu, shadow/border)
       opacity: .6; }
   .nav a {
     font-family: "EB Garamond", serif;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
 
 /*
 self explanatory
@@ -199,6 +199,7 @@ h-card {
 
 .mammoth-hcard {
   font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
   display: inline-block;
   margin-top: .8rem;
   margin-bottom: 0;
@@ -218,15 +219,25 @@ footer {
   border-top: 0.5px solid #e5e5e5;
   border-width: 100%;
   font-size: 1.2rem;
-  display: inline-block;
   /* remember that this should be $monospaced*/ }
   footer .flex-container {
-    margin-top: .5rem;
+    display: flex; }
+  footer .flex-container-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    font-family: "EB Garamond", serif; }
+    font-family: "EB Garamond", serif;
+    max-width: 50%;
+    margin: auto; }
+  footer .flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: "EB Garamond", serif;
+    max-width: 50%;
+    margin: auto; }
   footer span {
     color: #555;
     font-family: "EB Garamond", serif; }
@@ -257,14 +268,15 @@ post styles
   margin-top: .8rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -0.8rem\; span;
-    margin-bottom-font-style: italic; }
+  margin-bottom: auto; }
+  .post-info span {
+    font-style: italic; }
 
 .post-title {
   color: #555;
   font-family: "linux_biolinum_oregular", sans-serif;
-  letter-spacing: .05rem;
-  font-size: 2.2rem;
+  letter-spacing: .08rem;
+  font-size: 1.8rem;
   text-align: center;
   font-weight: 100;
   margin-bottom: auto;
@@ -279,15 +291,16 @@ post styles
   border-top: 0.2rem solid #e5e5e5;
   display: block;
   width: 2rem;
-  margin-top: -.01rem;
+  margin-top: .4rem;
   margin-bottom: .8rem;
   margin-left: auto;
   margin-right: auto; }
 
-.post p {
+.post-p {
   text-align: justify;
   margin-bottom: .8rem;
-  max-width: 100%; }
+  max-width: 100%;
+  font-size: 1.2rem; }
 
 .post blockquote p {
   margin-left: 0;
@@ -327,9 +340,8 @@ pagination rules
 
 */
 .pagination {
-  margin: 1rem auto 1rem;
+  margin: .8rem auto .8rem;
   font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
-  padding-top: .8rem;
   text-align: center;
   list-style: none; }
   .pagination li {

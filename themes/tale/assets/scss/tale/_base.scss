@@ -1,6 +1,6 @@
 * {
   @include box-sizing;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ html {
 
 @media all and (min-width:1000px) { 
   html { 
-    font-size: 1.7vw; 
+    font-size: 1.6vw; 
   } 
 }
 
@@ -85,7 +85,7 @@ items in header.html (site title, main menu, shadow/border)
     display: block;
     margin: .8rem 0 0 0;
     padding-right: .2rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 100;
 
     &:hover,
@@ -116,7 +116,7 @@ items in header.html (site title, main menu, shadow/border)
 
   a {
     font-family: $serif-primary;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -222,6 +222,7 @@ h-card {
 
 .mammoth-hcard {
   font-family: $serif-primary;
+  font-size: 1.2rem;
   display: inline-block;
   margin-top: .8rem;
   margin-bottom: 0;
@@ -245,15 +246,29 @@ footer {
   border-top: .5px solid $grey-2;
   border-width: 100%;
   font-size: 1.2rem;
-  display: inline-block;
 
   .flex-container {
-    margin-top: .5rem;
+    display: flex;
+  }
+
+  .flex-container-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
     font-family: $serif-primary;
+    max-width: 50%;
+    margin: auto;
+  }
+
+ .flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: $serif-primary;
+    max-width: 50%;
+    margin: auto;
   }
 
   span {
@@ -302,7 +317,7 @@ post styles
     margin-top: .8rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -.8rem\;
+    margin-bottom: auto;
 
     span {
       font-style: italic;
@@ -312,8 +327,8 @@ post styles
   &-title {
     color: $default-color;
     font-family: $sans-serif;
-    letter-spacing: .05rem;
-    font-size: 2.2rem;
+    letter-spacing: .08rem;
+    font-size: 1.8rem;
     text-align: center;
     font-weight: 100;
     margin-bottom: auto;
@@ -327,16 +342,17 @@ post styles
     border-top: .2rem solid $grey-2;
     display: block;
     width: 2rem;
-    margin-top: -.01rem;
+    margin-top: .4rem;
     margin-bottom: .8rem;
     margin-left: auto;
     margin-right: auto;
   } 
 
-  p {
+  &-p {
     text-align: justify;
     margin-bottom: .8rem;
     max-width: 100%;
+    font-size: 1.2rem;
   }
 
   & blockquote p {
@@ -387,14 +403,14 @@ pagination rules
 */
 
 .pagination {
-  margin: 1rem auto 1rem;
+  margin: .8rem auto .8rem;
   @extend %max-width;
 
   font-family: $serif-secondary;
-  padding-top: .8rem;
   text-align: center;
 
   list-style: none;
+
   li {
     list-style: none;
     display: inline-block;
