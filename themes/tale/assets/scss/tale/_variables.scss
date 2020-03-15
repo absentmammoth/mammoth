@@ -32,19 +32,4 @@ $monospaced: 'Fira Code', Menlo, Monaco, monospace;
           transition: $args;
 }
 
-%max-width {
-  /* Viewers on smaller screens should have 20% of the screen as whitespace
-   * to give them some breathing room
-   */
-  @media (max-width: 1200px) {
-    max-width: 80%;
-  }
-  /* When you're on a huge screen, you don't want to be looking _too_ far
-   * across the page, so we should limit this to an arbitrary width of
-   * 1100px. Anyone at 1200px will see it a little cramped, but it's not as
-   * bad as before!
-   */
-  @media (min-width: 1200px) {
-    max-width: 1100px;
-  }
-}
+

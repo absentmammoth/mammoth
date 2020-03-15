@@ -402,7 +402,7 @@ pagination rules
 
 .pagination {
   margin: .8rem auto .8rem;
-  @extend %max-width;
+  max-width: 100%;
 
   font-family: $serif-secondary;
   text-align: center;
@@ -477,7 +477,7 @@ pre code {
   padding: 0;
   display: block;
   margin: 0 auto;
-  @extend %max-width;
+  max-width: 100%;
 }
 
 .highlight {
