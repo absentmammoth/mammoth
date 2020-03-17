@@ -272,6 +272,15 @@ footer {
     height: 100%;
   }
   }
+  
+  .credits {
+    text-align: center;
+    font-size: .8rem;
+    font-family: $serif-primary;
+    margin: auto;
+    max-width: 100%;
+  }
+
   span {
     color: $default-color;
     font-family: $serif-primary;
