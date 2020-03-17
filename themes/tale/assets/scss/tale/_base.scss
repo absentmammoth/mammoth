@@ -107,6 +107,9 @@ items in header.html (site title, main menu, shadow/border)
     padding: 0 0.30rem 0 0;
     margin-bottom: .8rem;
     margin-top: .8rem;
+    font-family: $serif-primary;
+    letter-spacing: .08rem;
+    font-size: 1.5rem;
 
     &:hover,
     &:focus {
@@ -115,8 +118,8 @@ items in header.html (site title, main menu, shadow/border)
   }
 
   a {
-    font-family: $serif-primary;
-    font-size: 1.6rem;
+    
+    font-size: 1.5rem;
   }
 }
 
@@ -416,7 +419,7 @@ pagination rules
   margin: .8rem auto .8rem;
   max-width: 100%;
 
-  font-family: $serif-secondary;
+  font-family: $serif-primary;
   text-align: center;
 
   list-style: none;

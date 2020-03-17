@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%;
   font-family: "EB Garamond", serif;
-  color: #555;
+  color: #413D45;
   overflow-y: scroll;
   height: 100%; }
 
@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased; }
 
 h1 {
-  color: #555;
+  color: #413D45;
   font-family: "linux_biolinum_oregular", sans-serif;
   margin-top: .8rem;
   margin-bottom: .8rem; }
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #555;
+  color: #413D45;
   font-family: "linux_biolinum_oregular", sans-serif;
   margin-top: .8rem;
   font-weight: 100; }
@@ -51,7 +51,7 @@ a {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #B07ADE;
+  color: #BA90DE;
   text-decoration: none; }
   a:hover, a:focus {
     opacity: .6; }
@@ -70,7 +70,7 @@ items in header.html (site title, main menu, shadow/border)
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    color: #555;
+    color: #413D45;
     display: block;
     margin: .8rem 0 0 0;
     padding-right: .2rem;
@@ -85,17 +85,19 @@ items in header.html (site title, main menu, shadow/border)
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    color: #555;
+    color: #413D45;
     display: inline-block;
     opacity: 1;
     padding: 0 0.30rem 0 0;
     margin-bottom: .8rem;
-    margin-top: .8rem; }
+    margin-top: .8rem;
+    font-family: "EB Garamond", serif;
+    letter-spacing: .08rem;
+    font-size: 1.5rem; }
     .nav li:hover, .nav li:focus {
       opacity: .6; }
   .nav a {
-    font-family: "EB Garamond", serif;
-    font-size: 1.6rem; }
+    font-size: 1.5rem; }
 
 /*
 self explanatory
@@ -230,7 +232,7 @@ footer {
     margin: auto;
     max-width: 100%; }
   footer span {
-    color: #555;
+    color: #413D45;
     font-family: "EB Garamond", serif; }
   footer span#contact ul {
     list-style: none; }
@@ -251,7 +253,7 @@ post styles
   width: 5rem; }
 
 .post-info {
-  color: #aaa;
+  color: #808080;
   font-family: "EB Garamond", serif;
   font-size: .8rem;
   letter-spacing: .08rem;
@@ -264,7 +266,7 @@ post styles
     font-style: italic; }
 
 .post-title {
-  color: #555;
+  color: #413D45;
   font-family: "linux_biolinum_oregular", sans-serif;
   letter-spacing: .08rem;
   font-size: 1.8rem;
@@ -304,7 +306,7 @@ post styles
   margin: 0 auto 0.5rem; }
 
 .post img + em {
-  color: #aaa;
+  color: #808080;
   display: block;
   font-family: "linux_biolinum_oregular", sans-serif;
   font-size: 0.9rem;
@@ -333,7 +335,7 @@ pagination rules
 .pagination {
   margin: .8rem auto .8rem;
   max-width: 100%;
-  font-family: "EB Garamond", Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+  font-family: "EB Garamond", serif;
   text-align: center;
   list-style: none; }
   .pagination li {
@@ -343,7 +345,7 @@ pagination rules
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    color: #B07ADE;
+    color: #BA90DE;
     font-family: "EB Garamond", serif;
     font-size: .8rem;
     opacity: 1; }
@@ -386,7 +388,7 @@ pre code {
   max-width: 100%; }
 
 .highlight .lineno {
-  color: #aaa;
+  color: #808080;
   display: inline-block;
   padding: 0 .75rem 0 .25rem;
   -webkit-user-select: none;
