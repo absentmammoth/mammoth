@@ -33,7 +33,7 @@ body {
 
 h1 {
   color: #413D45;
-  font-family: "linux_biolinum_oregular", sans-serif;
+  font-family: "Vollkorn", sans-serif;
   margin-top: .8rem;
   margin-bottom: .8rem; }
 
@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
   color: #413D45;
-  font-family: "linux_biolinum_oregular", sans-serif;
+  font-family: "Vollkorn", sans-serif;
   margin-top: .8rem;
   font-weight: 100; }
 
@@ -75,7 +75,8 @@ items in header.html (site title, main menu, shadow/border)
     margin: .8rem 0 0 0;
     padding-right: .2rem;
     font-size: 2.3rem;
-    font-weight: 100; }
+    font-weight: 100;
+    font-family: 'Vollkorn'; }
     .nav-title:hover, .nav-title:focus {
       opacity: .6; }
   .nav ul {
@@ -91,7 +92,7 @@ items in header.html (site title, main menu, shadow/border)
     padding: 0 0.30rem 0 0;
     margin-bottom: .8rem;
     margin-top: .8rem;
-    font-family: "EB Garamond", serif;
+    font-family: "Vollkorn", sans-serif;
     letter-spacing: .08rem;
     font-size: 1.5rem; }
     .nav li:hover, .nav li:focus {
@@ -188,7 +189,7 @@ h-card {
   font-size: 1.2rem;
   display: inline-block;
   margin-top: .8rem;
-  margin-bottom: 0;
+  margin-bottom: 0.8rem;
   margin-left: 0;
   margin-right: 0; }
   .mammoth-hcard .u-photo {
@@ -256,7 +257,8 @@ post styles
   color: #808080;
   font-family: "EB Garamond", serif;
   font-size: .8rem;
-  letter-spacing: .08rem;
+  font-weight: 400;
+  letter-spacing: .06rem;
   text-align: center;
   margin-top: .8rem;
   margin-left: auto;
@@ -267,15 +269,16 @@ post styles
 
 .post-title {
   color: #413D45;
-  font-family: "linux_biolinum_oregular", sans-serif;
+  font-family: 'Vollkorn SC';
   letter-spacing: .08rem;
   font-size: 1.8rem;
   text-align: center;
-  font-weight: 100;
+  font-weight: 600;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto; }
+  margin-top: auto;
+  font-variant: small-caps; }
 
 .post-line {
   -webkit-transition: all 0.3s ease-out;
@@ -308,7 +311,7 @@ post styles
 .post img + em {
   color: #808080;
   display: block;
-  font-family: "linux_biolinum_oregular", sans-serif;
+  font-family: "Vollkorn", sans-serif;
   font-size: 0.9rem;
   font-style: normal;
   text-align: center; }

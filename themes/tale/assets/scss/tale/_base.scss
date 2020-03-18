@@ -87,6 +87,7 @@ items in header.html (site title, main menu, shadow/border)
     padding-right: .2rem;
     font-size: 2.3rem;
     font-weight: 100;
+    font-family: 'Vollkorn';
 
     &:hover,
     &:focus {
@@ -107,7 +108,7 @@ items in header.html (site title, main menu, shadow/border)
     padding: 0 0.30rem 0 0;
     margin-bottom: .8rem;
     margin-top: .8rem;
-    font-family: $serif-primary;
+    font-family: $sans-serif;
     letter-spacing: .08rem;
     font-size: 1.5rem;
 
@@ -228,7 +229,7 @@ h-card {
   font-size: 1.2rem;
   display: inline-block;
   margin-top: .8rem;
-  margin-bottom: 0;
+  margin-bottom: 0.8rem;
   margin-left: 0;
   margin-right: 0;
 
@@ -325,7 +326,8 @@ post styles
     color: $default-tint;
     font-family: $serif-primary;
     font-size: .8rem;
-    letter-spacing: .08rem;
+    font-weight: 400;
+    letter-spacing: .06rem;
     text-align: center;
     margin-top: .8rem;
     margin-left: auto;
@@ -339,15 +341,16 @@ post styles
 
   &-title {
     color: $default-color;
-    font-family: $sans-serif;
+    font-family: 'Vollkorn SC';
     letter-spacing: .08rem;
     font-size: 1.8rem;
     text-align: center;
-    font-weight: 100;
+    font-weight: 600;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    font-variant: small-caps;
   }
 
   &-line {
