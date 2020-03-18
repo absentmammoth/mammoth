@@ -184,20 +184,6 @@ footer,
 }
 */
 
-/*
-items from taxonomy & list html. commenting out for rn, not sure they are necessary.
-
-
-.h-feed {
-  .h-entry {
-    ul {
-      margin: 0;
-    }
-  }
-}
-*/
-
-
 /* seems like this would 
 apply to the title area as well but doesn't seem to do anything if I take it away?
 
@@ -321,7 +307,6 @@ post styles
     &:focus .post-line {
       width: 5rem;
   }
-
   &-info {
     color: $default-tint;
     font-family: $serif-primary;
@@ -346,13 +331,14 @@ post styles
     font-size: 1.8rem;
     text-align: center;
     font-weight: 600;
-    margin-bottom: auto;
+    margin-bottom: .8rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     font-variant: small-caps;
   }
 
+// this has been removed from title.html for now
   &-line {
     @include transition(all .3s ease-out);
     border-top: .2rem solid $grey-2;
@@ -410,7 +396,19 @@ post styles
     border-top: .5px solid $grey-2;
   }
 }
+#flex-tags {
+  display: flex;
+  justify-content: flex-start;
+  position: relative; 
+}
 
+a.tags {
+flex: 1;
+}
+
+div.flex-tags-main {
+margin-left: auto;
+}
 
 /* 
 
@@ -445,7 +443,16 @@ pagination rules
   }
 }
 
-
+ul.tags {
+  list-style-type: none;
+  span {
+    font-family: 'Vollkorn SC';
+    font-size: .8rem;
+    font-weight: 900;
+    font-variant: small-caps;
+    margin: auto;
+  }
+}
 
 
 

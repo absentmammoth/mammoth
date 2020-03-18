@@ -114,7 +114,6 @@ blockquote {
   @media (min-width: 520px) {
     blockquote {
       padding: 0 1.25rem 0 1.25rem; } }
-
 /*
 doublecheck these three if i have image/table problems later
 */
@@ -147,18 +146,6 @@ footer,
 
 .nav-container {
   @extend %max-width;
-}
-*/
-/*
-items from taxonomy & list html. commenting out for rn, not sure they are necessary.
-
-
-.h-feed {
-  .h-entry {
-    ul {
-      margin: 0;
-    }
-  }
 }
 */
 /* seems like this would 
@@ -249,8 +236,7 @@ footer {
 /*
 post styles
 */
-.post:hover .post-line,
-.post:focus .post-line {
+.post:hover .post-line, .post:focus .post-line {
   width: 5rem; }
 
 .post-info {
@@ -274,7 +260,7 @@ post styles
   font-size: 1.8rem;
   text-align: center;
   font-weight: 600;
-  margin-bottom: auto;
+  margin-bottom: .8rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -330,6 +316,17 @@ post styles
   padding-top: 1rem;
   border-top: 0.5px solid #e5e5e5; }
 
+#flex-tags {
+  display: flex;
+  justify-content: flex-start;
+  position: relative; }
+
+a.tags {
+  flex: 1; }
+
+div.flex-tags-main {
+  margin-left: auto; }
+
 /* 
 
 pagination rules 
@@ -354,6 +351,15 @@ pagination rules
     opacity: 1; }
     .pagination .top:hover {
       opacity: .6; }
+
+ul.tags {
+  list-style-type: none; }
+  ul.tags span {
+    font-family: 'Vollkorn SC';
+    font-size: .8rem;
+    font-weight: 900;
+    font-variant: small-caps;
+    margin: auto; }
 
 /* rules for the code blocks */
 pre,

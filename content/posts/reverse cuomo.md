@@ -6,7 +6,6 @@ draft: true
 toc: false
 tags: 
 - music
-kinds: music
 ---
 For the last year, I’ve been unable to experience much joy from music — with few exceptions, even old favorites sound flat and dull. One explanation for this is that I have a brain tumor, and another is that I got these nice headphones and then some fancy pads for them that position the sound too far from my ears which creates a hollowness to their sound that I’ve been too lazy to fix or think much about. But another possible cause is that I began listening to what might qualify a “corporate alt” radio station (this also stems from laziness: sometimes fighting with the bluetooth is just too hard, and it also stems from interpersonal sensitivity: I don’t want to put something bad that I like on in front of passengers). This station plays the classics you might expect like Nirvana and Green Day. But it also spins newer acts like Twenty One Pilots, AJR, and MISSIO. And, beyond my laziness and desire not to annoy those around me, this is part of how the station tricks me: It gives me just enough Longview to keep me listening while it subjects me to the aimlessness of modern radio rock.
 

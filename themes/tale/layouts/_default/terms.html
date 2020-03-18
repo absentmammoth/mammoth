@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
     <h2>kinds</h2>
-	<div class="catalogue">
+	<div class="kinds">
         <ul>
         {{- range (.Paginate .Data.Pages).Pages -}}
             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
