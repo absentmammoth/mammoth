@@ -1,9 +1,10 @@
 <div class="post">
-        <a href="{{ .Permalink }}">
-
-        {{ partial "single/posts/post-info.html" . }}
+       <a href="{{ .Permalink }}">
+        <div class="fade">{{ partial "single/posts/post-info.html" . }}
         {{ partial "single/title.html" . }}
+        </div>
         </a>
+        
         <p>
             {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | markdownify }}{{ end }}
         </p>

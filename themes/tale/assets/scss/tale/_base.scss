@@ -16,7 +16,7 @@ html {
   height: 100%;
 }
 
-@media all and (min-width:1000px) { 
+@media all and (min-width:800px) { 
   html { 
     font-size: 1.6vw; 
   } 
@@ -34,9 +34,6 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 70vw;
-  min-height: 100%;
-  position: relative;
-  z-index: -10000;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -73,10 +70,11 @@ items in header.html (site title, main menu, shadow/border)
 */
 
 .nav {
-  box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  border-bottom: .19rem solid $default-color;
 
   &-container {
     position: relative;
@@ -88,10 +86,10 @@ items in header.html (site title, main menu, shadow/border)
     display: block;
     margin: .8rem 0 0 0;
     padding-right: .2rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 100;
     font-family: 'Vollkorn';
-
+  
     &:hover,
     &:focus {
       opacity: .6;
@@ -105,27 +103,20 @@ items in header.html (site title, main menu, shadow/border)
 
   li {
     @include transition(all .2s ease-out);
-    color: $default-color;
     display: inline-block;
-    opacity: 1;
-    padding: 0 0.30rem 0 0;
+    padding: 0 0.40rem 0 0;
     margin-bottom: .8rem;
-    margin-top: .8rem;
     font-family: $sans-serif;
     letter-spacing: .08rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
     &:hover,
     &:focus {
       opacity: .6;
     }
   }
-
-  a {
-    
-    font-size: 1.5rem;
-  }
 }
+
 
 /*
 self explanatory
@@ -192,8 +183,7 @@ not sure why the video css is there.
 
 footer {
   font-family: $serif-primary;
-  border-top: .5px solid $grey-2;
-  border-width: 100%;
+  border-top: .19rem solid $default-color;
   font-size: 1.2rem;
 
   .flex-container {
@@ -262,11 +252,19 @@ post styles
 
 .post {
 
-    &:hover .post-line,
-    &:focus .post-line {
-      width: 5rem;
+  .fade {
+  @include transition(all .2s ease-out);
+  color: $purple;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
   }
+  }
+
   &-info {
+
     color: $default-tint;
     font-family: $serif-primary;
     font-size: .8rem;
@@ -297,7 +295,7 @@ post styles
     font-variant: small-caps;
   }
 
-// this has been removed from title.html for now
+/* this has been removed from title.html for now
   &-line {
     @include transition(all .3s ease-out);
     border-top: .2rem solid $grey-2;
@@ -308,20 +306,12 @@ post styles
     margin-left: auto;
     margin-right: auto;
   } 
+  */
 
   p {
     margin-bottom: .8rem;
     max-width: 100%;
     font-size: 1.2rem;
-  }
-
-  & blockquote p {
-    margin-left: 0;
-    max-width: none;
-  }
-
-  a:hover {
-    text-decoration: none;
   }
 
   img {
@@ -348,11 +338,6 @@ post styles
     padding: 0;
     margin: 0;
   }
-
-  &-details {
-    padding-top: 1rem;
-    border-top: .5px solid $grey-2;
-  }
 }
 
 /* 
@@ -362,12 +347,10 @@ pagination rules
 */
 
 .pagination {
-  margin: .8rem auto .8rem;
+  margin: .8rem auto .8rem auto;
   max-width: 100%;
-
-  font-family: $serif-primary;
+  font-family: $sans-serif;
   text-align: center;
-
   list-style: none;
 
   li {
@@ -380,8 +363,8 @@ pagination rules
     color: $purple;
     font-family: $serif-primary;
     font-size: .8rem;
-    opacity: 1;
-
+    
+    &:focus
     &:hover {
       opacity: .6;
     }

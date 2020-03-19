@@ -12,11 +12,11 @@
 html {
   font-size: 62.5%;
   font-family: "EB Garamond", serif;
-  color: #413D45;
+  color: #58545D;
   overflow-y: scroll;
   height: 100%; }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 800px) {
   html {
     font-size: 1.6vw; } }
 
@@ -29,13 +29,10 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 70vw;
-  min-height: 100%;
-  position: relative;
-  z-index: -10000;
   -webkit-font-smoothing: subpixel-antialiased; }
 
 h1 {
-  color: #413D45;
+  color: #58545D;
   font-family: "Vollkorn", sans-serif;
   margin-top: .8rem;
   margin-bottom: .8rem; }
@@ -45,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #413D45;
+  color: #58545D;
   font-family: "Vollkorn", sans-serif;
   margin-top: .8rem;
   font-weight: 100; }
@@ -63,21 +60,22 @@ a {
 items in header.html (site title, main menu, shadow/border) 
 */
 .nav {
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   overflow: auto;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative;
+  border-bottom: 0.19rem solid #58545D; }
   .nav-container {
     position: relative; }
   .nav-title {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    color: #413D45;
+    color: #58545D;
     display: block;
     margin: .8rem 0 0 0;
     padding-right: .2rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 100;
     font-family: 'Vollkorn'; }
     .nav-title:hover, .nav-title:focus {
@@ -89,19 +87,14 @@ items in header.html (site title, main menu, shadow/border)
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    color: #413D45;
     display: inline-block;
-    opacity: 1;
-    padding: 0 0.30rem 0 0;
+    padding: 0 0.40rem 0 0;
     margin-bottom: .8rem;
-    margin-top: .8rem;
     font-family: "Vollkorn", sans-serif;
     letter-spacing: .08rem;
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
     .nav li:hover, .nav li:focus {
       opacity: .6; }
-  .nav a {
-    font-size: 1.5rem; }
 
 /*
 self explanatory
@@ -153,8 +146,7 @@ not sure why the video css is there.
 */
 footer {
   font-family: "EB Garamond", serif;
-  border-top: 0.5px solid #e5e5e5;
-  border-width: 100%;
+  border-top: 0.19rem solid #58545D;
   font-size: 1.2rem;
   /* remember that this should be $monospaced*/ }
   footer .flex-container {
@@ -183,7 +175,7 @@ footer {
     margin: auto;
     max-width: 100%; }
   footer span {
-    color: #413D45;
+    color: #58545D;
     font-family: "EB Garamond", serif; }
   footer span#contact ul {
     list-style: none; }
@@ -199,84 +191,74 @@ footer {
 /*
 post styles
 */
-.post:hover .post-line, .post:focus .post-line {
-  width: 5rem; }
-
-.post-info {
-  color: #808080;
-  font-family: "EB Garamond", serif;
-  font-size: .8rem;
-  font-weight: 400;
-  letter-spacing: .06rem;
-  text-align: center;
-  margin-top: 1.6rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto; }
-  .post-info span {
-    font-style: italic; }
-
-.post-title {
-  color: #413D45;
-  font-family: 'Vollkorn SC';
-  letter-spacing: .08rem;
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: .8rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  font-variant: small-caps; }
-
-.post-line {
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-top: 0.2rem solid #e5e5e5;
-  display: block;
-  width: 2rem;
-  margin-top: .4rem;
-  margin-bottom: .8rem;
-  margin-left: auto;
-  margin-right: auto; }
-
-.post p {
-  margin-bottom: .8rem;
-  max-width: 100%;
-  font-size: 1.2rem; }
-
-.post blockquote p {
-  margin-left: 0;
-  max-width: none; }
-
-.post a:hover {
-  text-decoration: none; }
-
-.post img {
-  margin: 0 auto 0.5rem; }
-
-.post img + em {
-  color: #808080;
-  display: block;
-  font-family: "Vollkorn", sans-serif;
-  font-size: 0.9rem;
-  font-style: normal;
-  text-align: center; }
-
-.post img.emoji {
-  display: inline-block;
-  left: 0;
-  transform: none;
-  width: 1rem;
-  height: 1rem;
-  vertical-align: text-top;
-  padding: 0;
-  margin: 0; }
-
-.post-details {
-  padding-top: 1rem;
-  border-top: 0.5px solid #e5e5e5; }
+.post {
+  /* this has been removed from title.html for now
+  &-line {
+    @include transition(all .3s ease-out);
+    border-top: .2rem solid $grey-2;
+    display: block;
+    width: 2rem;
+    margin-top: .4rem;
+    margin-bottom: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  */ }
+  .post .fade {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #BA90DE;
+    text-decoration: none; }
+    .post .fade:hover, .post .fade:focus {
+      opacity: .6; }
+  .post-info {
+    color: #BA90DE;
+    font-family: "EB Garamond", serif;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .06rem;
+    text-align: center;
+    margin-top: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto; }
+    .post-info span {
+      font-style: italic; }
+  .post-title {
+    color: #58545D;
+    font-family: 'Vollkorn SC';
+    letter-spacing: .08rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-variant: small-caps; }
+  .post p {
+    margin-bottom: .8rem;
+    max-width: 100%;
+    font-size: 1.2rem; }
+  .post img {
+    margin: 0 auto 0.5rem; }
+  .post img + em {
+    color: #BA90DE;
+    display: block;
+    font-family: "Vollkorn", sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: center; }
+  .post img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0; }
 
 /* 
 
@@ -284,9 +266,9 @@ pagination rules
 
 */
 .pagination {
-  margin: .8rem auto .8rem;
+  margin: .8rem auto .8rem auto;
   max-width: 100%;
-  font-family: "EB Garamond", serif;
+  font-family: "Vollkorn", sans-serif;
   text-align: center;
   list-style: none; }
   .pagination li {
@@ -298,9 +280,8 @@ pagination rules
     transition: all 0.2s ease-out;
     color: #BA90DE;
     font-family: "EB Garamond", serif;
-    font-size: .8rem;
-    opacity: 1; }
-    .pagination .top:hover {
+    font-size: .8rem; }
+    .pagination .top:focus .pagination .top:hover {
       opacity: .6; }
 
 /* rules for the code blocks */
@@ -339,7 +320,7 @@ pre code {
   max-width: 100%; }
 
 .highlight .lineno {
-  color: #808080;
+  color: #BA90DE;
   display: inline-block;
   padding: 0 .75rem 0 .25rem;
   -webkit-user-select: none;
