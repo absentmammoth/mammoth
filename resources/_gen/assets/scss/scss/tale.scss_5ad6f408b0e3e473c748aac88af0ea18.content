@@ -4,7 +4,10 @@
   box-sizing: border-box;
   line-height: 1.5;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal; }
 
 html {
   font-size: 62.5%;
@@ -129,45 +132,6 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
-/*
-not sure what these apply to, commenting them out for now
-
-.container {
-  margin: 0 auto;
-  @extend %max-width;
-}
-
-main,
-footer,
-.nav-container {
-  display: block;
-  margin: 0 auto;
-}
-
-.nav-container {
-  @extend %max-width;
-}
-*/
-/* seems like this would 
-apply to the title area as well but doesn't seem to do anything if I take it away?
-
-@media (min-width: 600px) {
-  .nav {
-    &-container {
-      text-align: left;
-    }
-
-    ul {
-      bottom: 0;
-      right: 0;
-    }
-  }
-}
-*/
-/* 
-this is for the h-card info in introduction.html. u-photo needs inline-block and margin:auto or 
-it goes nuts.
-*/
 h-card {
   display: inline-block; }
 
@@ -176,7 +140,6 @@ h-card {
   font-size: 1.2rem;
   display: inline-block;
   margin-top: .8rem;
-  margin-bottom: 0.8rem;
   margin-left: 0;
   margin-right: 0; }
   .mammoth-hcard .u-photo {
@@ -246,7 +209,7 @@ post styles
   font-weight: 400;
   letter-spacing: .06rem;
   text-align: center;
-  margin-top: .8rem;
+  margin-top: 1.6rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto; }
@@ -279,7 +242,6 @@ post styles
   margin-right: auto; }
 
 .post p {
-  text-align: justify;
   margin-bottom: .8rem;
   max-width: 100%;
   font-size: 1.2rem; }
@@ -316,17 +278,6 @@ post styles
   padding-top: 1rem;
   border-top: 0.5px solid #e5e5e5; }
 
-#flex-tags {
-  display: flex;
-  justify-content: flex-start;
-  position: relative; }
-
-a.tags {
-  flex: 1; }
-
-div.flex-tags-main {
-  margin-left: auto; }
-
 /* 
 
 pagination rules 
@@ -351,15 +302,6 @@ pagination rules
     opacity: 1; }
     .pagination .top:hover {
       opacity: .6; }
-
-ul.tags {
-  list-style-type: none; }
-  ul.tags span {
-    font-family: 'Vollkorn SC';
-    font-size: .8rem;
-    font-weight: 900;
-    font-variant: small-caps;
-    margin: auto; }
 
 /* rules for the code blocks */
 pre,

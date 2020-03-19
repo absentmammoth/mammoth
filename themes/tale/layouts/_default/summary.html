@@ -1,13 +1,10 @@
 <div class="post">
-    <div id="flex-tags">
-        <a class="tags" href="{{ .Permalink }}">
+        <a href="{{ .Permalink }}">
 
         {{ partial "single/posts/post-info.html" . }}
         {{ partial "single/title.html" . }}
         </a>
-        <div class="flex-tags-main"> {{ partial "tags.html" . }} </div>
-    </div>
-        <p class="post-p">
+        <p>
             {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | markdownify }}{{ end }}
         </p>
 </div>
