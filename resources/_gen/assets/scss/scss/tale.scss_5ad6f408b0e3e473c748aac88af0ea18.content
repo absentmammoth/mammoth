@@ -264,6 +264,7 @@ post styles
   font-weight: 700;
   margin-bottom: -.4rem; }
 
+.post .post,
 .post h3 {
   text-align: center;
   font-weight: 600;
