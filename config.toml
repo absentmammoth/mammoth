@@ -99,16 +99,16 @@ notAlternative = true
 #   url = "/kind/bookmarks/"
 #    weight = 11
   [[menu.main]]
-    identifier = "kinds"
-    name = "kinds"
-    title = "kinds"
-    url = "/kind/"
+    identifier = "topics"
+    name = "topics"
+    title = "topics"
+    url = "/tags/"
     weight = 30
   [[menu.main]]
-    identifier = "blogroll"
-    name = "blogroll"
-    title = "blogroll"
-    url = "/blogroll/"
+    identifier = "media list"
+    name = "media list"
+    title = "media list"
+    url = "/media-list/"
     weight = 40
   [[menu.main]]
   identifier = "rss"

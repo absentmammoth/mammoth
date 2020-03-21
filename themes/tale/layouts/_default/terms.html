@@ -1,12 +1,12 @@
 {{ define "main" }}
 <main>
-    <h2>kinds</h2>
-	<div class="kinds">
-        <ul>
-        {{- range (.Paginate .Data.Pages).Pages -}}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{- end -}}
-        </ul>
+	<div class="tags">
+	<h2>tags</h2>
+		{{ range .Data.Terms.Alphabetical }}
+		<ul class="tags">
+				<a href="{{ .Page.Permalink }}">{{ .Page.Title }} #({{ .Count }})</a>
+		</ul>
+		{{ end }}
 	</div>
 	
 	<div class="pagination">
