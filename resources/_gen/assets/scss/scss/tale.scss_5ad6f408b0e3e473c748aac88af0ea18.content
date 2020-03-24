@@ -63,27 +63,25 @@ items in header.html (site title, main menu, shadow/border)
   overflow: auto;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   border-bottom: 0.19rem solid #58545D; }
-  .nav-header > a > .title {
+  .nav-header > .headerlink > .title {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     color: #58545D;
-    display: block;
     margin: .8rem 0 0 0;
     font-size: 2rem;
     font-weight: 100;
     font-family: "Vollkorn", sans-serif; }
-    .nav-header > a > .title:hover, .nav-header > a > .title:focus {
+    .nav-header > .headerlink > .title:hover, .nav-header > .headerlink > .title:focus {
       opacity: .6; }
 
 .header-menu > .links {
   display: inline-block;
-  padding: 0 .9rem 0 0;
+  padding: 0 .8rem 0 0;
   margin-bottom: .8rem;
   font-family: "Vollkorn", sans-serif;
-  letter-spacing: .08rem;
+  letter-spacing: .06rem;
   font-size: 1.4rem; }
 
 blockquote {
