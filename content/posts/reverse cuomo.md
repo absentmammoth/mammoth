@@ -3,7 +3,7 @@ title: "reverse cuomo"
 date: 2020-03-03T10:52:10-07:00
 lastmod: 2020-03-03T10:52:10-07:00
 draft: true
-toc: false
+toc: true
 tags: 
 - music
 ---
@@ -11,7 +11,11 @@ For the last year, I’ve been unable to experience much joy from music — with
 
 <!--more-->
 
+### ToC test
+
 This bland, mailed in, completely interchangeable content has become an absolute fixation for me. Who is listening to it? What motivates its makers? Does it exist solely because record companies need to show *something* to keep creditors at bay? And another natural question is, What is its lineage? Is there some common ancestor linking all of this bullshit? Or, in other words, Who can I blame for this?
+
+#### ToC test 2
 
 My answer for that last question: Weezer. I think I can make a decent case for this. Unfortunately, to do the topic just requires listening to the Weezer discography, something that becomes a real challenge not even that far in. I could even argue that anything after Blue is a slog. However, I’ve now made it up to and including the first half of *Raditude*. I didn’t want to hate the discography as much I have ended up hating it. Nothing would give me more pleasure than to smugly say the entire thing is great and the haters are just bandwagoneers trying to identify themselves to each other by dissing the subtly genius *Red Album*. They don’t get it, is all! I would love to not have to repeat the line that Matt Sharp carried the band on his back. But in going through these albums, I cannot do these things.
 

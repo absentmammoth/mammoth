@@ -21,8 +21,7 @@ $serif-secondary: 'EB Garamond', serif;
 $serif-medium: 'EB Garamond Medium', serif;
 // Fix variable name later
 $sans-serif: 'Vollkorn', sans-serif;
-// $sans-serif: 'FiraGo', 'Fira-Sans', sans-serif;
-$monospaced: 'Fira Code', Menlo, Monaco, monospace;
+$monospaced: 'Fira Code', Menlo, Inconsulata, monospace;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;

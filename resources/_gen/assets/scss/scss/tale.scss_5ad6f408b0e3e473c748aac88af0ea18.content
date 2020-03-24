@@ -5,7 +5,6 @@
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-rendering: optimizeLegibility;
   font-kerning: normal; }
 
@@ -16,13 +15,13 @@ html {
   overflow-y: scroll;
   height: 100%; }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 700px) {
   html {
-    font-size: 1.6vw; } }
+    font-size: 1.5rem; } }
 
-@media all and (max-width: 520px) {
+@media all and (max-width: 699px) {
   html {
-    font-size: .9rem; } }
+    font-size: 1.125rem; } }
 
 body {
   margin-left: auto;
@@ -78,36 +77,23 @@ items in header.html (site title, main menu, shadow/border)
     padding-right: .2rem;
     font-size: 2rem;
     font-weight: 100;
-    font-family: 'Vollkorn'; }
+    font-family: "Vollkorn", sans-serif; }
     .nav-title:hover, .nav-title:focus {
       opacity: .6; }
-  .nav ul {
-    list-style-type: none;
-    padding: 0; }
   .nav li {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
     display: inline-block;
-    padding: 0 0.50rem 0 0;
+    padding: 0 .9rem 0 0;
     margin-bottom: .8rem;
     font-family: "Vollkorn", sans-serif;
     letter-spacing: .08rem;
     font-size: 1.4rem; }
-    .nav li:hover, .nav li:focus {
-      opacity: .6; }
 
 blockquote {
-  border-left: 0.25rem solid #e5e5e5;
-  color: #979797;
+  border-left: 0.25rem solid #BA90DE;
+  color: #58545D;
   margin: .8rem 0;
-  padding: .5rem 1rem; }
-  blockquote p:last-child {
-    margin-bottom: 0;
-    margin-left: 0; }
-  @media (min-width: 520px) {
-    blockquote {
-      padding: 0 1.25rem 0 1.25rem; } }
+  padding: 0 1.25rem 0 1.25rem; }
+
 /*
 doublecheck these three if i have image/table problems later
 */
@@ -122,6 +108,20 @@ td {
 table {
   margin-left: auto;
   margin-right: auto; }
+
+details .toc {
+  text-align: left !important;
+  margin-bottom: .8rem; }
+
+details > summary {
+  width: 15em;
+  cursor: pointer;
+  list-style: none;
+  font: 1.4rem "Vollkorn", sans-serif;
+  font-weight: 600; }
+
+details > summary::-webkit-details-marker {
+  display: none; }
 
 h-card {
   display: inline-block; }
@@ -305,7 +305,7 @@ post styles
 /* rules for the code blocks */
 pre,
 code {
-  font-family: "Fira Code", Menlo, Monaco, monospace; }
+  font-family: "Fira Code", Menlo, Inconsulata, monospace; }
 
 pre {
   overflow-x: auto;

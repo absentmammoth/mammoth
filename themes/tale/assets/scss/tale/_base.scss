@@ -3,7 +3,6 @@
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
 }
@@ -16,15 +15,14 @@ html {
   height: 100%;
 }
 
-@media all and (min-width:800px) { 
+@media all and (min-width: 700px) { 
   html { 
-    font-size: 1.6vw; 
+    font-size: 1.5rem; 
   } 
 }
 
-@media all and (max-width:520px) { 
-  html { 
-    font-size: .9rem; 
+@media all and (max-width: 699px) { 
+  html{ font-size: 1.125rem; 
   } 
 }
 
@@ -89,7 +87,7 @@ items in header.html (site title, main menu, shadow/border)
     padding-right: .2rem;
     font-size: 2rem;
     font-weight: 100;
-    font-family: 'Vollkorn';
+    font-family: $sans-serif;
   
     &:hover,
     &:focus {
@@ -97,41 +95,21 @@ items in header.html (site title, main menu, shadow/border)
     }
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
   li {
-    @include transition(all .2s ease-out);
     display: inline-block;
-    padding: 0 0.50rem 0 0;
+    padding: 0 .9rem 0 0;
     margin-bottom: .8rem;
     font-family: $sans-serif;
     letter-spacing: .08rem;
     font-size: 1.4rem;
-
-    &:hover,
-    &:focus {
-      opacity: .6;
-    }
   }
 }
 
 blockquote {
-  border-left: .25rem solid $grey-2;
-  color: $grey-1;
+  border-left: .25rem solid $purple;
+  color: $default-color;
   margin: .8rem 0;
-  padding: .5rem 1rem;
-
-  p:last-child {
-    margin-bottom: 0;
-    margin-left: 0;
-  }
-
-  @media (min-width: 520px) {
-    padding: 0 1.25rem 0 1.25rem;
-  }
+  padding: 0 1.25rem 0 1.25rem;
 }
 
 /*
@@ -151,6 +129,25 @@ td {
 table {
   margin-left: auto;
   margin-right: auto;
+}
+
+details {
+  .toc {
+  text-align: left !important;
+  margin-bottom: .8rem;
+  }
+}
+
+details > summary {
+  width: 15em;
+  cursor: pointer;
+  list-style: none;
+  font: 1.4rem $sans-serif;
+  font-weight: 600;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 h-card {
