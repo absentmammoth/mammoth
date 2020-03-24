@@ -17,7 +17,7 @@ html {
 
 @media all and (min-width: 700px) { 
   html { 
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
   } 
 }
 
@@ -31,7 +31,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 70vw;
+  max-width: 65vw;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -68,34 +68,31 @@ a {
 items in header.html (site title, main menu, shadow/border) 
 */
 
-.nav {
+.nav-header {
   overflow: auto;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   border-bottom: .19rem solid $default-color;
 
-  &-container {
-    position: relative;
-  }
-
-  &-title {
+  > a > .title {
     @include transition(all .2s ease-out);
     color: $default-color;
     display: block;
     margin: .8rem 0 0 0;
-    padding-right: .2rem;
     font-size: 2rem;
     font-weight: 100;
     font-family: $sans-serif;
   
-    &:hover,
-    &:focus {
+      &:hover,
+      &:focus {
       opacity: .6;
     }
   }
+}
 
-  li {
+.header-menu {
+  > .links {
     display: inline-block;
     padding: 0 .9rem 0 0;
     margin-bottom: .8rem;
