@@ -61,8 +61,7 @@ items in header.html (site title, main menu, shadow/border)
 */
 .nav-header {
   overflow: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: .8rem;
   border-bottom: 0.19rem solid #58545D; }
   .nav-header > .headerlink > .title {
     -webkit-transition: all 0.2s ease-out;
@@ -119,17 +118,11 @@ details > summary {
 details > summary::-webkit-details-marker {
   display: none; }
 
-h-card {
-  display: inline-block; }
-
 .mammoth-hcard {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
-  display: inline-block;
-  margin-top: .8rem;
-  margin-left: 0;
-  margin-right: 0; }
-  .mammoth-hcard .u-photo {
+  display: inline-block; }
+  .mammoth-hcard > .u-photo {
     display: inline-block;
     left: 0;
     width: 30px;
@@ -146,40 +139,29 @@ not sure why the video css is there.
 footer {
   font-family: "EB Garamond", serif;
   border-top: 0.19rem solid #58545D;
-  font-size: 1.2rem;
-  /* remember that this should be $monospaced*/ }
-  footer .flex-container {
+  font-size: 1.2rem; }
+  footer > .flex-container {
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    margin: auto; }
-    footer .flex-container .flex-container-1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      font-family: "EB Garamond", serif;
+    margin-top: .8rem;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer > .flex-container > .flexleft {
       max-width: 100%;
       height: 100%; }
-    footer .flex-container .flex-container-2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      font-family: "EB Garamond", serif;
+    footer > .flex-container > .flexright {
       max-width: 100%;
       height: 100%; }
+      footer > .flex-container > .flexright > .h-card > .u-photo {
+        width: 50px;
+        height: 25px; }
   footer .credits {
     text-align: center;
     font-size: .8rem;
     font-family: "EB Garamond", serif;
     margin: auto;
     max-width: 100%; }
-  footer span {
-    color: #58545D;
-    font-family: "EB Garamond", serif; }
-  footer span#contact ul {
+  footer .contact {
     list-style: none; }
-  footer span.monospace {
-    font-family: "EB Garamond", serif; }
 
 .tags {
   text-align: center;
