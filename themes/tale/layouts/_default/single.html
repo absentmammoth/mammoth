@@ -6,7 +6,7 @@
 		<div class="post">
 			{{ partial "single/header.html" . }}
 			{{ partial "single/posts/post-info.html" . }}
-			{{ partial "single/title.html" . }}
+			{{ partial "single/posts/title.html" . }}
 			{{ partial "single/table-of-contents.html" . }}
 
 			{{ .Content | markdownify }}

@@ -1,7 +1,7 @@
 ---
 title: "reverse cuomo"
 date: 2020-03-03T10:52:10-07:00
-lastmod: 2020-03-03T10:52:10-07:00
+lastmod: 2020-03-03=T10:52:10-07:00
 draft: true
 toc: true
 tags: 

@@ -1,12 +1,9 @@
 {{ define "main" }}
 
 <div class="h-feed">
-	
-	<div class="post-p">
 		{{ range (.Paginate .Pages).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
-	</div>
 	
 	<div class="pagination">
 		{{ if .Paginator.HasPrev }}

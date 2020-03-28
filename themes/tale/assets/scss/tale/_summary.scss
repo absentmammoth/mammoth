@@ -1,0 +1,43 @@
+.post-summary {
+  margin: .8rem auto .8rem auto;
+
+  > .fade {
+  @include transition(all .2s ease-out);
+  color: $purple;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+    }
+  }
+}
+
+.feed-info {
+  font-family: $serif-primary;
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .06rem;
+  text-align: center;
+
+  > .italicinfo {
+  font-style: italic;
+  }
+}
+
+.feed-title {
+  color: $default-color;
+  font-family: $header;
+  margin-top: -.4rem;
+  letter-spacing: .08rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.feed-post {
+  margin-bottom: .8rem;
+  max-width: 100%;
+  font-size: 1.2rem;
+}

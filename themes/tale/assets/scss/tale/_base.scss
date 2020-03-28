@@ -37,7 +37,7 @@ body {
 
 h1 {
   color: $default-color;
-  font-family: $sans-serif;
+  font-family: $header;
   margin-top: .8rem;
   margin-bottom: .8rem;
 }
@@ -47,7 +47,7 @@ h4,
 h5,
 h6 {
   color: $default-color;
-  font-family: $sans-serif;
+  font-family: $header;
   margin-top: .8rem;
   font-weight: 600;
   font-variant: all-small-caps;
@@ -61,42 +61,6 @@ a {
   &:hover,
   &:focus {
     opacity: .6;
-  }
-}
-
-/* 
-items in header.html (site title, main menu, shadow/border) 
-*/
-
-.nav-header {
-  overflow: auto;
-  margin-bottom: .8rem;
-  border-bottom: .19rem solid $default-color;
-
-
-  > .headerlink > .title {
-    @include transition(all .2s ease-out);
-    color: $default-color;
-    margin: .8rem 0 0 0;
-    font-size: 2rem;
-    font-weight: 100;
-    font-family: $sans-serif;
-  
-      &:hover,
-      &:focus {
-      opacity: .6;
-    }
-  }
-}
-
-.header-menu {
-  > .links {
-    display: inline-block;
-    padding: 0 .8rem 0 0;
-    margin-bottom: .8rem;
-    font-family: $sans-serif;
-    letter-spacing: .06rem;
-    font-size: 1.4rem;
   }
 }
 
@@ -137,7 +101,7 @@ details > summary {
   width: 15em;
   cursor: pointer;
   list-style: none;
-  font: 1.4rem $sans-serif;
+  font: 1.4rem $header;
   font-weight: 600;
 }
 
@@ -162,59 +126,12 @@ details > summary::-webkit-details-marker {
     }
 }
 
-/*
-footer styling and flex boxes for side-by-side contact info/h-card.
-not sure why the video css is there.
-*/
-
-footer {
-  font-family: $serif-primary;
-  border-top: .19rem solid $default-color;
-  font-size: 1.2rem;
-
-  > .flex-container {
-      display: flex;
-      margin-top: .8rem;
-      flex-direction: row;
-      justify-content: space-around;
-
-    > .flexleft {
-      max-width: 100%;
-      height: 100%;
-      }
-
-    > .flexright {
-        max-width: 100%;
-        height: 100%;
-      > .h-card > .u-photo {
-        width: 50px;
-        height: 25px;
-      }
-    }
-  }
-  .credits {
-    text-align: center;
-    font-size: .8rem;
-    font-family: $serif-primary;
-    margin: auto;
-    max-width: 100%;
-  }
-
-  .contact {
-    list-style: none;
-  }
-}
-
 .tags {
   text-align: center;
   list-style-type: none;
   margin-top: .8rem;
-  font-family: $sans-serif;
+  font-family: $header;
 }
-
-/*
-post styles
-*/
 
 .post {
 
@@ -222,20 +139,9 @@ post styles
     font-size: 1.2rem;
   }
 
-  .fade {
-  @include transition(all .2s ease-out);
-  color: $purple;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    opacity: .6;
-  }
-  }
-
   &-info {
 
-    color: $default-tint;
+    color: $purple;
     font-family: $serif-primary;
     font-size: .8rem;
     font-weight: 500;
@@ -276,9 +182,9 @@ post styles
   }
 
   img+em {
-    color: $default-tint;
+    color: $purple;
     display: block;
-    font-family: $sans-serif;
+    font-family: $header;
     font-size: 0.9rem;
     font-style: normal;
     text-align: center;
@@ -309,7 +215,7 @@ post styles
   }
   h3,
   h4 {
-    font-family: $sans-serif;
+    font-family: $header;
   }
 
   h4 {
@@ -328,7 +234,7 @@ post styles
 .pagination {
   margin: .8rem auto .8rem auto;
   max-width: 100%;
-  font-family: $sans-serif;
+  font-family: $header;
   text-align: center;
   list-style: none;
 
@@ -400,7 +306,7 @@ pre code {
 
 .highlight {
   .lineno {
-    color: $default-tint;
+    color: $purple;
     display: inline-block; // Ensures the null space also isn't selectable
     padding: 0 .75rem 0 .25rem;
     // Make sure numbers aren't selectable

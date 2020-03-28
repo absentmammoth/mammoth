@@ -1,0 +1,35 @@
+/*
+everything at the top of the site including the black border-bottom
+*/
+
+.nav-header {
+  overflow: auto;
+  margin-bottom: .8rem;
+  border-bottom: .19rem solid $default-color;
+
+
+  > .headerlink > .title {
+    @include transition(all .2s ease-out);
+    color: $default-color;
+    margin: .8rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: $header;
+  
+      &:hover,
+      &:focus {
+      opacity: .6;
+    }
+  }
+}
+
+.header-menu {
+  > .links {
+    display: inline-block;
+    padding: 0 .8rem 0 0;
+    margin-bottom: .8rem;
+    font-family: $header;
+    letter-spacing: .06rem;
+    font-size: 1.4rem;
+  }
+}

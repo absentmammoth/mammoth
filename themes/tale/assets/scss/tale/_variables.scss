@@ -3,7 +3,6 @@
 $default-color: #58545D;
 $default-shade: #353535;
 // default-tint was #aaa
-$default-tint: #BA90DE;
 $border-color: #502D72;
 $grey-1: #979797;
 $grey-2: #e5e5e5;
@@ -18,9 +17,7 @@ $code-color-link: #e8afda;
 // Fonts
 $serif-primary: 'EB Garamond', serif;
 $serif-secondary: 'EB Garamond', serif;
-$serif-medium: 'EB Garamond Medium', serif;
-// Fix variable name later
-$sans-serif: 'Vollkorn', sans-serif;
+$header: 'Vollkorn', 'serif';
 $monospaced: 'Fira Code', Menlo, Inconsulata, monospace;
 
 @mixin box-sizing($type: border-box) {
