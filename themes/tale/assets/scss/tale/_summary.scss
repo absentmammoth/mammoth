@@ -1,16 +1,5 @@
 .post-summary {
   margin: .8rem auto .8rem auto;
-
-  > .fade {
-  @include transition(all .2s ease-out);
-  color: $purple;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    opacity: .6;
-    }
-  }
 }
 
 .feed-info {
@@ -41,3 +30,14 @@
   max-width: 100%;
   font-size: 1.2rem;
 }
+
+.fade {
+  @include transition(all .2s ease-out);
+  color: $purple;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+    }
+  }

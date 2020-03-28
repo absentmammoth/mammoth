@@ -1,5 +1,6 @@
 <div class="post-info">
-    <span>written by</span>
+    <span class="italicinfo">written by</span>
+
         {{- if .Params.Author }}
         {{ .Params.Author }}
         {{- else }}
@@ -11,10 +12,10 @@
     <br>
     
         {{ if eq .PublishDate .Lastmod }}
-    <span>on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
+    <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
         {{ else }}
-    <span>on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
-    <span>and last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
+    <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
+    <span class="italicinfo">and last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
         {{ end }}
 
 </div>
