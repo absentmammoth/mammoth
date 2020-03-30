@@ -92,7 +92,8 @@ details > summary::-webkit-details-marker {
   font-size: 1.6rem;
   text-align: center;
   font-weight: 600;
-  font-variant: all-small-caps; }
+  font-variant: all-small-caps;
+  margin-top: -.4rem; }
 
 .media-list
 > h3 {
@@ -138,7 +139,7 @@ details > summary::-webkit-details-marker {
   font-weight: 500;
   letter-spacing: .06rem;
   text-align: center;
-  margin-top: -.4rem; }
+  margin-top: .8rem; }
   .list-info > .italicinfo {
     font-style: italic; }
 

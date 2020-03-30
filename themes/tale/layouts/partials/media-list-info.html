@@ -1,10 +1,10 @@
 <!-- <div class="list-a"><a href="/archive.html">past entries</a></div> -->
+<div class="fade">
+    <a href="{{ .Permalink }}">
+        <div class="list-info">
+            <span class="italicinfo">last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
+        </div>
+    </a>
+</div>
 
 <h2>some things from the last 30 days</h2>
-<div class="fade">
-<a href="{{ .Permalink }}">
-<div class="list-info">
-    <span class="italicinfo">last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
-</div>
-</a>
-</div>
