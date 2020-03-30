@@ -38,8 +38,7 @@ h5,
 h6 {
   color: #58545D;
   font-family: "Vollkorn", serif;
-  font-weight: 600;
-  font-variant: all-small-caps; }
+  font-weight: 600; }
 
 a {
   -webkit-transition: all 0.2s ease-out;
@@ -82,6 +81,73 @@ details > summary {
 details > summary::-webkit-details-marker {
   display: none; }
 
+.media-list {
+  font-size: 1rem; }
+
+.media-list
+> h2 {
+  color: #58545D;
+  font-family: "Vollkorn", serif;
+  letter-spacing: .08rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-variant: all-small-caps; }
+
+.media-list
+> h3 {
+  color: #58545D;
+  font-family: "Vollkorn", serif;
+  letter-spacing: .08rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: .8rem; }
+
+.media-list
+> h4 {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: .2rem; }
+
+.media-list
+> ul > li {
+  list-style-type: none; }
+
+.media-list
+> ul > li:before {
+  content: '\232A';
+  vertical-align: text-top; }
+
+.media-list
+> .fade {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #BA90DE;
+  text-decoration: none; }
+  .media-list
+> .fade:hover, .media-list
+> .fade:focus {
+    opacity: .6; }
+
+.list-info {
+  font-family: "EB Garamond", serif;
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .06rem;
+  text-align: center;
+  margin-top: -.4rem; }
+  .list-info > .italicinfo {
+    font-style: italic; }
+
+/* TO DO
+  .list-a {
+  text-align: center;
+  font-size: .8rem;
+}
+*/
 .mammoth-hcard {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
