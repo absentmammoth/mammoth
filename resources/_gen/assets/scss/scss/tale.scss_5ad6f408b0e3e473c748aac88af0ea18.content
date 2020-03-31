@@ -223,7 +223,8 @@ everything at the top of the site including the black border-bottom
   .individual-post > .tags {
     font-size: .7rem;
     grid-column-start: 3;
-    grid-row-start: 1; }
+    grid-row-start: 1;
+    margin: 0; }
     .individual-post > .tags > .tagsfont {
       font-size: .7rem; }
   .individual-post .whole-post {
@@ -243,11 +244,11 @@ everything at the top of the site including the black border-bottom
 
 .post-summary {
   margin: .8rem auto auto auto;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto; }
   .post-summary > .h-feed-meta {
-    grid-column-start: 100%;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1; }
     .post-summary > .h-feed-meta > a > .feed-info, .individual-post .post-summary > .h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
@@ -271,7 +272,8 @@ everything at the top of the site including the black border-bottom
   .post-summary > .tags {
     font-size: .7rem;
     grid-column-start: 3;
-    grid-row-start: 1; }
+    grid-row-start: 1;
+    margin-top: 0; }
     .post-summary > .tags > .tagsfont {
       font-size: .7rem; }
   .post-summary > .feed-post {

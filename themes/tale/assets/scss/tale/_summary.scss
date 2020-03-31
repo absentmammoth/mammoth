@@ -1,12 +1,12 @@
 .post-summary {
   margin: .8rem auto auto auto;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   
   > .h-feed-meta {
   @extend a;
-    grid-column-start: 100%;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
 
@@ -38,7 +38,7 @@
   font-size: .7rem;
   grid-column-start: 3;
   grid-row-start: 1;
-  
+  margin-top: 0;
     > .tagsfont {
       font-size: .7rem;
     }
