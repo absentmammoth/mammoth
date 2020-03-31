@@ -2,23 +2,33 @@
 
 <main>
 	<a name="top">
-			<div class="fade">
-				<a href="{{ .Permalink }}">
+	<div class="individual-post">
+
+		<div class="post-meta">
+			<a href="{{ .Permalink }}">
+				<div class="post-info">
 					{{ partial "single/posts/post-info.html" . }}
+				</div>
+				<h2 class="post-title">
 					{{ partial "single/posts/title.html" . }}
-				</a>
-			</div>
-<span class="single-post">
-{{ .Content | markdownify }}
-</span>
+				</h2>
+			</a>
+		</div>
+		<div class="tags">
+			{{ partial "tags.html" . }}
+		</div>
+		<div class="whole-post">
+			{{ .Content | markdownify }}
+		</div>
+	</div>
 	<div class="pagination">
-		{{- if .PrevPage }}
-			<a href="{{ .PrevPage.URL }}" class="left arrow">&#8592;</a>
-				{{- end }}
-			&nbsp;<a href="#top" class="top">top</a>&nbsp;
-				{{- if .NextPage }}
-			<a href="{{ .NextPage.URL }}" class="right arrow">&#8594;</a>
-				{{- end }}	
+			{{- if .PrevPage }}
+				<a href="{{ .PrevPage.URL }}" class="left arrow">&#8592;</a>
+			{{- end }}
+				&nbsp;<a href="#top" class="top">top</a>&nbsp;
+			{{- if .NextPage }}
+				<a href="{{ .NextPage.URL }}" class="right arrow">&#8594;</a>
+			{{- end }}	
 	</div>
 </main>
 			

@@ -1,6 +1,3 @@
-<div class="post-info">
-    <span class="italicinfo">written by</span>
-
         {{- if .Params.Author }}
         {{ .Params.Author }}
         {{- else }}
@@ -17,5 +14,3 @@
     <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
     <span class="italicinfo">and last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
         {{ end }}
-
-</div>

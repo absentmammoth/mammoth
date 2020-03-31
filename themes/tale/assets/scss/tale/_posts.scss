@@ -1,39 +1,64 @@
-.post-info {
+.individual-post {
+  margin: .8rem auto .8rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  .post-meta {
+    @extend a;
+    grid-column-start: 100%;
+    grid-column-end: 3;
+    grid-row-start: 1;
+
+    > a > .post-info {
     font-family: $serif-primary;
     font-size: .8rem;
     font-weight: 500;
     letter-spacing: .06rem;
     text-align: center;
+    white-space: nowrap;
 
-    > .italicinfo {
-    font-style: italic;
+          > .italicinfo {
+        font-style: italic;
+    }
   }
- }
 
- .post-title {
-  color: $default-color;
-  font-family: $header;
-  margin-top: -.4rem;
-  letter-spacing: .08rem;
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 600;
-  font-variant: small-caps; 
-}
-
-.single-post {
-    max-width: 100%;
-    font-size: 1.2rem;
+    > a > .post-title {
+    color: $default-color;
+    font-family: $header;
+    margin-top: -.4rem;
+    letter-spacing: .08rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    font-variant: small-caps; 
+    }
+  }
+  > .tags {
+ font-size: .7rem;
+ grid-column-start: 3;
+ grid-row-start: 1;
+    > .tagsfont {
+      font-size: .7rem;
+    }
+  }
+  .whole-post {
+      max-width: 100%;
+      font-size: 1.2rem;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
 
     > p {
-    margin-bottom: .8rem;
-    font-size: 1.2rem;
+      margin-bottom: .8rem;
+      font-size: 1.2rem;
     }
 
     > blockquote {
-        border-left: .19rem solid $purple;
-        color: $default-color;
-        margin-bottom: .8rem;
-        padding: 0 1.25rem 0 1.25rem;
-        }
+      border-left: .19rem solid $purple;
+      color: $default-color;
+      margin-bottom: .8rem;
+      padding: 0 1.25rem 0 1.25rem;
+    }
+  }
 }

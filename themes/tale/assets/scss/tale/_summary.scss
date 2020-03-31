@@ -1,43 +1,54 @@
 .post-summary {
-  margin: .8rem auto .8rem auto;
-}
+  margin: .8rem auto auto auto;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  
+  > .h-feed-meta {
+  @extend a;
+    grid-column-start: 100%;
+    grid-column-end: 3;
+    grid-row-start: 1;
 
-.feed-info {
-  font-family: $serif-primary;
-  font-size: .8rem;
-  font-weight: 500;
-  letter-spacing: .06rem;
-  text-align: center;
+    > a > .feed-info {
+      font-family: $serif-primary;
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .06rem;
+      text-align: center;
+      white-space: nowrap;
 
-  > .italicinfo {
-  font-style: italic;
-  }
-}
+          > .italicinfo {
+        font-style: italic;
+      }
+    }
 
-.feed-title {
-  color: $default-color;
-  font-family: $header;
-  margin-top: -.4rem;
-  letter-spacing: .08rem;
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 600;
-  font-variant: small-caps;
-}
-
-.feed-post {
-  margin-bottom: .8rem;
-  max-width: 100%;
-  font-size: 1.2rem;
-}
-
-.fade {
-  @include transition(all .2s ease-out);
-  color: $purple;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    opacity: .6;
+    > a > .feed-title {
+      color: $default-color;
+      font-family: $header;
+      margin-top: -.4rem;
+      letter-spacing: .08rem;
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: 600;
+      font-variant: all-small-caps;
     }
   }
+  > .tags {
+  font-size: .7rem;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  
+    > .tagsfont {
+      font-size: .7rem;
+    }
+  }
+
+  > .feed-post {
+  max-width: 100%;
+  font-size: 1.2rem;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  }
+}

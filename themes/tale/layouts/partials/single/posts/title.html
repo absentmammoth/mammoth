@@ -1,4 +1,2 @@
-{{ with .Title }}
-    <h2 class="post-title">{{ . | markdownify }}</h2>
+{{ .Title | markdownify }}
 <!-- <div class="post-line"></div> temporarily(?) removing line -->
-{{ end }}

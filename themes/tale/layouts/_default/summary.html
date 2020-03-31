@@ -1,12 +1,14 @@
 <div class="post-summary">
-    <div class="fade">
+    <div class="h-feed-meta">
         <a href="{{ .Permalink }}">
             {{ partial "h-feed-post-info.html" . }}
             {{ partial "h-feed-title.html" . }}
         </a>
     </div>
+    <div class="tags">
+        {{ partial "tags.html" . }}
+    </div>
     <p class="feed-post">
         {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | markdownify }}{{ end }}
     </p>
 </div>
-

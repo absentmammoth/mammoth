@@ -1,0 +1,162 @@
+// For now, I am going to use media-list child selectors for the media-list.md page because it seems
+// more organized than filling the .md up with shortcodes {{< >}} {{< / >}} and html tags just to
+// access elements and classes in what should be writing-oriented markdown. We'll see if this works.
+// I am not sure that it is RSCSS compliant or that it won't break other things on the site.
+// media-list.md is currently {{ .Content }} in a div called media-list in the html file of the same name.
+
+.media-list {
+  font-size: 1rem;
+}
+
+.media-list 
+  > h2 {
+  color: $default-color;
+  font-family: $header;
+  letter-spacing: .08rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-variant: all-small-caps; 
+  margin-top: -.4rem;
+}
+
+.media-list 
+  > h3 {
+  color: $default-color;
+  font-family: $header;
+  letter-spacing: .08rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: .8rem;
+  }
+
+.media-list 
+  > h4 {
+    font-family: $serif-primary;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: .2rem;
+  }
+
+.media-list
+  > ul > li {
+  list-style-type: none;
+  } 
+.media-list 
+  > ul > li:before {
+    content: '\232A';
+    vertical-align: text-top;
+  }
+
+.media-list
+  > .fade {
+  @include transition(all .2s ease-out);
+  color: $purple;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+    }
+  }
+
+.list-info {
+    font-family: $serif-primary;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .06rem;
+    text-align: center;
+    margin-top: .8rem;
+
+    > .italicinfo {
+    font-style: italic;
+  }
+ }
+ /* TO DO
+  .list-a {
+  text-align: center;
+  font-size: .8rem;
+}
+*/// For now, I am going to use media-list child selectors for the media-list.md page because it seems
+// more organized than filling the .md up with shortcodes {{< >}} {{< / >}} and html tags just to
+// access elements and classes in what should be writing-oriented markdown. We'll see if this works.
+// I am not sure that it is RSCSS compliant or that it won't break other things on the site.
+// media-list.md is currently {{ .Content }} in a div called media-list in the html file of the same name.
+
+.media-list {
+  font-size: 1rem;
+}
+
+.media-list 
+  > h2 {
+  color: $default-color;
+  font-family: $header;
+  letter-spacing: .08rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-variant: all-small-caps; 
+  margin-top: -.4rem;
+}
+
+.media-list 
+  > h3 {
+  color: $default-color;
+  font-family: $header;
+  letter-spacing: .08rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+  margin: .4rem 0 .4rem 0;
+  }
+
+.media-list 
+  > h4 {
+    font-family: $serif-primary;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+.media-list
+  > ul > li {
+  list-style-type: none;
+  margin-bottom: .4rem;
+  } 
+
+.media-list 
+  > ul > li:before {
+    content: '\232A';
+    vertical-align: text-top;
+  }
+
+.media-list
+  > .fade {
+  @include transition(all .2s ease-out);
+  color: $purple;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+    }
+  }
+
+.list-info {
+    font-family: $serif-primary;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .06rem;
+    text-align: center;
+    margin-top: .8rem;
+
+    > .italicinfo {
+    font-style: italic;
+  }
+ }
+ /* TO DO for media list archive page
+  .list-a {
+  text-align: center;
+  font-size: .8rem;
+}
+*/
