@@ -1,5 +1,5 @@
 .post-summary {
-  margin: .8rem 0 .8rem 0;
+  margin: .8rem auto .8rem auto;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
@@ -19,20 +19,21 @@
       letter-spacing: .04rem;
 
           > .italicinfo {
-        font-style: italic;
+          font-style: italic;
       }
     }
 
     > a > .feed-title {
     color: $default-color;
     font-family: $header;
-    margin-top: -.4rem;
+    margin: -.4rem;
     letter-spacing: .08rem;
     font-size: 1.8rem;
     font-weight: 600;
     font-variant: all-small-caps; 
     }
   }
+
   > .tags {
   font-size: .7rem;
   grid-column-start: 3;

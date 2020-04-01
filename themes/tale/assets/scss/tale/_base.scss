@@ -4,9 +4,6 @@
   padding: 0;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 
 html { 
@@ -24,10 +21,18 @@ html {
 }
 
 @media all and (max-width: 699px) { 
-  html{ font-size: 1.125rem; 
+  html{ font-size: .9rem; 
+  } 
+}
+@media all and (max-width: 600px) { 
+  html{ font-size: .7rem; 
   } 
 }
 
+@media all and (max-width: 425px) { 
+  html{ font-size: .6rem; 
+  } 
+}
 
 body {
   margin-left: auto;
@@ -35,7 +40,6 @@ body {
   width: 100%;
   max-width: 65vw;
   -webkit-font-smoothing: subpixel-antialiased;
-  text-align: justify;
 }
 
 h1,
