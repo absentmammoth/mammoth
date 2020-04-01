@@ -1,0 +1,12 @@
+<div class="toc">
+   {{ if .Params.toc }}
+   <details open>
+      <summary>
+         sections:
+      </summary>
+      <ul>
+            {{ .TableOfContents }}
+      </ul>
+   </details>
+   {{ end }}
+</div>

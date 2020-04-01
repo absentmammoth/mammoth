@@ -1,16 +1,19 @@
-        {{- if .Params.Author }}
-        {{ .Params.Author }}
-        {{- else }}
-        {{ .Site.Params.Author }}
-        {{- end }}
+<div class="post-info">
+    <span class ="italicinfo">
+        by
+    </span>
+    {{- if .Params.Author }}
+    {{ .Params.Author }}
+    {{- else }}
+    {{ .Site.Params.Author }}
+    {{- end }}
+
+        <br>
     
-    <i class="fa fa-crow fa-fw" style="color:#353535"></i>
-    
-    <br>
-    
-        {{ if eq .PublishDate .Lastmod }}
-    <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
-        {{ else }}
-    <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
-    <span class="italicinfo">and last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
-        {{ end }}
+    {{ if eq .PublishDate .Lastmod }}
+        <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
+    {{ else }}
+        <span class="italicinfo">on&nbsp;</span>{{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
+        <span class="italicinfo">and last updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
+    {{ end }}
+</div>

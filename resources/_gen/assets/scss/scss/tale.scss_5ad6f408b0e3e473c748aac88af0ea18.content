@@ -41,13 +41,13 @@ h6 {
   font-family: "Vollkorn", serif;
   font-weight: 600; }
 
-a, .post-summary > .h-feed-meta, .individual-post .post-meta {
+a, .post-summary > .h-feed-meta, .individual-post > .post-meta {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: #BA90DE;
   text-decoration: none; }
-  a:hover, .post-summary > .h-feed-meta:hover, .individual-post .post-meta:hover, a:focus, .post-summary > .h-feed-meta:focus, .individual-post .post-meta:focus {
+  a:hover, .post-summary > .h-feed-meta:hover, .individual-post > .post-meta:hover, a:focus, .post-summary > .h-feed-meta:focus, .individual-post > .post-meta:focus {
     opacity: .6; }
 
 blockquote {
@@ -68,20 +68,6 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
-details .toc {
-  text-align: left !important;
-  margin-bottom: .8rem; }
-
-details > summary {
-  width: 15em;
-  cursor: pointer;
-  list-style: none;
-  font: 1.4rem "Vollkorn", serif;
-  font-weight: 600; }
-
-details > summary::-webkit-details-marker {
-  display: none; }
-
 .mammoth-hcard {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
@@ -95,12 +81,6 @@ details > summary::-webkit-details-marker {
     vertical-align: baseline;
     padding: 0;
     margin: 0; }
-
-.tags {
-  text-align: center;
-  list-style-type: none;
-  margin-top: .8rem;
-  font-family: "Vollkorn", serif; }
 
 img {
   margin: 0 auto 0.5rem; }
@@ -144,7 +124,7 @@ code {
   color: #bf616a;
   font-size: 85%;
   padding: .25em .5em; }
-  code a, code .post-summary > .h-feed-meta, code .individual-post .post-meta, .individual-post code .post-meta {
+  code a, code .post-summary > .h-feed-meta, code .individual-post > .post-meta {
     color: #e8afda; }
 
 /* TODO: is this a non-highlighted?
@@ -194,94 +174,123 @@ everything at the top of the site including the black border-bottom
   font-size: 1.4rem; }
 
 .individual-post {
-  margin: .8rem auto .8rem auto;
+  margin: .8rem 0 .8rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto; }
-  .individual-post .post-meta {
-    grid-column-start: 100%;
+  .individual-post > .toc {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-self: start;
+    font-family: "EB Garamond", serif; }
+    .individual-post > .toc > details > summary {
+      font-size: .7rem;
+      cursor: pointer; }
+    .individual-post > .toc > details > summary::-webkit-details-marker {
+      display: none; }
+    .individual-post > .toc > details > ul {
+      font-size: .7rem;
+      text-transform: lowercase;
+      list-style-type: none; }
+    .individual-post > .toc > details > ul li {
+      list-style-type: none; }
+    .individual-post > .toc > details > ul li:before {
+      content: '\232A';
+      vertical-align: text-top; }
+  .individual-post > .post-meta {
+    grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1; }
-    .individual-post .post-meta > a > .post-info, .individual-post .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post .post-meta > .post-meta > .post-info {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    white-space: nowrap; }
+    .individual-post > .post-meta > a > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
       font-family: "EB Garamond", serif;
-      font-size: .8rem;
-      font-weight: 500;
-      letter-spacing: .06rem;
-      text-align: center;
-      white-space: nowrap; }
-      .individual-post .post-meta > a > .post-info > .italicinfo, .individual-post .post-summary.post-meta > .h-feed-meta > .post-info > .italicinfo, .individual-post .post-meta > .post-meta > .post-info > .italicinfo {
+      font-size: .9rem;
+      letter-spacing: .04rem; }
+      .individual-post > .post-meta > a > .post-info > .italicinfo, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info > .italicinfo, .individual-post > .individual-post.post-meta > .post-meta > .post-info > .italicinfo {
         font-style: italic; }
-    .individual-post .post-meta > a > .post-title, .individual-post .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post .post-meta > .post-meta > .post-title {
+    .individual-post > .post-meta > a > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
       color: #58545D;
       font-family: "Vollkorn", serif;
       margin-top: -.4rem;
       letter-spacing: .08rem;
       font-size: 1.8rem;
-      text-align: center;
-      font-weight: 600;
-      font-variant: small-caps; }
+      font-weight: 500;
+      font-variant: all-small-caps; }
   .individual-post > .tags {
     font-size: .7rem;
     grid-column-start: 3;
+    grid-column-end: 3;
     grid-row-start: 1;
-    margin: 0; }
-    .individual-post > .tags > .tagsfont {
-      font-size: .7rem; }
-  .individual-post .whole-post {
-    max-width: 100%;
+    grid-row-end: 1;
+    justify-self: end;
+    font-family: "EB Garamond", serif;
+    text-align: center; }
+    .individual-post > .tags > .tagslist {
+      list-style-type: none; }
+  .individual-post > .whole-post {
     font-size: 1.2rem;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2; }
-    .individual-post .whole-post > p {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: "EB Garamond", serif; }
+    .individual-post > .whole-post > p {
       margin-bottom: .8rem;
       font-size: 1.2rem; }
-    .individual-post .whole-post > blockquote {
+    .individual-post > .whole-post > blockquote {
       border-left: 0.19rem solid #BA90DE;
       color: #58545D;
       margin-bottom: .8rem;
       padding: 0 1.25rem 0 1.25rem; }
 
 .post-summary {
-  margin: .8rem auto auto auto;
+  margin: .8rem 0 .8rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto; }
   .post-summary > .h-feed-meta {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1; }
-    .post-summary > .h-feed-meta > a > .feed-info, .individual-post .post-summary > .h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    white-space: nowrap; }
+    .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
       font-family: "EB Garamond", serif;
-      font-size: .8rem;
-      font-weight: 500;
-      letter-spacing: .06rem;
-      text-align: center;
-      white-space: nowrap; }
-      .post-summary > .h-feed-meta > a > .feed-info > .italicinfo, .individual-post .post-summary > .h-feed-meta > .post-meta > .feed-info > .italicinfo, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info > .italicinfo {
+      font-size: .9rem;
+      letter-spacing: .04rem; }
+      .post-summary > .h-feed-meta > a > .feed-info > .italicinfo, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info > .italicinfo, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info > .italicinfo {
         font-style: italic; }
-    .post-summary > .h-feed-meta > a > .feed-title, .individual-post .post-summary > .h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
+    .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
       color: #58545D;
       font-family: "Vollkorn", serif;
       margin-top: -.4rem;
       letter-spacing: .08rem;
       font-size: 1.8rem;
-      text-align: center;
       font-weight: 600;
       font-variant: all-small-caps; }
   .post-summary > .tags {
     font-size: .7rem;
     grid-column-start: 3;
+    grid-column-end: 3;
     grid-row-start: 1;
-    margin-top: 0; }
-    .post-summary > .tags > .tagsfont {
-      font-size: .7rem; }
+    grid-row-end: 1;
+    justify-self: end;
+    font-family: "EB Garamond", serif;
+    text-align: center; }
+    .post-summary > .tags > .tagslist {
+      list-style-type: none; }
   .post-summary > .feed-post {
-    max-width: 100%;
     font-size: 1.2rem;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2; }
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: "EB Garamond", serif; }
 
 .media-list {
   font-size: 1rem; }
@@ -424,7 +433,7 @@ everything at the top of the site including the black border-bottom
   font-family: "Vollkorn", serif;
   text-align: center;
   list-style: none; }
-  .pagination a.top, .pagination .individual-post .top.post-meta, .individual-post .pagination .top.post-meta, .pagination .post-summary > .top.h-feed-meta {
+  .pagination a.top, .pagination .individual-post > .top.post-meta, .pagination .post-summary > .top.h-feed-meta {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -432,7 +441,7 @@ everything at the top of the site including the black border-bottom
     font-family: "EB Garamond", serif;
     font-size: .7rem;
     vertical-align: text-top; }
-    .pagination a.top:focus .pagination a.top:hover, .pagination .individual-post .top.post-meta:focus .pagination a.top:hover, .individual-post .pagination .top.post-meta:focus .pagination a.top:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination a.top:hover, .pagination a.top:focus .pagination .individual-post .top.post-meta:hover, .individual-post .pagination a.top:focus .pagination .top.post-meta:hover, .pagination .individual-post .top.post-meta:focus .pagination .top.post-meta:hover, .individual-post .pagination .top.post-meta:focus .pagination .top.post-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .individual-post .top.post-meta:hover, .individual-post .pagination .post-summary > .top.h-feed-meta:focus .pagination .top.post-meta:hover, .pagination a.top:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .individual-post .top.post-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .individual-post .pagination .top.post-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .post-summary > .top.h-feed-meta:hover {
+    .pagination a.top:focus .pagination a.top:hover, .pagination .individual-post > .top.post-meta:focus .pagination a.top:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination a.top:hover, .pagination a.top:focus .pagination .individual-post > .top.post-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination a.top:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .post-summary > .top.h-feed-meta:hover {
       opacity: .6; }
 
 /*

@@ -1,22 +1,16 @@
 {{define "main"}}
 
 <main>
-	<a name="top">
+	<a name="top"></a>
 	<div class="individual-post">
-
+			{{ partial "single/posts/table-of-contents.html" . }}
 		<div class="post-meta">
 			<a href="{{ .Permalink }}">
-				<div class="post-info">
 					{{ partial "single/posts/post-info.html" . }}
-				</div>
-				<h2 class="post-title">
 					{{ partial "single/posts/title.html" . }}
-				</h2>
 			</a>
 		</div>
-		<div class="tags">
 			{{ partial "tags.html" . }}
-		</div>
 		<div class="whole-post">
 			{{ .Content | markdownify }}
 		</div>
@@ -29,7 +23,7 @@
 			{{- if .NextPage }}
 				<a href="{{ .NextPage.URL }}" class="right arrow">&#8594;</a>
 			{{- end }}	
-	</div>
+	</div>			
 </main>
-			
+
 {{ end }}

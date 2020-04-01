@@ -5,9 +5,7 @@
             {{ partial "h-feed-title.html" . }}
         </a>
     </div>
-    <div class="tags">
         {{ partial "tags.html" . }}
-    </div>
     <p class="feed-post">
         {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | markdownify }}{{ end }}
     </p>

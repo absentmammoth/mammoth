@@ -1,22 +1,22 @@
 .post-summary {
-  margin: .8rem auto auto auto;
+  margin: .8rem 0 .8rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
   
   > .h-feed-meta {
-  @extend a;
+    @extend a;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    white-space: nowrap;
 
     > a > .feed-info {
       font-family: $serif-primary;
-      font-size: .8rem;
-      font-weight: 500;
-      letter-spacing: .06rem;
-      text-align: center;
-      white-space: nowrap;
+      font-size: .9rem;
+      letter-spacing: .04rem;
 
           > .italicinfo {
         font-style: italic;
@@ -24,31 +24,36 @@
     }
 
     > a > .feed-title {
-      color: $default-color;
-      font-family: $header;
-      margin-top: -.4rem;
-      letter-spacing: .08rem;
-      font-size: 1.8rem;
-      text-align: center;
-      font-weight: 600;
-      font-variant: all-small-caps;
+    color: $default-color;
+    font-family: $header;
+    margin-top: -.4rem;
+    letter-spacing: .08rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-variant: all-small-caps; 
     }
   }
   > .tags {
   font-size: .7rem;
   grid-column-start: 3;
+  grid-column-end: 3;
   grid-row-start: 1;
-  margin-top: 0;
-    > .tagsfont {
-      font-size: .7rem;
+  grid-row-end: 1;
+  justify-self: end;
+  font-family: $serif-primary;
+  text-align: center;
+
+    > .tagslist {
+      list-style-type: none;
     }
   }
 
   > .feed-post {
-  max-width: 100%;
-  font-size: 1.2rem;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
+    font-size: 1.2rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: $serif-primary;
   }
 }
