@@ -4,7 +4,7 @@
 
 .credits-style 
     > .creditsh2 {
-    font-family: $header;
+    font-family: 'Vollkorn SC';
     font-size: 1.6rem;
     text-align: center;
     font-variant-caps: all-small-caps;
@@ -21,15 +21,20 @@
         }
         sup {
         font-family: $header;
-        font-size: .8rem;
+        font-size: .7rem;
         }
     }
 }
 
 .credits-style {
+    > ul > li {
+    margin-bottom: .2rem;
+    }
+
     > ul > li:before {
     content: '\232A';
     vertical-align: text-top;
+    margin: .2rem .2rem;
     }
 }
 
@@ -44,6 +49,8 @@
         > ol {
             font-family: $header;
             list-style-position: inside;
+            font-size: .8rem;
+            font-weight: 100;
             }
     }   
 }

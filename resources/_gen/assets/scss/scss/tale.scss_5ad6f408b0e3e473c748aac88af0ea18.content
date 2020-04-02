@@ -1,5 +1,5 @@
 * {
-  line-height: 1.5;
+  line-height: 1.45;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
@@ -27,13 +27,13 @@ html {
 
 @media all and (max-width: 425px) {
   html {
-    font-size: .6rem; } }
+    font-size: .65rem; } }
 
 body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 65vw; }
+  max-width: 69vw; }
 
 h1,
 h2,
@@ -45,13 +45,16 @@ h6 {
   font-family: "Vollkorn", serif;
   font-weight: 600; }
 
-a, .post-summary > .h-feed-meta, .individual-post > .post-meta {
+a, .media-list
+> .fade, .post-summary > .h-feed-meta, .individual-post > .post-meta {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: #BA90DE;
   text-decoration: none; }
-  a:hover, .post-summary > .h-feed-meta:hover, .individual-post > .post-meta:hover, a:focus, .post-summary > .h-feed-meta:focus, .individual-post > .post-meta:focus {
+  a:hover, .media-list
+> .fade:hover, .post-summary > .h-feed-meta:hover, .individual-post > .post-meta:hover, a:focus, .media-list
+> .fade:focus, .post-summary > .h-feed-meta:focus, .individual-post > .post-meta:focus {
     opacity: .6; }
 
 blockquote {
@@ -128,7 +131,8 @@ code {
   color: #bf616a;
   font-size: 85%;
   padding: .25em .5em; }
-  code a, code .post-summary > .h-feed-meta, code .individual-post > .post-meta {
+  code a, code .media-list
+> .fade, code .post-summary > .h-feed-meta, code .individual-post > .post-meta {
     color: #e8afda; }
 
 /* TODO: is this a non-highlighted?
@@ -209,13 +213,13 @@ everything at the top of the site including the black border-bottom
     grid-row-end: 1;
     text-align: center;
     white-space: nowrap; }
-    .individual-post > .post-meta > a > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
+    .individual-post > .post-meta > a > .post-info, .individual-post > .media-list.post-meta > .fade > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
       font-family: "EB Garamond", serif;
       font-size: .9rem;
       letter-spacing: .04rem; }
-      .individual-post > .post-meta > a > .post-info > .italicinfo, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info > .italicinfo, .individual-post > .individual-post.post-meta > .post-meta > .post-info > .italicinfo {
+      .individual-post > .post-meta > a > .post-info > .italicinfo, .individual-post > .media-list.post-meta > .fade > .post-info > .italicinfo, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info > .italicinfo, .individual-post > .individual-post.post-meta > .post-meta > .post-info > .italicinfo {
         font-style: italic; }
-    .individual-post > .post-meta > a > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
+    .individual-post > .post-meta > a > .post-title, .individual-post > .media-list.post-meta > .fade > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
       color: #58545D;
       font-family: "Vollkorn SC";
       margin: -.4rem 0 0 0;
@@ -261,13 +265,13 @@ everything at the top of the site including the black border-bottom
     grid-row-end: 1;
     text-align: center;
     white-space: nowrap; }
-    .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
+    .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .media-list.h-feed-meta > .fade > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
       font-family: "EB Garamond", serif;
       font-size: .9rem;
       letter-spacing: .04rem; }
-      .post-summary > .h-feed-meta > a > .feed-info > .italicinfo, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info > .italicinfo, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info > .italicinfo {
+      .post-summary > .h-feed-meta > a > .feed-info > .italicinfo, .post-summary > .media-list.h-feed-meta > .fade > .feed-info > .italicinfo, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info > .italicinfo, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info > .italicinfo {
         font-style: italic; }
-    .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
+    .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .media-list.h-feed-meta > .fade > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
       color: #58545D;
       font-family: "Vollkorn SC";
       margin: -.4rem 0 0 0;
@@ -316,8 +320,7 @@ everything at the top of the site including the black border-bottom
   letter-spacing: .08rem;
   font-size: 1.4rem;
   text-align: center;
-  font-weight: 600;
-  margin-top: .8rem; }
+  font-weight: 600; }
 
 .media-list
 > h4 {
@@ -335,108 +338,23 @@ everything at the top of the site including the black border-bottom
   content: '\232A';
   vertical-align: text-top; }
 
-.media-list
-> .fade {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  color: #BA90DE;
-  text-decoration: none; }
-  .media-list
-> .fade:hover, .media-list
-> .fade:focus {
-    opacity: .6; }
-
 .list-info {
   font-family: "EB Garamond", serif;
   font-size: .8rem;
   font-weight: 500;
   letter-spacing: .06rem;
   text-align: center;
-  margin-top: .8rem; }
+  margin-top: .2rem; }
   .list-info > .italicinfo {
     font-style: italic; }
 
-/* TO DO
-  .list-a {
-  text-align: center;
-  font-size: .8rem;
-}
-*/
-.media-list {
-  font-size: 1rem; }
-
-.media-list
-> h2 {
-  color: #58545D;
-  font-family: "Vollkorn SC";
-  letter-spacing: .08rem;
-  font-size: 1.6rem;
-  text-align: center;
-  font-weight: 600;
-  font-variant: all-small-caps;
-  margin-top: -.4rem; }
-
-.media-list
-> h3 {
-  color: #58545D;
-  font-family: "Vollkorn", serif;
-  letter-spacing: .08rem;
-  font-size: 1.4rem;
-  text-align: center;
-  font-weight: 600;
-  margin: .4rem 0 .4rem 0; }
-
-.media-list
-> h4 {
-  font-family: "EB Garamond", serif;
-  font-size: 1rem;
-  font-weight: 400; }
-
-.media-list
-> ul > li {
-  list-style-type: none;
-  margin-bottom: .4rem; }
-
-.media-list
-> ul > li:before {
-  content: '\232A';
-  vertical-align: text-top; }
-
-.media-list
-> .fade {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  color: #BA90DE;
-  text-decoration: none; }
-  .media-list
-> .fade:hover, .media-list
-> .fade:focus {
-    opacity: .6; }
-
-.list-info {
-  font-family: "EB Garamond", serif;
-  font-size: .8rem;
-  font-weight: 500;
-  letter-spacing: .06rem;
-  text-align: center;
-  margin-top: .8rem; }
-  .list-info > .italicinfo {
-    font-style: italic; }
-
-/* TO DO for media list archive page
-  .list-a {
-  text-align: center;
-  font-size: .8rem;
-}
-*/
 .pagination {
   margin: .8rem auto .8rem auto;
   font-family: "Vollkorn", serif;
   text-align: center;
   list-style: none; }
-  .pagination a.top, .pagination .individual-post > .top.post-meta, .pagination .post-summary > .top.h-feed-meta {
+  .pagination a.top, .pagination .individual-post > .top.post-meta, .pagination .post-summary > .top.h-feed-meta, .pagination .media-list
+> .top.fade {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -444,7 +362,15 @@ everything at the top of the site including the black border-bottom
     font-family: "EB Garamond", serif;
     font-size: .7rem;
     vertical-align: text-top; }
-    .pagination a.top:focus .pagination a.top:hover, .pagination .individual-post > .top.post-meta:focus .pagination a.top:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination a.top:hover, .pagination a.top:focus .pagination .individual-post > .top.post-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination a.top:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .post-summary > .top.h-feed-meta:hover {
+    .pagination a.top:focus .pagination a.top:hover, .pagination .individual-post > .top.post-meta:focus .pagination a.top:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination a.top:hover, .pagination .media-list
+> .top.fade:focus .pagination a.top:hover, .pagination a.top:focus .pagination .individual-post > .top.post-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination .media-list
+> .top.fade:focus .pagination .individual-post > .top.post-meta:hover, .pagination a.top:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .media-list
+> .top.fade:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination a.top:focus .pagination .media-list
+> .top.fade:hover, .pagination .individual-post > .top.post-meta:focus .pagination .media-list
+> .top.fade:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .media-list
+> .top.fade:hover, .pagination .media-list
+> .top.fade:focus .pagination .media-list
+> .top.fade:hover {
       opacity: .6; }
 
 /*
@@ -483,7 +409,7 @@ footer {
 
 .credits-style
 > .creditsh2 {
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn SC';
   font-size: 1.6rem;
   text-align: center;
   font-variant-caps: all-small-caps; }
@@ -496,11 +422,15 @@ footer {
     content: ']'; }
   .credits-style > ul sup {
     font-family: "Vollkorn", serif;
-    font-size: .8rem; }
+    font-size: .7rem; }
+
+.credits-style > ul > li {
+  margin-bottom: .2rem; }
 
 .credits-style > ul > li:before {
   content: '\232A';
-  vertical-align: text-top; }
+  vertical-align: text-top;
+  margin: .2rem .2rem; }
 
 .credits-style .footnotes > hr {
   margin: .8rem auto .8rem auto;
@@ -508,7 +438,9 @@ footer {
 
 .credits-style .footnotes > ol {
   font-family: "Vollkorn", serif;
-  list-style-position: inside; }
+  list-style-position: inside;
+  font-size: .8rem;
+  font-weight: 100; }
 
 .highlight .hll {
   background-color: #ffffcc; }

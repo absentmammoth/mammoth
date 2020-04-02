@@ -1,5 +1,5 @@
 * {
-  line-height: 1.5;
+  line-height: 1.45;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
@@ -32,7 +32,7 @@ html {
 }
 
 @media all and (max-width: 425px) { 
-  html{ font-size: .6rem; 
+  html{ font-size: .65rem; 
   } 
 }
 
@@ -40,7 +40,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 65vw;
+  max-width: 69vw;
 }
 
 h1,
