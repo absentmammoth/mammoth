@@ -1,9 +1,8 @@
 .post-summary {
-  margin: .8rem auto .8rem auto;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
-  
+
   > .h-feed-meta {
     @extend a;
     grid-column-start: 2;
@@ -25,12 +24,12 @@
 
     > a > .feed-title {
     color: $default-color;
-    font-family: $header;
-    margin: -.4rem;
+    font-family: "Vollkorn SC";
+    margin: -.4rem 0 0 0;
     letter-spacing: .08rem;
     font-size: 1.8rem;
     font-weight: 600;
-    font-variant: all-small-caps; 
+    font-variant: all-small-caps;
     }
   }
 
@@ -56,5 +55,6 @@
     grid-row-start: 2;
     grid-row-end: 2;
     font-family: $serif-primary;
+    margin-bottom: .8rem;
   }
 }

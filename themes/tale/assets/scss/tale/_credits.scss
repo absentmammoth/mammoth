@@ -1,0 +1,50 @@
+.credits-style {
+    margin: .8rem auto .8rem auto;
+}
+
+.credits-style 
+    > .creditsh2 {
+    font-family: $header;
+    font-size: 1.6rem;
+    text-align: center;
+    font-variant-caps: all-small-caps;
+}
+
+.credits-style {
+    > ul {
+        list-style-type: none;
+        sup:before {
+        content: '[';
+        }
+        sup:after {
+        content: ']';
+        }
+        sup {
+        font-family: $header;
+        font-size: .8rem;
+        }
+    }
+}
+
+.credits-style {
+    > ul > li:before {
+    content: '\232A';
+    vertical-align: text-top;
+    }
+}
+
+.credits-style {
+    .footnotes {
+
+        > hr {
+            margin: .8rem auto .8rem auto;
+            border: none;
+        }
+
+        > ol {
+            font-family: $header;
+            list-style-position: inside;
+            }
+    }   
+}
+

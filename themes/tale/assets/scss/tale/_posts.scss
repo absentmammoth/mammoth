@@ -1,5 +1,4 @@
 .individual-post {
-  margin: .8rem 0 .8rem 0;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
@@ -53,13 +52,14 @@
         font-style: italic;
     }
   }
+
     > a > .post-title {
     color: $default-color;
-    font-family: $header;
-    margin-top: -.4rem;
+    font-family: "Vollkorn SC";
+    margin: -.4rem 0 0 0;
     letter-spacing: .08rem;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     font-variant: all-small-caps; 
     }
   }

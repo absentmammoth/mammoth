@@ -11,9 +11,9 @@
 			</a>
 		</div>
 			{{ partial "tags.html" . }}
-		<div class="whole-post">
-			{{ .Content | markdownify }}
-		</div>
+		<span class="whole-post">
+		{{ .Content }}
+		</span>
 	</div>
 	<div class="pagination">
 			{{- if .PrevPage }}

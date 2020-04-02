@@ -3,11 +3,11 @@
 <main>
 	{{ partial "index/introduction.html" . }}
 
-	<div class="h-feed">
+
 		{{ range where (.Paginate .Site.RegularPages).Pages.ByLastmod.Reverse "Section" "posts" }}
 			{{ .Render "summary" }}
 		{{ end }}
-	</div>
+
 
 	<div class="pagination">
 		{{ if .Paginator.HasPrev }}

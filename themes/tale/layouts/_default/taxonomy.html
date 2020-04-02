@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-<main class="h-feed">
+<main>
+	
 		{{ range (.Paginate .Pages).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}

@@ -1,9 +1,10 @@
 * {
-  line-height: 1.48;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  font-kerning: normal; }
+  font-kerning: normal;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 html {
   font-size: 62.5%;
@@ -32,8 +33,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 65vw;
-  -webkit-font-smoothing: subpixel-antialiased; }
+  max-width: 65vw; }
 
 h1,
 h2,
@@ -75,7 +75,7 @@ table {
 .mammoth-hcard {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
-  display: inline-block; }
+  margin-bottom: .8rem; }
   .mammoth-hcard > .u-photo {
     display: inline-block;
     left: 0;
@@ -178,7 +178,6 @@ everything at the top of the site including the black border-bottom
   font-size: 1.4rem; }
 
 .individual-post {
-  margin: .8rem 0 .8rem 0;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto; }
@@ -218,11 +217,11 @@ everything at the top of the site including the black border-bottom
         font-style: italic; }
     .individual-post > .post-meta > a > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
       color: #58545D;
-      font-family: "Vollkorn", serif;
-      margin-top: -.4rem;
+      font-family: "Vollkorn SC";
+      margin: -.4rem 0 0 0;
       letter-spacing: .08rem;
       font-size: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
       font-variant: all-small-caps; }
   .individual-post > .tags {
     font-size: .7rem;
@@ -252,7 +251,6 @@ everything at the top of the site including the black border-bottom
       padding: 0 1.25rem 0 1.25rem; }
 
 .post-summary {
-  margin: .8rem auto .8rem auto;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto; }
@@ -271,8 +269,8 @@ everything at the top of the site including the black border-bottom
         font-style: italic; }
     .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
       color: #58545D;
-      font-family: "Vollkorn", serif;
-      margin: -.4rem;
+      font-family: "Vollkorn SC";
+      margin: -.4rem 0 0 0;
       letter-spacing: .08rem;
       font-size: 1.8rem;
       font-weight: 600;
@@ -294,7 +292,8 @@ everything at the top of the site including the black border-bottom
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
-    font-family: "EB Garamond", serif; }
+    font-family: "EB Garamond", serif;
+    margin-bottom: .8rem; }
 
 .media-list {
   font-size: 1rem; }
@@ -302,7 +301,7 @@ everything at the top of the site including the black border-bottom
 .media-list
 > h2 {
   color: #58545D;
-  font-family: "Vollkorn", serif;
+  font-family: "Vollkorn SC";
   letter-spacing: .08rem;
   font-size: 1.6rem;
   text-align: center;
@@ -370,7 +369,7 @@ everything at the top of the site including the black border-bottom
 .media-list
 > h2 {
   color: #58545D;
-  font-family: "Vollkorn", serif;
+  font-family: "Vollkorn SC";
   letter-spacing: .08rem;
   font-size: 1.6rem;
   text-align: center;
@@ -478,6 +477,38 @@ footer {
     font-family: "EB Garamond", serif;
     margin: auto;
     max-width: 100%; }
+
+.credits-style {
+  margin: .8rem auto .8rem auto; }
+
+.credits-style
+> .creditsh2 {
+  font-family: "Vollkorn", serif;
+  font-size: 1.6rem;
+  text-align: center;
+  font-variant-caps: all-small-caps; }
+
+.credits-style > ul {
+  list-style-type: none; }
+  .credits-style > ul sup:before {
+    content: '['; }
+  .credits-style > ul sup:after {
+    content: ']'; }
+  .credits-style > ul sup {
+    font-family: "Vollkorn", serif;
+    font-size: .8rem; }
+
+.credits-style > ul > li:before {
+  content: '\232A';
+  vertical-align: text-top; }
+
+.credits-style .footnotes > hr {
+  margin: .8rem auto .8rem auto;
+  border: none; }
+
+.credits-style .footnotes > ol {
+  font-family: "Vollkorn", serif;
+  list-style-position: inside; }
 
 .highlight .hll {
   background-color: #ffffcc; }

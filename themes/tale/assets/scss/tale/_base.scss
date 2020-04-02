@@ -1,10 +1,12 @@
 * {
-  line-height: 1.48;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
+
 
 html { 
   font-size: 62.5%; 
@@ -39,7 +41,6 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 65vw;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1,
@@ -89,7 +90,7 @@ table {
 .mammoth-hcard {
   font-family: $serif-primary;
   font-size: 1.2rem;
-  display: inline-block;
+  margin-bottom: .8rem;
 
   > .u-photo {
       display: inline-block;
