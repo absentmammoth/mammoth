@@ -303,50 +303,57 @@ everything at the top of the site including the black border-bottom
   font-size: 1rem; }
 
 .media-list
+> h2,
+.archive-main
 > h2 {
   color: #58545D;
-  font-family: "Vollkorn SC";
-  letter-spacing: .08rem;
-  font-size: 1.6rem;
-  text-align: center;
-  font-weight: 600;
+  font: 600 1.6rem 'Vollkorn SC';
   font-variant: all-small-caps;
+  letter-spacing: .08rem;
+  text-align: center;
   margin-top: -.4rem; }
 
 .media-list
+> h3,
+.archive-main
 > h3 {
   color: #58545D;
-  font-family: "Vollkorn", serif;
+  font: 600 1.4rem "Vollkorn", serif;
   letter-spacing: .08rem;
-  font-size: 1.4rem;
-  text-align: center;
-  font-weight: 600; }
+  text-align: center; }
 
 .media-list
+> h4,
+.archive-main
 > h4 {
-  font-family: "EB Garamond", serif;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: .2rem; }
+  font: 400 1rem "EB Garamond", serif;
+  margin-top: .4rem; }
 
 .media-list
+> ul > li,
+.archive-main
 > ul > li {
   list-style-type: none; }
 
 .media-list
+> ul > li:before,
+.archive-main
 > ul > li:before {
   content: '\232A';
   vertical-align: text-top; }
 
 .list-info {
-  font-family: "EB Garamond", serif;
-  font-size: .8rem;
-  font-weight: 500;
+  font: 500 0.8rem "EB Garamond", serif;
   letter-spacing: .06rem;
   text-align: center;
   margin-top: .2rem; }
   .list-info > .italicinfo {
     font-style: italic; }
+
+.archive-link {
+  font: 0.7rem "EB Garamond", serif;
+  text-align: center;
+  margin: .8rem 0 .8rem 0; }
 
 .pagination {
   margin: .8rem auto .8rem auto;
@@ -425,12 +432,11 @@ footer {
     font-size: .7rem; }
 
 .credits-style > ul > li {
-  margin-bottom: .2rem; }
+  margin-bottom: .4rem; }
 
 .credits-style > ul > li:before {
   content: '\232A';
-  vertical-align: text-top;
-  margin: .2rem .2rem; }
+  vertical-align: text-top; }
 
 .credits-style .footnotes > hr {
   margin: .8rem auto .8rem auto;

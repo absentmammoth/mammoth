@@ -9,40 +9,45 @@
 }
 
 .media-list 
+  > h2, 
+.archive-main 
   > h2 {
   color: $default-color;
-  font-family: "Vollkorn SC";
+  font: 600 1.6rem 'Vollkorn SC';
+  font-variant: all-small-caps;
   letter-spacing: .08rem;
-  font-size: 1.6rem;
   text-align: center;
-  font-weight: 600;
-  font-variant: all-small-caps; 
   margin-top: -.4rem;
 }
 
 .media-list 
+  > h3, 
+.archive-main 
   > h3 {
   color: $default-color;
-  font-family: $header;
+  font: 600 1.4rem $header;
   letter-spacing: .08rem;
-  font-size: 1.4rem;
   text-align: center;
-  font-weight: 600;
-  }
+}
 
 .media-list 
+  > h4, 
+.archive-main 
   > h4 {
-    font-family: $serif-primary;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: .2rem;
-  }
+  font: 400 1rem $serif-primary;
+  margin-top: .4rem;
+}
 
-.media-list
+.media-list 
+  > ul > li, 
+.archive-main 
   > ul > li {
   list-style-type: none;
-  } 
+} 
+
 .media-list 
+  > ul > li:before,
+.archive-main 
   > ul > li:before {
     content: '\232A';
     vertical-align: text-top;
@@ -54,9 +59,7 @@
   }
 
 .list-info {
-    font-family: $serif-primary;
-    font-size: .8rem;
-    font-weight: 500;
+    font: 500 .8rem $serif-primary;
     letter-spacing: .06rem;
     text-align: center;
     margin-top: .2rem;
@@ -65,3 +68,9 @@
     font-style: italic;
   }
 }
+
+.archive-link {
+  font: .7rem $serif-primary;
+  text-align: center;
+  margin: .8rem 0 .8rem 0;
+  }

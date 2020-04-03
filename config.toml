@@ -24,13 +24,10 @@ enableEmoji = "true"
   image = "/img/me.jpg"
   # DateForm = "mon jan 2, 2006 | 03:04PM"
   WebMentionDomain = "www.absentmammoth.org"
-  MaxWebmentions = "100"
+  # MaxWebmentions = "100"
   AuthorizationEndpoint = "https://indieauth.com/auth"
   TokenEndpoint = "https://tokens.indieauth.com/token"
   Auth = "https://indieauth.com/auth"
-  # MicroSubEndpoint = "https://aperture.p3k.io/microsub/262"
-  # MicroPubEndpoint = "https://www-api.jvt.me/micropub"
-  # IgnoreInFeeds = "blogroll"
 
 [frontmatter]
   date = ["publishDate", "date", "lastmod"]
@@ -51,16 +48,16 @@ enableEmoji = "true"
   series = "series"
 
 [outputs]
-home = ["HTML", "RSS"]
-section = ["HTML", "RSS"]
-page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
 
 [outputFormats]
 [outputFormats.RSS]
-mediatype = "application/rss"
-baseName = "feed"
-isPlainText = true
-notAlternative = true
+  mediatype = "application/rss"
+  baseName = "feed"
+  isPlainText = true
+  notAlternative = true
 
 [markup]
   [markup.tableOfContents]
@@ -111,11 +108,11 @@ notAlternative = true
     url = "/media-list/"
     weight = 40
   [[menu.main]]
-  identifier = "rss"
-  name = "rss" 
-  title = "rss"
-  url = "/feed.xml"
-  weight= 50
+    identifier = "rss"
+    name = "rss" 
+    title = "rss"
+    url = "/feed.xml"
+    weight= 50
 # "<label>rss</label><i class='fa fa-rss fa-fw'></i>" code will include rss icon
 #  [[menu.main]]
 #    identifier = "search"
