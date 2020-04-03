@@ -1,6 +1,6 @@
 ---
 Title: March, 2020
-url: /archive/march-2020
+url: /storage/march-2020
 draft: false
 type: archive
 layout: archive
