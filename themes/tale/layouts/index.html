@@ -2,22 +2,17 @@
 
 <main>
 	{{ partial "index/introduction.html" . }}
-
-
 		{{ range where (.Paginate .Site.RegularPages).Pages.ByLastmod.Reverse "Section" "posts" }}
 			{{ .Render "summary" }}
 		{{ end }}
-
-
 	<div class="pagination">
 		{{ if .Paginator.HasPrev }}
 			<a href="{{ .Paginator.Prev.URL }}" class="left arrow">&#8592;</a>
 		{{ end }}
+			<span>{{ .Paginator.PageNumber }}</span>
 		{{ if .Paginator.HasNext }}
 			<a href="{{ .Paginator.Next.URL }}" class="right arrow">&#8594;</a>
 		{{ end }}
-
-		<span>{{ .Paginator.PageNumber }}</span>
 	</div>
 </main>
 

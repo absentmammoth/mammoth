@@ -1,6 +1,6 @@
 ---
 Title: past media lists
-url: /archive/
+url: /storage/_archive
 draft: false
 type: archive
 layout: archive
@@ -9,4 +9,4 @@ layout: archive
 ### 2020
 
 #### March
-* [Articles](/archive/march-2020)
+* [Articles](/storage/march-2020)
