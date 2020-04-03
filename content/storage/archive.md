@@ -1,6 +1,6 @@
 ---
 Title: past media lists
-url: /storage/_archive
+url: /storage/archive/
 draft: false
 type: archive
 layout: archive
