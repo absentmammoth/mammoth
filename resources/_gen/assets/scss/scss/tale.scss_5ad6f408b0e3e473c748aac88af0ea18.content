@@ -366,8 +366,7 @@ everything at the top of the site including the black border-bottom
   margin: .8rem 0 .8rem 0; }
 
 .archive-main.md {
-  margin-bottom: .8rem;
-  font-size: 1.2rem; }
+  margin-bottom: .8rem; }
 
 .pagination {
   margin: .8rem auto .8rem auto;
