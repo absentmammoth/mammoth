@@ -104,6 +104,18 @@ table {
       }
 }
 
+.topics-terms {
+  margin-bottom: .8rem;
+  > h2 {
+  font: 600 1.6rem 'Vollkorn SC';
+  font-variant: all-small-caps;
+  text-align: center;
+  }
+  > .topicsul {
+    font: 100 1rem $header;
+    text-align: center; 
+  }
+}
   img {
     margin: 0 auto 0.5rem;
   }

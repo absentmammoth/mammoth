@@ -1,3 +1,6 @@
 {{ define "main" }}
-{{ .Content }}
+<div class="archive-main md">
+    {{ .Content }}
+</div>
+<!-- this all feels very ugly, but it essentially calls up archive.md (in the /content folder), which then links to md files in the /archive folder. i don't think this is how i am 'supposed' to do things, but the hugo docs feel very vague sometimes. this works, so i'm leaving it as it is for now. -->
 {{ end }}

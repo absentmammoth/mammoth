@@ -5,7 +5,7 @@
 // media-list.md is currently {{ .Content }} in a div called media-list in the html file of the same name.
 
 .media-list {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .media-list 
@@ -74,3 +74,7 @@
   text-align: center;
   margin: .8rem 0 .8rem 0;
   }
+
+.archive-main.md {
+  margin-bottom: .8rem;
+}
