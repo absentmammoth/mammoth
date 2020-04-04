@@ -6,7 +6,13 @@
         </a>
     </div>
         {{ partial "tags.html" . }}
-    <p class="feed-post">
-        {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | markdownify }}{{ end }}
-    </p>
+        
+        {{ if isset .Params "summary" }}
+        {{ .Params.Summary | markdownify }}
+        {{ else }}
+        <div class="feed-post">
+            {{ .Summary | markdownify }}
+        </div>
+        {{ end }}
+        
 </div>

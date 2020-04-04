@@ -65,8 +65,8 @@ blockquote {
 
 img {
   display: block;
-  margin: 0 0 .8rem;
-  max-width: 100%; }
+  margin: .8rem 0 .8rem;
+  max-width: 50%; }
 
 td {
   vertical-align: top; }
@@ -89,14 +89,15 @@ table {
     padding: 0;
     margin: 0; }
 
+/* this is for the tags/topcis page */
 .topics-terms {
   margin-bottom: .8rem; }
   .topics-terms > h2 {
-    font: 600 1.6rem 'Vollkorn SC';
+    font: 500 1.6rem 'Vollkorn SC';
     font-variant: all-small-caps;
     text-align: center; }
   .topics-terms > .topicsul {
-    font: 100 1rem "Vollkorn", serif;
+    font: 500 1rem "Vollkorn", serif;
     text-align: center; }
 
 img {
@@ -105,9 +106,7 @@ img {
 img + em {
   color: #BA90DE;
   display: block;
-  font-family: "Vollkorn", serif;
-  font-size: 0.9rem;
-  font-style: normal;
+  font: 500 0.9rem "Vollkorn", serif;
   text-align: center; }
 
 img.emoji {
@@ -317,7 +316,7 @@ everything at the top of the site including the black border-bottom
 .archive-main
 > h2 {
   color: #58545D;
-  font: 600 1.6rem 'Vollkorn SC';
+  font: 500 1.6rem 'Vollkorn SC';
   font-variant: all-small-caps;
   letter-spacing: .08rem;
   text-align: center;
@@ -428,10 +427,8 @@ footer {
 .credits-style {
   margin: .8rem auto .8rem auto; }
 
-.credits-style
-> .creditsh2 {
-  font-family: 'Vollkorn SC';
-  font-size: 1.6rem;
+.credits-style > .creditsh2 {
+  font: 500 1.6rem 'Vollkorn SC';
   text-align: center;
   font-variant-caps: all-small-caps; }
 
@@ -442,8 +439,7 @@ footer {
   .credits-style > ul sup:after {
     content: ']'; }
   .credits-style > ul sup {
-    font-family: "Vollkorn", serif;
-    font-size: .7rem; }
+    font: 100 0.7rem "Vollkorn", serif; }
 
 .credits-style > ul > li {
   margin-bottom: .4rem; }
@@ -457,10 +453,11 @@ footer {
   border: none; }
 
 .credits-style .footnotes > ol {
-  font-family: "Vollkorn", serif;
-  list-style-position: inside;
-  font-size: .8rem;
-  font-weight: 100; }
+  list-style-position: inside; }
+  .credits-style .footnotes > ol > li {
+    font: 100 0.8rem "Vollkorn", serif; }
+    .credits-style .footnotes > ol > li > p {
+      font: 100 0.8rem "EB Garamond", serif; }
 
 .highlight .hll {
   background-color: #ffffcc; }

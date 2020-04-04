@@ -2,31 +2,28 @@
     margin: .8rem auto .8rem auto;
 }
 
-.credits-style 
+.credits-style { 
     > .creditsh2 {
-    font-family: 'Vollkorn SC';
-    font-size: 1.6rem;
+    font: 500 1.6rem 'Vollkorn SC';
     text-align: center;
     font-variant-caps: all-small-caps;
-}
-
-.credits-style {
+    }
+    
     > ul {
         list-style-type: none;
         sup:before {
         content: '[';
         }
+
         sup:after {
         content: ']';
         }
+
         sup {
-        font-family: $header;
-        font-size: .7rem;
+        font: 100 .7rem $header;
         }
     }
-}
 
-.credits-style {
     > ul > li {
     margin-bottom: .4rem;
     }
@@ -46,11 +43,16 @@
         }
 
         > ol {
-            font-family: $header;
             list-style-position: inside;
-            font-size: .8rem;
-            font-weight: 100;
+
+            > li {
+                font: 100 .8rem $header;
+
+                > p {
+                font: 100 .8rem $serif-primary;
+                }
             }
-    }   
+        }
+    }
 }
 

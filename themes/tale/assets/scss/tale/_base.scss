@@ -74,8 +74,8 @@ blockquote {
 
 img {
   display: block;
-  margin: 0 0 .8rem;
-  max-width: 100%;
+  margin: .8rem 0 .8rem;
+  max-width: 50%;
 }
 
 td {
@@ -93,26 +93,28 @@ table {
   margin-bottom: .8rem;
 
   > .u-photo {
-      display: inline-block;
-      left: 0;
-      width: 30px;
-      height: 15px;
-      transform: none;
-      vertical-align: baseline;
-      padding: 0;
-      margin: 0;
-      }
+    display: inline-block;
+    left: 0;
+    width: 30px;
+    height: 15px;
+    transform: none;
+    vertical-align: baseline;
+    padding: 0;
+    margin: 0;
+    }
 }
+
+/* this is for the tags/topcis page */
 
 .topics-terms {
   margin-bottom: .8rem;
   > h2 {
-  font: 600 1.6rem 'Vollkorn SC';
+  font: 500 1.6rem 'Vollkorn SC';
   font-variant: all-small-caps;
   text-align: center;
   }
   > .topicsul {
-    font: 100 1rem $header;
+    font: 500 1rem $header;
     text-align: center; 
   }
 }
@@ -123,9 +125,7 @@ table {
   img+em {
     color: $purple;
     display: block;
-    font-family: $header;
-    font-size: 0.9rem;
-    font-style: normal;
+    font: 500 .9rem $header;
     text-align: center;
   }
 
@@ -196,7 +196,7 @@ pre code {
     padding: 0 .75rem 0 .25rem;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
+      -moz-user-select: none;
+        user-select: none;
   }
 }
