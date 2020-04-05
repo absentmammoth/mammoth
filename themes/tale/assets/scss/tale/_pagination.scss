@@ -4,6 +4,9 @@
   text-align: center;
   list-style: none;
   
+  > .leftarrow-hidden {
+    opacity: 0%;
+  }
 
   a.top {
     @include transition(all .2s ease-out);

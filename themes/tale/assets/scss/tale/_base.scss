@@ -41,6 +41,7 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 69vw;
+  background-color: $grey-1;
 }
 
 h1,
@@ -145,19 +146,23 @@ img.emoji {
 
 pre,
 code {
-  font-family: $monospaced;
+  font: 600 .8rem $monospaced;
+  position: relative;
+  max-width: 35rem;
+  max-height: 100rem;
+  margin: .8rem auto .8rem auto;
 }
 
 %code-block {
   overflow-x: auto;
   /* from _syntax.scss */
-  background: #282828;
-  color: #ebdbb2;
-  background-color: #282828;
+  background: #272822;
+  color: #f8f8f2;
+  background-color: #272822;
 
-  border-radius: 3px;
+  border-radius: .4rem;
   line-height: 1.4;
-  padding: 1rem;
+  padding: .8rem;
 }
 
 code {
@@ -168,7 +173,7 @@ code {
   padding: .25em .5em;
 
   & a {
-      color: $code-color-link;
+    color: $code-color-link;
   }
 }
 

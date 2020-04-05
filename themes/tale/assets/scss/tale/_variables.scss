@@ -1,20 +1,18 @@
 // Colors
-$default-color: #58545D;
-$border-color: #502D72;
-$grey-1: #979797;
-$grey-2: #e5e5e5;
-$grey-3: #f9f9f9;
+$default-color: hsl(266, 1%, 29%);
+$grey-1: hsl(300, 1%, 99%);
+$grey-3: hsl(0, 0%, 97.6%);
 $white: #fff;
 $blue: #4a9ae1;
-$purple: #BA90DE;
-$shadow-color: rgba(0, 0, 0, .2);
-$code-color: #bf616a;
+$purple: hsl(271, 27%, 55%);
+$code-color: #960050;
 $code-color-link: #e8afda;
 
 // Fonts
 $serif-primary: 'EB Garamond', serif;
 $serif-secondary: 'EB Garamond', serif;
 $header: 'Vollkorn', serif;
+$smallcaps: 'Vollkorn SC', serif;
 $monospaced: 'Fira Code', Menlo, Inconsulata, monospace;
 
 @mixin box-sizing($type: border-box) {
