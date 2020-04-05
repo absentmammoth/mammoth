@@ -66,8 +66,15 @@ blockquote {
 
 img {
   display: block;
-  margin: .8rem 0 .8rem;
-  max-width: 50%; }
+  max-width: 50%;
+  max-height: 50%;
+  margin: .4rem auto .4rem; }
+
+img + em {
+  color: #8d6dab;
+  display: block;
+  font: 500 0.9rem "Vollkorn", serif;
+  text-align: center; }
 
 td {
   vertical-align: top; }
@@ -101,15 +108,6 @@ table {
     font: 500 1rem "Vollkorn", serif;
     text-align: center; }
 
-img {
-  margin: 0 auto 0.5rem; }
-
-img + em {
-  color: #8d6dab;
-  display: block;
-  font: 500 0.9rem "Vollkorn", serif;
-  text-align: center; }
-
 img.emoji {
   display: inline-block;
   left: 0;
@@ -123,7 +121,7 @@ img.emoji {
 /* rules for the code blocks */
 pre,
 code {
-  font: 600 0.8rem "Fira Code", Menlo, Inconsulata, monospace;
+  font: 600 0.8rem "Source Code Pro", Menlo, Inconsolata, monospace;
   position: relative;
   max-width: 35rem;
   max-height: 100rem;
@@ -140,11 +138,12 @@ pre {
   padding: .8rem; }
 
 code {
-  background-color: #f9f9f9;
-  border-radius: 3px;
-  color: #960050;
-  font-size: 85%;
-  padding: .25em .5em; }
+  background-color: #011627;
+  border-radius: 6px;
+  color: #c792ea;
+  font: 500 0.6rem "Source Code Pro", Menlo, Inconsolata, monospace;
+  padding: .1rem .3rem;
+  margin: 0 .1rem 0 .1rem; }
   code a, code .media-list
 > .fade, code .post-summary > .h-feed-meta, code .individual-post > .post-meta {
     color: #e8afda; }
@@ -407,12 +406,13 @@ to do: add a link to a longer credits page
 footer {
   font-family: "EB Garamond", serif;
   border-top: 0.19rem solid #4a494b;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin: .8rem auto; }
   footer > .flex-container {
     display: flex;
-    margin-top: .8rem;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-top: .8rem; }
     footer > .flex-container > .flexleft {
       max-width: 100%;
       height: 100%; }
@@ -426,11 +426,11 @@ footer {
         height: 25px; }
   footer > .credits {
     text-align: center;
-    font-size: .8rem;
-    font-family: "EB Garamond", serif;
-    margin: auto;
+    font: 100 0.8rem "EB Garamond", serif;
     max-width: 100%; }
 
+/* if I ever remove the Boris pic, need to remember 
+that <hr> is now set to 0 margin*/
 .credits-style {
   margin: .8rem auto .8rem auto; }
 
@@ -456,7 +456,7 @@ footer {
   vertical-align: text-top; }
 
 .credits-style .footnotes > hr {
-  margin: .8rem auto .8rem auto;
+  margin: 0;
   border: none; }
 
 .credits-style .footnotes > ol {
@@ -464,7 +464,8 @@ footer {
   .credits-style .footnotes > ol > li {
     font: 100 0.8rem "Vollkorn", serif; }
     .credits-style .footnotes > ol > li > p {
-      font: 100 0.8rem "EB Garamond", serif; }
+      font: 100 0.8rem "EB Garamond", serif;
+      margin-bottom: .4rem; }
 
 /* Background */
 .chroma {

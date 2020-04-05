@@ -1,3 +1,6 @@
+/* if I ever remove the Boris pic, need to remember 
+that <hr> is now set to 0 margin*/
+
 .credits-style {
     margin: .8rem auto .8rem auto;
 }
@@ -38,7 +41,7 @@
     .footnotes {
 
         > hr {
-            margin: .8rem auto .8rem auto;
+            margin: 0;
             border: none;
         }
 
@@ -50,6 +53,7 @@
 
                 > p {
                 font: 100 .8rem $serif-primary;
+                margin-bottom: .4rem;
                 }
             }
         }

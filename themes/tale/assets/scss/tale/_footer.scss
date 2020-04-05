@@ -7,12 +7,13 @@ footer {
   font-family: $serif-primary;
   border-top: .19rem solid $default-color;
   font-size: 1.2rem;
+  margin: .8rem auto;
 
   > .flex-container {
       display: flex;
-      margin-top: .8rem;
       flex-direction: row;
       justify-content: space-around;
+      margin-top: .8rem;
 
     > .flexleft {
       max-width: 100%;
@@ -34,9 +35,7 @@ footer {
 
   > .credits {
     text-align: center;
-    font-size: .8rem;
-    font-family: $serif-primary;
-    margin: auto;
+    font: 100 .8rem $serif-primary;
     max-width: 100%;
   }
 }

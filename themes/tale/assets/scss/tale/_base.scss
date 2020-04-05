@@ -75,8 +75,16 @@ blockquote {
 
 img {
   display: block;
-  margin: .8rem 0 .8rem;
   max-width: 50%;
+  max-height: 50%;
+  margin: .4rem auto .4rem;
+}
+
+img+em {
+  color: $purple;
+  display: block;
+  font: 500 .9rem $header;
+  text-align: center;
 }
 
 td {
@@ -119,16 +127,7 @@ table {
     text-align: center; 
   }
 }
-  img {
-    margin: 0 auto 0.5rem;
-  }
 
-  img+em {
-    color: $purple;
-    display: block;
-    font: 500 .9rem $header;
-    text-align: center;
-  }
 
 // CSS for making emoji inline
 img.emoji {
@@ -166,11 +165,12 @@ code {
 }
 
 code {
-  background-color: $grey-3;
-  border-radius: 3px;
-  color: $code-color;
-  font-size: 85%;
-  padding: .25em .5em;
+  background-color: hsl(206.8, 95%, 7.8%);
+  border-radius: 6px;
+  color: hsl(276.1, 67.7%, 74.5%);
+  font: 500 .6rem $monospaced;
+  padding: .1rem .3rem;
+  margin: 0 .1rem 0 .1rem;
 
   & a {
     color: $code-color-link;

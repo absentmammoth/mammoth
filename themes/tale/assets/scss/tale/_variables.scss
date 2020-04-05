@@ -5,7 +5,6 @@ $grey-3: hsl(0, 0%, 97.6%);
 $white: #fff;
 $blue: #4a9ae1;
 $purple: hsl(271, 27%, 55%);
-$code-color: #960050;
 $code-color-link: #e8afda;
 
 // Fonts
@@ -13,7 +12,7 @@ $serif-primary: 'EB Garamond', serif;
 $serif-secondary: 'EB Garamond', serif;
 $header: 'Vollkorn', serif;
 $smallcaps: 'Vollkorn SC', serif;
-$monospaced: 'Fira Code', Menlo, Inconsulata, monospace;
+$monospaced: 'Source Code Pro', Menlo, Inconsolata, monospace;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
