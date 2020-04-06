@@ -10,14 +10,15 @@ footer {
 
   > .grid-container {
       display: grid;
-      grid-template-columns: 2;
-      grid-template-rows: 1;
-      justify-content: space-around;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100%;
+      align-items: stretch;
+      justify-items: center;
       margin-top: .8rem;
+      max-width: 100%;
 
     > .gridleft { 
       grid-area: 1 / 1 / 1 / 1;
-      justify-self: start;
       > .mysites >.contact {
         list-style: none;
         }
@@ -25,12 +26,10 @@ footer {
 
     > .gridright {
       grid-area: 1 / 2 / 1 / 2;
-      justify-self: end;
       > .h-card > .u-photo {
         display: inline-block;
         width: 50px;
         height: 25px;
-        vertical-align: baseline;
       }
     }
   }

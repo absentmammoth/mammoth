@@ -176,21 +176,23 @@ everything at the top of the site including the black border-bottom
   margin: .8rem auto;
   border-bottom: 0.1rem solid #534c5d; }
   .nav-header > .headerlink > .title {
+    max-width: 100%;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     color: #534c5d;
+    text-align-last: justify;
     font: 600 2rem "Vollkorn", serif; }
     .nav-header > .headerlink > .title:hover, .nav-header > .headerlink > .title:focus {
       opacity: .6; }
 
 .header-menu {
-  width: 75%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 0 0 .8rem 0; }
+  margin: 0 0 .8rem 0;
+  justify-content: space-between; }
   .header-menu > .links {
-    flex-grow: 1;
     font: 500 1.4rem "Vollkorn", serif;
     letter-spacing: .06rem;
     list-style-type: none; }
@@ -375,23 +377,22 @@ footer {
   margin: .8rem auto; }
   footer > .grid-container {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-    justify-content: space-around;
-    margin-top: .8rem; }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: stretch;
+    justify-items: center;
+    margin-top: .8rem;
+    max-width: 100%; }
     footer > .grid-container > .gridleft {
-      grid-area: 1 / 1 / 1 / 1;
-      justify-self: start; }
+      grid-area: 1 / 1 / 1 / 1; }
       footer > .grid-container > .gridleft > .mysites > .contact {
         list-style: none; }
     footer > .grid-container > .gridright {
-      grid-area: 1 / 2 / 1 / 2;
-      justify-self: end; }
+      grid-area: 1 / 2 / 1 / 2; }
       footer > .grid-container > .gridright > .h-card > .u-photo {
         display: inline-block;
         width: 50px;
-        height: 25px;
-        vertical-align: baseline; }
+        height: 25px; }
   footer > .credits {
     text-align: center;
     font: 100 0.8rem "EB Garamond", serif;
