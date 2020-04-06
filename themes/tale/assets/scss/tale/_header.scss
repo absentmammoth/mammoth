@@ -7,10 +7,9 @@ everything at the top of the site including the black border-bottom
   border-bottom: .1rem solid $default-color;
 
   > .headerlink > .title {
-    max-width: 100%;
+    word-spacing: .3rem;
     @include transition(all .2s ease-out);
     color: $default-color;
-    text-align-last: justify;
     font: 600 2rem $header;
   
       &:hover,

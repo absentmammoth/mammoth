@@ -176,12 +176,11 @@ everything at the top of the site including the black border-bottom
   margin: .8rem auto;
   border-bottom: 0.1rem solid #534c5d; }
   .nav-header > .headerlink > .title {
-    max-width: 100%;
+    word-spacing: .3rem;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     color: #534c5d;
-    text-align-last: justify;
     font: 600 2rem "Vollkorn", serif; }
     .nav-header > .headerlink > .title:hover, .nav-header > .headerlink > .title:focus {
       opacity: .6; }
