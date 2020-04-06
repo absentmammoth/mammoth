@@ -8,6 +8,11 @@
 - [ ] Switch colors over to HSL from hex/rgb. Use [ColorHexa](https://www.colorhexa.com).
 - [x] Add '[How the Web Became Unreadable](https://www.wired.com/2016/10/how-the-web-became-unreadable/)' to credits page.
   - Difference between Butterick's approach of 'adjust at it until it seems right' and 'use a formula because that's right.'
+- [x] Change footer/header rulers to a light grey ($grey-3)
+  - Made .1rem
+- [x] More whitespace between post title and header
+- [x] More space between navigation titles
+- [ ] Left justify post titles
 
 #### Consider:
 * Change small-caps weight to 500

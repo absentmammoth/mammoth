@@ -11,9 +11,9 @@
 			</a>
 		</div>
 			{{ partial "tags.html" . }}
-		<span class="whole-post">
+		<div class="whole-post">
 		{{ .Content }}
-		</span>
+		</div>
 	</div>
 	<div class="pagination">
 			{{- if .PrevPage }}
@@ -23,7 +23,8 @@
 			{{- end }}
 				&nbsp;<a href="#top" class="top">top</a>&nbsp;
 			{{- if .NextPage }}
-				<a href="{{ .NextPage.URL }}" class="right arrow">&#8594;</a>{{ else }}
+				<a href="{{ .NextPage.URL }}" class="right arrow">&#8594;</a>
+			{{ else }}
 			<span class="leftarrow-hidden">&#8592;</span>
 			{{- end }}	
 	</div>			

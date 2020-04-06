@@ -1,5 +1,5 @@
 * {
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
@@ -13,7 +13,6 @@ html {
   font-family: $serif-primary;
   color: $default-color;
   overflow-y: scroll;
-  height: 100%;
 }
 
 @media all and (min-width: 700px) { 
@@ -99,7 +98,7 @@ table {
 .mammoth-hcard {
   font-family: $serif-primary;
   font-size: 1.2rem;
-  margin-bottom: .8rem;
+  margin-bottom: 1.6rem;
 
   > .u-photo {
     display: inline-block;
@@ -118,7 +117,7 @@ table {
 .topics-terms {
   margin-bottom: .8rem;
   > h2 {
-  font: 500 1.6rem 'Vollkorn SC';
+  font: 500 1.6rem $smallcaps;
   font-variant: all-small-caps;
   text-align: center;
   }
