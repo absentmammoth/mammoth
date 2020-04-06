@@ -64,10 +64,10 @@
 
   > .whole-post {
     grid-area: 2 / 1 / 2 / 4;
-
+    font: 100 1.2rem $serif-primary;
+    
     > p {
-      margin-bottom: .8rem;
-      font: 100 1.2rem $serif-primary;
+    margin-bottom: .8rem;
     }
 
     > blockquote {

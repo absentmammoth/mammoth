@@ -8,10 +8,10 @@
         {{ partial "tags.html" . }}
         
         {{ if isset .Params "summary" }}
-        {{ .Params.Summary | markdownify }}
+        {{ .Params.Summary }}
         {{ else }}
         <div class="feed-post">
-            {{ .Summary | markdownify }}
+            {{ .Summary }}
         </div>
         {{ end }}       
 </div>

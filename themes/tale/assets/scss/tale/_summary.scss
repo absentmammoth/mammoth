@@ -35,7 +35,8 @@
   > .feed-post {
     font: 100 1.2rem $serif-primary;
     grid-area: 2 / 1 / 2 / 4;
-    line-height: 1.5;
-    margin-bottom: .8rem;
+    > p {
+      margin-bottom: .8rem;
+    }
   }
 }

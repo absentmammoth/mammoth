@@ -1,7 +1,10 @@
 * {
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   -webkit-font-smoothing: subpixel-antialiased; }
@@ -237,10 +240,10 @@ everything at the top of the site including the black border-bottom
     .individual-post > .tags > .tagslist {
       list-style-type: none; }
   .individual-post > .whole-post {
-    grid-area: 2 / 1 / 2 / 4; }
+    grid-area: 2 / 1 / 2 / 4;
+    font: 100 1.2rem "EB Garamond", serif; }
     .individual-post > .whole-post > p {
-      margin-bottom: .8rem;
-      font: 100 1.2rem "EB Garamond", serif; }
+      margin-bottom: .8rem; }
     .individual-post > .whole-post > blockquote {
       border-left: 0.19rem solid #8d6dab;
       color: #534c5d;
@@ -271,9 +274,9 @@ everything at the top of the site including the black border-bottom
       list-style-type: none; }
   .post-summary > .feed-post {
     font: 100 1.2rem "EB Garamond", serif;
-    grid-area: 2 / 1 / 2 / 4;
-    line-height: 1.5;
-    margin-bottom: .8rem; }
+    grid-area: 2 / 1 / 2 / 4; }
+    .post-summary > .feed-post > p {
+      margin-bottom: .8rem; }
 
 .media-list {
   font-size: 1.2rem; }
@@ -367,26 +370,28 @@ styling for the footer that exists on the bottom of every site page
 to do: add a link to a longer credits page
 */
 footer {
-  font-family: "EB Garamond", serif;
+  font: 100 1.2rem "EB Garamond", serif;
   border-top: 0.1rem solid #65616b;
-  font-size: 1.2rem;
   margin: .8rem auto; }
-  footer > .flex-container {
-    display: flex;
-    flex-direction: row;
+  footer > .grid-container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
     justify-content: space-around;
     margin-top: .8rem; }
-    footer > .flex-container > .flexleft {
-      max-width: 100%;
-      height: 100%; }
-      footer > .flex-container > .flexleft > .mysites > .contact {
+    footer > .grid-container > .gridleft {
+      grid-area: 1 / 1 / 1 / 1;
+      justify-self: start; }
+      footer > .grid-container > .gridleft > .mysites > .contact {
         list-style: none; }
-    footer > .flex-container > .flexright {
-      max-width: 100%;
-      height: 100%; }
-      footer > .flex-container > .flexright > .h-card > .u-photo {
+    footer > .grid-container > .gridright {
+      grid-area: 1 / 2 / 1 / 2;
+      justify-self: end; }
+      footer > .grid-container > .gridright > .h-card > .u-photo {
+        display: inline-block;
         width: 50px;
-        height: 25px; }
+        height: 25px;
+        vertical-align: baseline; }
   footer > .credits {
     text-align: center;
     font: 100 0.8rem "EB Garamond", serif;

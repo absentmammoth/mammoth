@@ -12,7 +12,8 @@
   - Made .1rem
 - [x] More whitespace between post title and header
 - [x] More space between navigation titles
-- [ ] Left justify post titles
+- [ ] Fix up font sizes on side pages -- media list archive link, headers, etc.
 
 #### Consider:
 * Change small-caps weight to 500
+* Left justify post titles
