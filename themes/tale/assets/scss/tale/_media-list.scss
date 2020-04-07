@@ -13,11 +13,11 @@
 .archive-main 
   > h2 {
   color: $default-color;
-  font: 500 1.6rem 'Vollkorn SC';
+  font: 600 1.6rem $smallcaps;
   font-variant: all-small-caps;
+  margin-top: -.4rem;
   letter-spacing: .08rem;
   text-align: center;
-  margin-top: -.4rem;
 }
 
 .media-list 
@@ -25,7 +25,8 @@
 .archive-main 
   > h3 {
   color: $default-color;
-  font: 600 1.4rem $header;
+  font: 600 1.4rem $smallcaps;
+  font-variant: all-small-caps;
   letter-spacing: .08rem;
   text-align: center;
 }
@@ -43,6 +44,7 @@
 .archive-main 
   > ul > li {
   list-style-type: none;
+  font-size: 1rem;
 } 
 
 .media-list 
@@ -59,18 +61,18 @@
   }
 
 .list-info {
-    font: 500 .8rem $serif-primary;
+    font: 500 .9rem $header;
     letter-spacing: .06rem;
     text-align: center;
     margin-top: .2rem;
-
+// obviously normally 'italic' but removing for now
     > .italicinfo {
-    font-style: italic;
+    font-style: none;
   }
 }
 
 .archive-link {
-  font: .7rem $serif-primary;
+  font: .8rem $serif-primary;
   text-align: center;
   margin: .8rem 0 .8rem 0;
   }

@@ -1,5 +1,5 @@
 * {
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -21,25 +21,33 @@ body {
   width: calc(100% - 35vw);
   background-color: #fcfcfc; }
 
+@media (max-width: 1100px) {
+  html {
+    font-size: calc(62.5% + .5vw); }
+  body {
+    width: calc(100%-40vw); } }
+
 @media (max-width: 900px) {
   html {
-    font-size: calc(62.5% + .5vw); } }
+    font-size: calc(55% + .5vw); }
+  body {
+    width: 65vw; } }
 
 @media (max-width: 650px) {
   html {
-    font-size: calc(62.5% + .4vw); }
+    font-size: calc(50% + .5vw); }
   body {
     width: 70vw; } }
 
 @media (max-width: 530px) and (min-width: 450px) {
   html {
-    font-size: calc(55% + .3vw); }
+    font-size: calc(45% + .5vw); }
   body {
-    width: 80vw; } }
+    width: 75vw; } }
 
-@media (max-width: 450px) and (min-width: 320px) {
+@media (max-width: 450px) and (min-width: 319px) {
   html {
-    font-size: calc(40% + .3vw); }
+    font-size: calc(40% + .5vw); }
   body {
     width: 80vw; } }
 
@@ -90,29 +98,33 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
-.mammoth-hcard {
-  font-family: "EB Garamond", serif;
-  font-size: 1.2rem;
+.h-card {
   margin-bottom: 1.6rem; }
-  .mammoth-hcard > .u-photo {
-    display: inline-block;
-    left: 0;
-    width: 30px;
-    height: 15px;
-    transform: none;
-    vertical-align: baseline;
-    padding: 0;
-    margin: 0; }
+  .h-card .mammoth-hcard {
+    font-family: "EB Garamond", serif;
+    font-size: 1.2rem; }
+    .h-card .mammoth-hcard > .u-photo {
+      display: inline-block;
+      left: 0;
+      width: 30px;
+      height: 15px;
+      transform: none;
+      vertical-align: baseline;
+      padding: 0;
+      margin: 0; }
 
-/* this is for the tags/topcis page */
+/* this is for the tags/topics page */
 .topics-terms {
   margin-bottom: .8rem; }
   .topics-terms > h2 {
     font: 500 1.6rem "Vollkorn SC", serif;
     font-variant: all-small-caps;
-    text-align: center; }
+    letter-spacing: .08rem;
+    text-align: center;
+    margin-top: -.4rem; }
   .topics-terms > .topicsul {
     font: 500 1rem "Vollkorn", serif;
+    margin-top: -.4rem;
     text-align: center; }
 
 img.emoji {
@@ -258,7 +270,8 @@ everything at the top of the site including the black border-bottom
 .post-summary {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: auto; }
+  grid-template-rows: auto;
+  margin-top: .8rem; }
   .post-summary > .h-feed-meta {
     grid-area: 1 / 2 / 1 / 3;
     text-align: center; }
@@ -291,18 +304,19 @@ everything at the top of the site including the black border-bottom
 .archive-main
 > h2 {
   color: #534c5d;
-  font: 500 1.6rem 'Vollkorn SC';
+  font: 600 1.6rem "Vollkorn SC", serif;
   font-variant: all-small-caps;
+  margin-top: -.4rem;
   letter-spacing: .08rem;
-  text-align: center;
-  margin-top: -.4rem; }
+  text-align: center; }
 
 .media-list
 > h3,
 .archive-main
 > h3 {
   color: #534c5d;
-  font: 600 1.4rem "Vollkorn", serif;
+  font: 600 1.4rem "Vollkorn SC", serif;
+  font-variant: all-small-caps;
   letter-spacing: .08rem;
   text-align: center; }
 
@@ -317,7 +331,8 @@ everything at the top of the site including the black border-bottom
 > ul > li,
 .archive-main
 > ul > li {
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 1rem; }
 
 .media-list
 > ul > li:before,
@@ -327,15 +342,15 @@ everything at the top of the site including the black border-bottom
   vertical-align: text-top; }
 
 .list-info {
-  font: 500 0.8rem "EB Garamond", serif;
+  font: 500 0.9rem "Vollkorn", serif;
   letter-spacing: .06rem;
   text-align: center;
   margin-top: .2rem; }
   .list-info > .italicinfo {
-    font-style: italic; }
+    font-style: none; }
 
 .archive-link {
-  font: 0.7rem "EB Garamond", serif;
+  font: 0.8rem "EB Garamond", serif;
   text-align: center;
   margin: .8rem 0 .8rem 0; }
 
