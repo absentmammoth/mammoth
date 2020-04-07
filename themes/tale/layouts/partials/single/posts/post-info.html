@@ -3,6 +3,6 @@
         {{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
     {{ else }}
         {{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
-        {{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
+        <span>updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
     {{ end }}
 </div>
