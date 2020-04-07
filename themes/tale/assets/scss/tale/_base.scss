@@ -25,22 +25,31 @@ body {
 
 @media (max-width: 900px) { 
   html {
-  font-size: .8rem; 
+  font-size: calc(62.5% + .5vw);
   }
 }
 
 @media (max-width: 650px) { 
   html {
-  font-size: .6rem; 
+  font-size: calc(62.5% + .4vw);
   }
   body {
     width: 70vw;
   }
 }
 
-@media (max-width: 450px) { 
+@media (max-width: 530px) and (min-width: 450px) { 
   html {
-  font-size: .52rem; 
+  font-size: calc(55% + .3vw);
+  }
+  body {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 320px) { 
+  html {
+  font-size: calc(40% + .3vw);
   }
   body {
     width: 80vw;

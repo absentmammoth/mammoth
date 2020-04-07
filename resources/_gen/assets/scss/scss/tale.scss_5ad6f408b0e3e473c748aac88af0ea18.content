@@ -23,17 +23,23 @@ body {
 
 @media (max-width: 900px) {
   html {
-    font-size: .8rem; } }
+    font-size: calc(62.5% + .5vw); } }
 
 @media (max-width: 650px) {
   html {
-    font-size: .6rem; }
+    font-size: calc(62.5% + .4vw); }
   body {
     width: 70vw; } }
 
-@media (max-width: 450px) {
+@media (max-width: 530px) and (min-width: 450px) {
   html {
-    font-size: .52rem; }
+    font-size: calc(55% + .3vw); }
+  body {
+    width: 80vw; } }
+
+@media (max-width: 450px) and (min-width: 320px) {
+  html {
+    font-size: calc(40% + .3vw); }
   body {
     width: 80vw; } }
 
@@ -186,16 +192,13 @@ everything at the top of the site including the black border-bottom
       opacity: .6; }
 
 .header-menu {
-  max-width: 75%;
-  display: flex;
-  flex-direction: row;
-  margin: 0 0 .8rem 0;
-  justify-content: space-between;
-  white-space: nowrap; }
+  margin: 0 0 .8rem 0; }
   .header-menu > .links {
     font: 500 1.4rem "Vollkorn", serif;
     letter-spacing: .06rem;
-    list-style-type: none; }
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 2rem; }
     .header-menu > .links > a, .header-menu > .media-list.links > .fade, .header-menu > .post-summary.links > .h-feed-meta, .header-menu > .individual-post.links > .post-meta {
       display: block; }
 
