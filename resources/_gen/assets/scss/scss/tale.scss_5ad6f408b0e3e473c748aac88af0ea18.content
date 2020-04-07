@@ -10,33 +10,28 @@
   -webkit-font-smoothing: subpixel-antialiased; }
 
 html {
-  font-size: 62.5%;
+  font-size: calc(62.5% + 1vw);
   font-family: "EB Garamond", serif;
   color: #534c5d;
   overflow-y: scroll; }
 
-@media all and (min-width: 700px) {
-  html {
-    font-size: 1.4rem; } }
-
-@media all and (max-width: 699px) {
-  html {
-    font-size: .9rem; } }
-
-@media all and (max-width: 600px) {
-  html {
-    font-size: .7rem; } }
-
-@media all and (max-width: 425px) {
-  html {
-    font-size: .65rem; } }
-
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 69vw;
+  max-width: calc(100% - 35vw);
   background-color: #fcfcfc; }
+
+@media (max-width: 900px) {
+  html {
+    font-size: .8rem; } }
+
+@media (max-width: 650px) {
+  html {
+    font-size: .6rem; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: .5rem; } }
 
 h1,
 h2,
@@ -181,16 +176,18 @@ everything at the top of the site including the black border-bottom
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     color: #534c5d;
-    font: 600 2rem "Vollkorn", serif; }
+    font: 600 2rem "Vollkorn", serif;
+    white-space: nowrap; }
     .nav-header > .headerlink > .title:hover, .nav-header > .headerlink > .title:focus {
       opacity: .6; }
 
 .header-menu {
-  max-width: 100%;
+  max-width: 75%;
   display: flex;
   flex-direction: row;
   margin: 0 0 .8rem 0;
-  justify-content: space-between; }
+  justify-content: space-between;
+  white-space: nowrap; }
   .header-menu > .links {
     font: 500 1.4rem "Vollkorn", serif;
     letter-spacing: .06rem;

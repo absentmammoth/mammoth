@@ -10,38 +10,35 @@
 
 
 html { 
-  font-size: 62.5%; 
+  font-size: calc(62.5% + 1vw); 
   font-family: $serif-primary;
   color: $default-color;
   overflow-y: scroll;
 }
 
-@media all and (min-width: 700px) { 
-  html { 
-    font-size: 1.4rem; 
-  } 
-}
-
-@media all and (max-width: 699px) { 
-  html{ font-size: .9rem; 
-  } 
-}
-@media all and (max-width: 600px) { 
-  html{ font-size: .7rem; 
-  } 
-}
-
-@media all and (max-width: 425px) { 
-  html{ font-size: .65rem; 
-  } 
-}
-
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 69vw;
+  max-width: calc(100% - 35vw);
   background-color: $grey-1;
+}
+
+@media (max-width: 900px) { 
+  html {
+  font-size: .8rem; 
+  }
+}
+
+@media (max-width: 650px) { 
+  html {
+  font-size: .6rem; 
+  }
+}
+
+@media (max-width: 450px) { 
+  html {
+  font-size: .5rem; 
+  }
 }
 
 h1,

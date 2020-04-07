@@ -11,6 +11,7 @@ everything at the top of the site including the black border-bottom
     @include transition(all .2s ease-out);
     color: $default-color;
     font: 600 2rem $header;
+    white-space: nowrap;
   
       &:hover,
       &:focus {
@@ -20,11 +21,12 @@ everything at the top of the site including the black border-bottom
 }
 
 .header-menu {
-    max-width: 100%;
+    max-width: 75%;
     display: flex;
     flex-direction: row;
     margin: 0 0 .8rem 0;
     justify-content: space-between;
+    white-space: nowrap;
   
     > .links {
     font: 500 1.4rem $header;
