@@ -1,8 +1,9 @@
-<div class="tags">    
+<div class="tags">   
+        <div class="tagsfont">
+            tags:
+        </div>
     {{ range (.GetTerms "tags") }}
-    <div class="tagsfont">
-        tags:
-    </div>
+
     <li class="tagslist">
         <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
     </li>

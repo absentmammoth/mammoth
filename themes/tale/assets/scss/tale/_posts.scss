@@ -1,80 +1,80 @@
 .individual-post {
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: auto;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	grid-template-rows: auto;
 
-  > .toc {
-    grid-area: 1 / 1 / 1 / 1;
-    justify-self: start;
-    font-family: $header;
-    
-    > details > summary {
-    font-size: .7rem;
-    cursor: pointer;
-    }
-    > details > summary::-webkit-details-marker {
-      display: none;
-    }
+	> .toc {
+		grid-area: 1 / 1 / 1 / 1;
+		justify-self: start;
+		font-family: $header;
 
-    > details > ul {
-      font-size: .7rem;
-      text-transform: lowercase;
-      list-style-type: none;
-    }
+		> details > summary {
+			font-size: 0.7rem;
+			cursor: pointer;
+		}
+		> details > summary::-webkit-details-marker {
+			display: none;
+		}
 
-    > details > ul li {
-      list-style-type: none;
-    }
-    > details > ul li:before {
-      content: '\232A';
-      vertical-align: text-top;
-    }
-  }
+		> details > ul {
+			font-size: 0.7rem;
+			text-transform: lowercase;
+			list-style-type: none;
+		}
 
-  > .post-meta {
-    @extend a;
-    grid-area: 1 / 2 / 1 / 3;
-    text-align: center;
-    white-space: nowrap;
+		> details > ul li {
+			list-style-type: none;
+		}
+		> details > ul li:before {
+			content: '\232A';
+			vertical-align: text-top;
+		}
+	}
 
-    > a > .post-info {
-    font: 100 .9rem $header;
-    letter-spacing: .04rem;
-  }
+	> .post-meta {
+		@extend a;
+		grid-area: 1 / 2 / 1 / 3;
+		text-align: center;
+		white-space: nowrap;
 
-    > a > .post-title {
-    color: $default-color;
-    font: 600 1.6rem $smallcaps;
-    margin: -.4rem 0 0 0;
-    letter-spacing: .08rem;
-    font-variant: all-small-caps; 
-    }
-  }
+		> a > .post-info {
+			font: 100 0.9rem $header;
+			letter-spacing: 0.04rem;
+		}
 
-  > .tags {
-  font: 100 .7rem $header;
-  grid-area: 1 / 3 / 1 / 3;
-  justify-self: end;
-  text-align: center;
+		> a > .post-title {
+			color: $default-color;
+			font: 600 1.6rem $smallcaps;
+			margin: -0.4rem 0 0 0;
+			letter-spacing: 0.08rem;
+			font-variant: all-small-caps;
+		}
+	}
 
-    > .tagslist {
-      list-style-type: none;
-    }
-  }
+	> .tags {
+		font: 100 0.7rem $header;
+		grid-area: 1 / 3 / 1 / 3;
+		justify-self: end;
+		text-align: center;
 
-  > .whole-post {
-    grid-area: 2 / 1 / 2 / 4;
-    font: 100 1.2rem $serif-primary;
-    
-    > p {
-    margin-bottom: .8rem;
-    }
+		> .tagslist {
+			list-style-type: none;
+		}
+	}
 
-    > blockquote {
-      border-left: .19rem solid $purple;
-      color: $default-color;
-      margin-bottom: .8rem;
-      padding: 0 1.25rem 0 1.25rem;
-    }
-  }
+	> .whole-post {
+		grid-area: 2 / 1 / 2 / 4;
+		font: 100 1.2rem $serif-primary;
+
+		> p {
+			margin-bottom: 0.8rem;
+		}
+
+		> blockquote {
+			border-left: 0.19rem solid $purple;
+			color: $default-color;
+			margin-bottom: 0.8rem;
+			padding: 0 1.25rem 0 1.25rem;
+		}
+	}
 }

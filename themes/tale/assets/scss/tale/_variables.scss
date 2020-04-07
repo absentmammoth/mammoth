@@ -15,15 +15,13 @@ $smallcaps: 'Vollkorn SC', serif;
 $monospaced: 'Source Code Pro', Menlo, Inconsolata, monospace;
 
 @mixin box-sizing($type: border-box) {
-  -webkit-box-sizing: $type;
-    -moz-box-sizing: $type;
-      box-sizing: $type;
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	box-sizing: $type;
 }
 
 @mixin transition($args...) {
-  -webkit-transition: $args;
-    -moz-transition: $args;
-      transition: $args;
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	transition: $args;
 }
-
-

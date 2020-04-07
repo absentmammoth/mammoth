@@ -5,79 +5,68 @@
 // media-list.md is currently {{ .Content }} in a div called media-list in the html file of the same name.
 
 .media-list {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
-.media-list 
-  > h2, 
-.archive-main 
-  > h2 {
-  color: $default-color;
-  font: 600 1.6rem $smallcaps;
-  font-variant: all-small-caps;
-  margin-top: -.4rem;
-  letter-spacing: .08rem;
-  text-align: center;
+.media-list > h2,
+.archive-main > h2 {
+	color: $default-color;
+	font: 600 1.6rem $smallcaps;
+	font-variant: all-small-caps;
+	margin-top: -0.4rem;
+	letter-spacing: 0.08rem;
+	text-align: center;
 }
 
-.media-list 
-  > h3, 
-.archive-main 
-  > h3 {
-  color: $default-color;
-  font: 600 1.4rem $smallcaps;
-  font-variant: all-small-caps;
-  letter-spacing: .08rem;
-  text-align: center;
+.media-list > h3,
+.archive-main > h3 {
+	color: $default-color;
+	font: 600 1.4rem $smallcaps;
+	font-variant: all-small-caps;
+	letter-spacing: 0.08rem;
+	text-align: center;
 }
 
-.media-list 
-  > h4, 
-.archive-main 
-  > h4 {
-  font: 400 1rem $serif-primary;
-  margin-top: .4rem;
+.media-list > h4,
+.archive-main > h4 {
+	font: 400 1rem $serif-primary;
+	margin-top: 0.4rem;
 }
 
-.media-list 
-  > ul > li, 
-.archive-main 
-  > ul > li {
-  list-style-type: none;
-  font-size: 1rem;
-} 
+.media-list > ul > li,
+.archive-main > ul > li {
+	list-style-type: none;
+	font-size: 1rem;
+}
 
-.media-list 
-  > ul > li:before,
-.archive-main 
-  > ul > li:before {
-    content: '\232A';
-    vertical-align: text-top;
-  }
+.media-list > ul > li:before,
+.archive-main > ul > li:before {
+	content: '\232A';
+	vertical-align: text-top;
+}
 
-.media-list
-  > .fade {
-  @extend a;
-  }
+.media-list > .fade {
+	@extend a;
+}
 
 .list-info {
-    font: 500 .9rem $header;
-    letter-spacing: .06rem;
-    text-align: center;
-    margin-top: .2rem;
-// obviously normally 'italic' but removing for now
-    > .italicinfo {
-    font-style: none;
-  }
+	font: 500 0.9rem $header;
+	letter-spacing: 0.06rem;
+	text-align: center;
+	margin-top: 0.2rem;
+	// obviously normally 'italic' but removing for now
+	> .italicinfo {
+		font-style: none;
+	}
 }
 
 .archive-link {
-  font: .8rem $serif-primary;
-  text-align: center;
-  margin: .8rem 0 .8rem 0;
-  }
+	font: 0.8rem $serif-primary;
+	text-align: center;
+	margin: 0.8rem 0 0.8rem 0;
+}
 
 .archive-main.md {
-  margin-bottom: .8rem;
-  font-size: 1.2rem;
+	margin-bottom: 0.8rem;
+	font-size: 1.2rem;
 }
