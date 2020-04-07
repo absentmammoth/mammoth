@@ -13,6 +13,8 @@
 - [x] More whitespace between post title and header
 - [x] More space between navigation titles
 - [x] Fix up font sizes on side pages -- media list archive link, headers, etc.
+- [ ] Fix wrapped titles on longer post titles
+- [ ] Fix tags duplicating 'tags:' for each tag
 
 #### Consider:
 * Change small-caps weight to 500
