@@ -23,31 +23,31 @@ body {
 
 @media (max-width: 1100px) {
   html {
-    font-size: calc(62.5% + .5vw); }
+    font-size: calc(62.5% + 0.5vw); }
   body {
     width: calc(100%-40vw); } }
 
 @media (max-width: 900px) {
   html {
-    font-size: calc(55% + .5vw); }
+    font-size: calc(55% + 0.5vw); }
   body {
     width: 65vw; } }
 
 @media (max-width: 650px) {
   html {
-    font-size: calc(50% + .5vw); }
+    font-size: calc(50% + 0.5vw); }
   body {
     width: 70vw; } }
 
 @media (max-width: 530px) and (min-width: 450px) {
   html {
-    font-size: calc(45% + .5vw); }
+    font-size: calc(45% + 0.5vw); }
   body {
     width: 75vw; } }
 
 @media (max-width: 450px) and (min-width: 319px) {
   html {
-    font-size: calc(40% + .5vw); }
+    font-size: calc(40% + 0.5vw); }
   body {
     width: 80vw; } }
 
@@ -58,8 +58,7 @@ h4,
 h5,
 h6 {
   color: #534c5d;
-  font-family: "Vollkorn", serif;
-  font-weight: 600; }
+  font-family: 600 "Vollkorn", serif; }
 
 a, .media-list > .fade, .post-summary > .h-feed-meta, .individual-post > .post-meta {
   -webkit-transition: all 0.2s ease-out;
@@ -68,19 +67,19 @@ a, .media-list > .fade, .post-summary > .h-feed-meta, .individual-post > .post-m
   color: #8d6dab;
   text-decoration: none; }
   a:hover, .media-list > .fade:hover, .post-summary > .h-feed-meta:hover, .individual-post > .post-meta:hover, a:focus, .media-list > .fade:focus, .post-summary > .h-feed-meta:focus, .individual-post > .post-meta:focus {
-    opacity: .6; }
+    opacity: 0.6; }
 
 blockquote {
   border-left: 0.19rem solid #8d6dab;
   color: #534c5d;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   padding: 0 1.25rem 0 1.25rem; }
 
 img {
   display: block;
   max-width: 50%;
   max-height: 50%;
-  margin: .4rem auto .4rem; }
+  margin: 0.4rem auto 0.4rem; }
 
 img + em {
   color: #8d6dab;
@@ -112,16 +111,16 @@ table {
 
 /* this is for the tags/topics page */
 .topics-terms {
-  margin-bottom: .8rem; }
+  margin-bottom: 0.8rem; }
   .topics-terms > h2 {
     font: 500 1.6rem "Vollkorn SC", serif;
     font-variant: all-small-caps;
-    letter-spacing: .08rem;
+    letter-spacing: 0.08rem;
     text-align: center;
-    margin-top: -.4rem; }
+    margin-top: -0.4rem; }
   .topics-terms > .topicsul {
     font: 500 1rem "Vollkorn", serif;
-    margin-top: -.4rem;
+    margin-top: -0.4rem;
     text-align: center; }
 
 img.emoji {
@@ -141,7 +140,7 @@ code {
   position: relative;
   max-width: 35rem;
   max-height: 100rem;
-  margin: .8rem auto .8rem auto; }
+  margin: 0.8rem auto 0.8rem auto; }
 
 pre {
   overflow-x: auto;
@@ -149,17 +148,17 @@ pre {
   background: #272822;
   color: #f8f8f2;
   background-color: #272822;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   line-height: 1.4;
-  padding: .8rem; }
+  padding: 0.8rem; }
 
 code {
   background-color: #011627;
   border-radius: 6px;
   color: #c792ea;
   font: 500 0.6rem "Source Code Pro", Menlo, Inconsolata, monospace;
-  padding: .1rem .3rem;
-  margin: 0 .1rem 0 .1rem; }
+  padding: 0.1rem 0.3rem;
+  margin: 0 0.1rem 0 0.1rem; }
   code a, code .media-list > .fade, code .post-summary > .h-feed-meta, code .individual-post > .post-meta {
     color: #e8afda; }
 
@@ -177,7 +176,7 @@ pre code {
 .highlight .lineno {
   color: #8d6dab;
   display: inline-block;
-  padding: 0 .75rem 0 .25rem;
+  padding: 0 0.75rem 0 0.25rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none; }
@@ -266,11 +265,11 @@ everything at the top of the site including the black border-bottom
 .post-summary {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: auto;
-  margin-top: 0.8rem; }
+  grid-template-rows: auto; }
   .post-summary > .h-feed-meta {
     grid-area: 1 / 2 / 1 / 3;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: .8rem; }
     .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .media-list.h-feed-meta > .fade > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
       font: 100 0.9rem "Vollkorn", serif;
       letter-spacing: 0.04rem; }

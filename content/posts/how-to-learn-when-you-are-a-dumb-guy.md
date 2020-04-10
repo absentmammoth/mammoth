@@ -10,6 +10,8 @@ tags:
 
 I have worked on this website for the last month and a half. Couldn't tell you why I started on it, initially, but building it has become a legit interest and I have learned so much along the way. It doesn't hurt that it's also been a distraction from the news.
 
+<!--more-->
+
 This uses the free static generator [Hugo](https://www.gohugo.io) and is hosted on a free Github repo. The URL, the name of a [Mount Eerie song](https://www.youtube.com/watch?v=VN9Fugvy7wI), cost me $12. For hours of use/cost, this project has been one of my wiser investments. 
 
 Part of that is because I am not a smart guy, and I'm not a 'quick study.' Going into this, my knowledge of CSS and HTML was limited -- to say nothing of how little I knew about Hugo, Git, ssh, VS Code, and basic 'Does this site hurt to look at?' type stuff. Do I have my four year degree in all of this stuff now? Heck nah, but I'm confident I now understand just a little bit more than when I began. 
