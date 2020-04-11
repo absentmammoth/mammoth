@@ -36,6 +36,7 @@
 		grid-area: 1 / 2 / 1 / 3;
 		text-align: center;
 		white-space: nowrap;
+		margin-bottom: 1rem;
 
 		> a > .post-info {
 			font: 100 0.9rem $header;
@@ -45,7 +46,7 @@
 		> a > .post-title {
 			color: $default-color;
 			font: 600 1.6rem $smallcaps;
-			margin: -0.4rem 0 0 0;
+			margin: -0.4rem;
 			letter-spacing: 0.08rem;
 			font-variant: all-small-caps;
 		}
@@ -66,8 +67,16 @@
 		grid-area: 2 / 1 / 2 / 4;
 		font: 100 1.2rem $serif-primary;
 
+	> h3, h4 {
+		margin: auto auto .4rem auto;
+		}
+
 		> p {
 			margin-bottom: 0.8rem;
+		}
+
+		> p:last-child {
+			margin-bottom: 0;
 		}
 
 		> blockquote {

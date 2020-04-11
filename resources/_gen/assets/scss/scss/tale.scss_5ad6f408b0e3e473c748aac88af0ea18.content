@@ -95,7 +95,7 @@ table {
   margin-right: auto; }
 
 .h-card {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 2rem; }
   .h-card .mammoth-hcard {
     font-family: "EB Garamond", serif;
     font-size: 1.2rem; }
@@ -170,8 +170,9 @@ pre code {
   font-size: 100%;
   padding: 0;
   display: block;
-  margin: 0 auto;
-  max-width: 100%; }
+  margin: auto;
+  max-width: 100%;
+  white-space: pre-line; }
 
 .highlight .lineno {
   color: #8d6dab;
@@ -234,14 +235,15 @@ everything at the top of the site including the black border-bottom
   .individual-post > .post-meta {
     grid-area: 1 / 2 / 1 / 3;
     text-align: center;
-    white-space: nowrap; }
+    white-space: nowrap;
+    margin-bottom: 1rem; }
     .individual-post > .post-meta > a > .post-info, .individual-post > .media-list.post-meta > .fade > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
       font: 100 0.9rem "Vollkorn", serif;
       letter-spacing: 0.04rem; }
     .individual-post > .post-meta > a > .post-title, .individual-post > .media-list.post-meta > .fade > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
       color: #534c5d;
       font: 600 1.6rem "Vollkorn SC", serif;
-      margin: -0.4rem 0 0 0;
+      margin: -0.4rem;
       letter-spacing: 0.08rem;
       font-variant: all-small-caps; }
   .individual-post > .tags {
@@ -254,8 +256,12 @@ everything at the top of the site including the black border-bottom
   .individual-post > .whole-post {
     grid-area: 2 / 1 / 2 / 4;
     font: 100 1.2rem "EB Garamond", serif; }
+    .individual-post > .whole-post > h3, .individual-post > .whole-post h4 {
+      margin: auto auto .4rem auto; }
     .individual-post > .whole-post > p {
       margin-bottom: 0.8rem; }
+    .individual-post > .whole-post > p:last-child {
+      margin-bottom: 0; }
     .individual-post > .whole-post > blockquote {
       border-left: 0.19rem solid #8d6dab;
       color: #534c5d;
@@ -265,17 +271,18 @@ everything at the top of the site including the black border-bottom
 .post-summary {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: auto; }
+  grid-template-rows: auto;
+  margin-bottom: 1rem; }
   .post-summary > .h-feed-meta {
     grid-area: 1 / 2 / 1 / 3;
     text-align: center;
-    margin-bottom: .8rem; }
+    margin-bottom: 1rem; }
     .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .media-list.h-feed-meta > .fade > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
       font: 100 0.9rem "Vollkorn", serif;
       letter-spacing: 0.04rem; }
     .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .media-list.h-feed-meta > .fade > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
       font: 600 1.6rem "Vollkorn SC", serif;
-      margin: -0.4rem 0 0 0;
+      margin: -0.4rem;
       letter-spacing: 0.08rem;
       font-variant: all-small-caps; }
   .post-summary > .tags {
@@ -290,6 +297,8 @@ everything at the top of the site including the black border-bottom
     grid-area: 2 / 1 / 2 / 4; }
     .post-summary > .feed-post > p {
       margin-bottom: 0.8rem; }
+    .post-summary > .feed-post > p:last-child {
+      margin-bottom: 0; }
 
 .media-list {
   font-size: 1.2rem; }

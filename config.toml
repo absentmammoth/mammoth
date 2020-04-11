@@ -23,11 +23,12 @@ enableEmoji = "true"
   author = "marshall"
   image = "/img/me.jpg"
   # DateForm = "mon jan 2, 2006 | 03:04PM"
-  WebMentionDomain = "www.absentmammoth.org"
+  # WebMentionDomain = "www.absentmammoth.org"
   # MaxWebmentions = "100"
   AuthorizationEndpoint = "https://indieauth.com/auth"
   TokenEndpoint = "https://tokens.indieauth.com/token"
   Auth = "https://indieauth.com/auth"
+  mainSections = "posts"
 
 [frontmatter]
   date = ["publishDate", "date", "lastmod"]
@@ -84,6 +85,8 @@ enableEmoji = "true"
       typographer = false
     [markup.goldmark.renderer]
       unsafe = true
+
+
 
 
 [menu]

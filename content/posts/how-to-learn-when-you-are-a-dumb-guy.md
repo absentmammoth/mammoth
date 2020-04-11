@@ -52,7 +52,8 @@ There are a huge number of note-taking, bookmarking, organizational tools out th
 
 Take a lot of notes. Even if you never look at them again, it's okay. It just helps to have seen it, written it down, and be able to return to it easily if need be. One thing I've been doing more and more of: interactive notes. Instead of writing, 'x is a problem how I fix? will try later i guess,' I'm using little checkboxes to help me keep track of what I am doing and want to be doing. Here's an example from the to-do list I have for this site:
 
-```
+
+```markdown
 ## Site To Do List
 
 #### For sure:

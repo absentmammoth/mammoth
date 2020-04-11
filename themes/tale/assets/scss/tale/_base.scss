@@ -119,7 +119,7 @@ table {
 }
 
 .h-card {
-	margin-bottom: 1.6rem;
+	margin-bottom: 2rem;
 
 	.mammoth-hcard {
 		font-family: $serif-primary;
@@ -216,8 +216,9 @@ pre code {
 	font-size: 100%;
 	padding: 0;
 	display: block;
-	margin: 0 auto;
+	margin: auto;
 	max-width: 100%;
+	white-space: pre-line;
 }
 
 .highlight {
