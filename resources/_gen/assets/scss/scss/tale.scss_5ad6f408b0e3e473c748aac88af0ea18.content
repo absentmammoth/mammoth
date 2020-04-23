@@ -235,7 +235,6 @@ everything at the top of the site including the black border-bottom
   .individual-post > .post-meta {
     grid-area: 1 / 2 / 1 / 3;
     text-align: center;
-    white-space: nowrap;
     margin-bottom: 1rem; }
     .individual-post > .post-meta > a > .post-info, .individual-post > .media-list.post-meta > .fade > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
       font: 100 0.9rem "Vollkorn", serif;
@@ -243,9 +242,9 @@ everything at the top of the site including the black border-bottom
     .individual-post > .post-meta > a > .post-title, .individual-post > .media-list.post-meta > .fade > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
       color: #534c5d;
       font: 600 1.6rem "Vollkorn SC", serif;
-      margin: -0.4rem;
       letter-spacing: 0.08rem;
-      font-variant: all-small-caps; }
+      font-variant: all-small-caps;
+      line-height: 1; }
   .individual-post > .tags {
     font: 100 0.7rem "Vollkorn", serif;
     grid-area: 1 / 3 / 1 / 3;
@@ -256,17 +255,34 @@ everything at the top of the site including the black border-bottom
   .individual-post > .whole-post {
     grid-area: 2 / 1 / 2 / 4;
     font: 100 1.2rem "EB Garamond", serif; }
-    .individual-post > .whole-post > h3, .individual-post > .whole-post h4 {
-      margin: auto auto .4rem auto; }
+    .individual-post > .whole-post > h3,
+    .individual-post > .whole-post h4 {
+      margin: auto auto 0.4rem auto; }
     .individual-post > .whole-post > p {
       margin-bottom: 0.8rem; }
-    .individual-post > .whole-post > p:last-child {
-      margin-bottom: 0; }
-    .individual-post > .whole-post > blockquote {
-      border-left: 0.19rem solid #8d6dab;
-      color: #534c5d;
-      margin-bottom: 0.8rem;
-      padding: 0 1.25rem 0 1.25rem; }
+    .individual-post > .whole-post > p sup:before {
+      content: '['; }
+    .individual-post > .whole-post > p sup:after {
+      content: ']'; }
+    .individual-post > .whole-post > p sup {
+      font: 100 0.7rem "Vollkorn", serif; }
+  .individual-post > p:last-child {
+    margin-bottom: 0; }
+  .individual-post > blockquote {
+    border-left: 0.19rem solid #8d6dab;
+    color: #534c5d;
+    margin-bottom: 0.8rem;
+    padding: 0 1.25rem 0 1.25rem; }
+  .individual-post .footnotes > hr {
+    margin: 0;
+    border: none; }
+  .individual-post .footnotes > ol {
+    list-style-position: inside; }
+    .individual-post .footnotes > ol > li {
+      font: 100 0.8rem "Vollkorn", serif; }
+      .individual-post .footnotes > ol > li > p {
+        font: 100 0.8rem "EB Garamond", serif;
+        margin-bottom: 0.4rem; }
 
 .post-summary {
   display: grid;
@@ -282,9 +298,9 @@ everything at the top of the site including the black border-bottom
       letter-spacing: 0.04rem; }
     .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .media-list.h-feed-meta > .fade > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
       font: 600 1.6rem "Vollkorn SC", serif;
-      margin: -0.4rem;
       letter-spacing: 0.08rem;
-      font-variant: all-small-caps; }
+      font-variant: all-small-caps;
+      line-height: 1; }
   .post-summary > .tags {
     font: 100 0.7rem "Vollkorn", serif;
     grid-area: 1 / 3 / 1 / 3;

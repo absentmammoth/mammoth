@@ -35,7 +35,6 @@
 		@extend a;
 		grid-area: 1 / 2 / 1 / 3;
 		text-align: center;
-		white-space: nowrap;
 		margin-bottom: 1rem;
 
 		> a > .post-info {
@@ -46,9 +45,9 @@
 		> a > .post-title {
 			color: $default-color;
 			font: 600 1.6rem $smallcaps;
-			margin: -0.4rem;
 			letter-spacing: 0.08rem;
 			font-variant: all-small-caps;
+			line-height: 1;
 		}
 	}
 
@@ -67,23 +66,56 @@
 		grid-area: 2 / 1 / 2 / 4;
 		font: 100 1.2rem $serif-primary;
 
-	> h3, h4 {
-		margin: auto auto .4rem auto;
+		> h3,
+		h4 {
+			margin: auto auto 0.4rem auto;
 		}
 
 		> p {
 			margin-bottom: 0.8rem;
 		}
+		> p {
+			sup:before {
+				content: '[';
+			}
 
-		> p:last-child {
-			margin-bottom: 0;
+			sup:after {
+				content: ']';
+			}
+
+			sup {
+				font: 100 0.7rem $header;
+			}
+		}
+	}
+	> p:last-child {
+		margin-bottom: 0;
+	}
+
+	> blockquote {
+		border-left: 0.19rem solid $purple;
+		color: $default-color;
+		margin-bottom: 0.8rem;
+		padding: 0 1.25rem 0 1.25rem;
+	}
+
+	.footnotes {
+		> hr {
+			margin: 0;
+			border: none;
 		}
 
-		> blockquote {
-			border-left: 0.19rem solid $purple;
-			color: $default-color;
-			margin-bottom: 0.8rem;
-			padding: 0 1.25rem 0 1.25rem;
+		> ol {
+			list-style-position: inside;
+
+			> li {
+				font: 100 0.8rem $header;
+
+				> p {
+					font: 100 0.8rem $serif-primary;
+					margin-bottom: 0.4rem;
+				}
+			}
 		}
 	}
 }
