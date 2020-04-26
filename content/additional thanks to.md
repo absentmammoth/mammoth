@@ -6,7 +6,7 @@ draft: false
 layout: additional-thanks-to
 ---
 
-* Hank Ewbank, for the h-card display picture and favicon, as well as for showing me...
+* [Hank Ewbank](https://dribbble.com/hankewbank), for the cute lil shadow puppet mammoth display picture, as well as for showing me...
 * Matthew Butterick's [practicaltypography.com](https://www.practicaltypography.com)[^1]
 * ⌃ click "Inspect Element"
 * The [Hugo docs](https://gohugo.io/documentation/) (for the most part)

@@ -6,9 +6,28 @@
     <description>Recent content in Tags on wooly mammoth&#39;s mighty absence</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Sun, 26 Apr 2020 00:30:00 -0600</lastBuildDate>
     
 	<atom:link href="/tags/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>fog series</title>
+      <link>/tags/fog-series/</link>
+      <pubDate>Sun, 26 Apr 2020 00:30:00 -0600</pubDate>
+      
+      <guid>/tags/fog-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podcasts</title>
+      <link>/tags/podcasts/</link>
+      <pubDate>Sun, 26 Apr 2020 00:30:00 -0600</pubDate>
+      
+      <guid>/tags/podcasts/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
