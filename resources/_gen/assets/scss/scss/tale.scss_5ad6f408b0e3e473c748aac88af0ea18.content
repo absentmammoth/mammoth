@@ -102,8 +102,8 @@ table {
     .h-card .mammoth-hcard > .u-photo {
       display: inline-block;
       left: 0;
-      width: 50px;
-      height: 50px;
+      width: 3.125rem;
+      height: 3.125rem;
       transform: none;
       vertical-align: text-bottom;
       padding: 0;
@@ -414,8 +414,8 @@ footer {
       grid-area: 1 / 2 / 1 / 2; }
       footer > .grid-container > .gridright > .h-card > .u-photo {
         display: inline-block;
-        width: 100px;
-        height: 100px; }
+        width: 4em;
+        height: 4em; }
   footer > .credits {
     text-align: center;
     font: 100 0.8rem "EB Garamond", serif;
