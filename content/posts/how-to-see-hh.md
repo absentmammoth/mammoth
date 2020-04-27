@@ -45,7 +45,7 @@ I would love to give a whole list of episodes to check out now, but episodes go 
 
 * [David Sedaris, Our Storytelling Friend](https://overcast.fm/+Ti_TasO98)
   * This is one of the better jumping off points, especially if you already like David Sedaris. A couple different generations of neurotic confabulists get together to discuss taxidermy and storytelling.
-* [Felicia Day, Our Close Friends](https://overcast.fm/+Ti_S8bEHs)
+* [Felicia Day, Our Close Friend](https://overcast.fm/+Ti_S8bEHs)
   * If you're not into Sedaris, this is another good one to get started with. Jocks is pumping our gas now. A personal favorite. 
 
 ###### Bye![^3]
