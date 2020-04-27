@@ -71,6 +71,10 @@
 			margin: auto auto 0.4rem auto;
 		}
 
+		> h6 {
+			margin: auto auto .8rem auto;
+		}
+
 		> p {
 			margin-bottom: 0.8rem;
 		}
@@ -87,7 +91,19 @@
 				font: 100 0.7rem $header;
 			}
 		}
+
+// kind of complicated way to remove bullet points and replace with >. some of this is also necessary to keep the bullet points inside the body of the site.
+
+		> ul {
+			list-style-position: inside;
+			margin-bottom: .8rem;
+		}
+		> ul > li > ul > li {
+			text-indent: 1rem;
+			margin-bottom: .4rem;
+		}
 	}
+
 	> p:last-child {
 		margin-bottom: 0;
 	}

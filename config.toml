@@ -16,12 +16,13 @@ pygmentsUseClasses = true
 # enableGitInfo = true
 
 paginate = "5"
-
-enableEmoji = "true"
+enableRobotsTXT = true
+canonifyURLs = true
+enableEmoji = true
 
 [params]
   author = "marshall"
-  image = "/img/me.jpg"
+  image = "/img/me.png"
   # DateForm = "mon jan 2, 2006 | 03:04PM"
   # WebMentionDomain = "www.absentmammoth.org"
   # MaxWebmentions = "100"

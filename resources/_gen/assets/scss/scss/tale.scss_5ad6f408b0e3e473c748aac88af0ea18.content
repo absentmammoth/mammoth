@@ -258,6 +258,8 @@ everything at the top of the site including the black border-bottom
     .individual-post > .whole-post > h3,
     .individual-post > .whole-post h4 {
       margin: auto auto 0.4rem auto; }
+    .individual-post > .whole-post > h6 {
+      margin: auto auto .8rem auto; }
     .individual-post > .whole-post > p {
       margin-bottom: 0.8rem; }
     .individual-post > .whole-post > p sup:before {
@@ -266,6 +268,12 @@ everything at the top of the site including the black border-bottom
       content: ']'; }
     .individual-post > .whole-post > p sup {
       font: 100 0.7rem "Vollkorn", serif; }
+    .individual-post > .whole-post > ul {
+      list-style-position: inside;
+      margin-bottom: .8rem; }
+    .individual-post > .whole-post > ul > li > ul > li {
+      text-indent: 1rem;
+      margin-bottom: .4rem; }
   .individual-post > p:last-child {
     margin-bottom: 0; }
   .individual-post > blockquote {

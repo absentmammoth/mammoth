@@ -21,6 +21,8 @@
 - [x] Fix tags duplicating 'tags:' for each tag
 - [ ] Create some space between post titles and body text for the sake of the tags section (summary scss, posts scss)
 - [ ] Hide tags section if none on post
+- [ ] Make sure links and fa icons in the footer are aligned
+- [ ] Sort out SEO for the site
 
 #### Consider:
 * Change small-caps weight to 500

@@ -5,6 +5,7 @@ draft: false
 tags:
 - podcasts
 - fog series
+description: 'A series on nice things during a bad time, Hollywood Handbook'
 ---
 ###### Thanks. This helped.
 
@@ -42,11 +43,10 @@ It feels worth pointing out that, despite the show's mischievousness, it avoids 
 
 I would love to give a whole list of episodes to check out now, but episodes go behind a paywall after six months. At the time of this writing, two of best free episodes are also two of the most straightforward. If you end up digging through the archive, you can't go wrong with any Julie Klausner, Tom Scharpling, or Joe Mande episode. New recent good recurring guests are Martha Kelly and Ayo Edebiri. The "Masked Engineer"/"Masked Guest" episodes are much-loved, as well.
 
-- [David Sedaris, Our Storytelling Friend](https://overcast.fm/+Ti_TasO98)
-  - This is one of the better jumping off points, especially if you already like David Sedaris. A couple different generations of neurotic confabulists get together to discuss taxidermy and storytelling.
-
-- [Felicia Day, Our Close Friends](https://overcast.fm/+Ti_S8bEHs)
-  - If you're not into Sedaris, this is another good one to get started with. Jocks is pumping our gas now. A personal favorite. 
+* [David Sedaris, Our Storytelling Friend](https://overcast.fm/+Ti_TasO98)
+  * This is one of the better jumping off points, especially if you already like David Sedaris. A couple different generations of neurotic confabulists get together to discuss taxidermy and storytelling.
+* [Felicia Day, Our Close Friends](https://overcast.fm/+Ti_S8bEHs)
+  * If you're not into Sedaris, this is another good one to get started with. Jocks is pumping our gas now. A personal favorite. 
 
 ###### Bye![^3]
 
