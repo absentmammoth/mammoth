@@ -25,5 +25,5 @@
 - [ ] Sort out SEO for the site
 
 #### Consider:
-* Change small-caps weight to 500
+* Add 'last edited' to post meta info (any significance of just a date (implies 'posted on') vs. 'posted on' vs. 'last edited -- the permanence of the post, in other words)
 * Left justify post titles
