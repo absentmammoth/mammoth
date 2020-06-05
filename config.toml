@@ -124,6 +124,12 @@ enableEmoji = true
     title = "rss"
     url = "/feed.xml"
     weight= 50
+  [[menu.main]]
+    identifier = "notes"
+    name = "garden" 
+    title = "notes"
+    url = "https://garden.absentmammoth.org"
+    weight= 60
 # "<label>rss</label><i class='fa fa-rss fa-fw'></i>" code will include rss icon
 #  [[menu.main]]
 #    identifier = "search"
