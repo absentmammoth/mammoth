@@ -5,7 +5,7 @@ draft: false
 tags:
 - podcasts
 - fog series
-description: 'A series on nice things during a bad time, Hollywood Handbook'
+description: 'A series on nice things during a bad time, Hollywood Handbook edition'
 ---
 ###### Thanks. This helped.
 
