@@ -113,10 +113,10 @@ enableEmoji = true
     url = "/tags/"
     weight = 30
   [[menu.main]]
-    identifier = "media list"
-    name = "media list"
-    title = "media list"
-    url = "/media-list/"
+    identifier = "link list"
+    name = "link list"
+    title = "link list"
+    url = "/link-list/"
     weight = 40
   [[menu.main]]
     identifier = "rss"

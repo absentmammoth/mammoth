@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="media-list">
+    {{ partial "link-list-info.html" . }}
+    {{ .Content }}
+</div>
+<!-- archive commented out for the time being, trying out just an endless scroll -->
+<!-- <div class="archive-link">
+    <a href="/storage/archive">media list archive</a>
+</div> -->
+
+{{ end }}

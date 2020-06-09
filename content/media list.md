@@ -1,9 +1,9 @@
 ---
-title: media list
+title: link list
 date: 2020-02-25T20:01:24-07:00
 lastmod: 2020-03-20T23:03:24-07:00
 draft: false
-layout: media-list
+layout: link-list
 ---
 
 ### Articles
