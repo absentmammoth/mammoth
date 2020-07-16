@@ -9,8 +9,11 @@ description: 'A series on nice things during a bad time, Persona 5 Royal edition
 ---
 
 ###### Listen up, inmate! (Consider this sentence a major spoiler warning, if you care about that kind of stuff.)
+
 *Persona 5 Royal* is the best Japanese roleplaying game that isn’t *Tactics Ogre*.  Recently released as an expanded take on the now few years’ old *Persona 5*, *Royal* furthers the story of a gang of outcast Japanese teens, each wronged in a different way by an adult or society. While ultimately a criticism of Japan, from the Lost Decade to Fukushima to today’s right-wing Abe government, the specifics of what it is condemning — corruption, selfishness, complicity, cruelty, sexism, and mindless obedience — are… well, baby, they’re universal.
+
 <!--more-->
+
 #### The very basics
 
 ![shadow madarame](/imgs/how-to-see-p5r/rules-madarame.jpeg)

@@ -1,7 +1,10 @@
 ---
 title: /now
 date: 2020-02-24T20:13:24-07:00
-lastmod: 2020-02-24T20:13:24-07:00
+lastmod: 2020-07-15T21:50:51-07:00
+draft: false
+tags:
+- now
 ---
 
 a /now page is a bit different than an 'about' page. it's explained in more detail on [nownownow](https://nownownow.com/about), but the basic idea is to just include a little about what is going on in a person's life right Now -- like you'd say if you were catching up with an old friend after a long time apart.  
