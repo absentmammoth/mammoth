@@ -1,12 +1,4 @@
----
-title: 'Yo La Tengo - Painful'
-date: 2020-07-16T22:27:00-07:00
-draft: false
-tags:
-- music
-- the vault
-description: 'Words on the brilliant Yo La Tengo record Painful'
----
+
 
 ###### This is something I wrote on an old website as part of a series on favorite records. It's several years old now. Have some mid-late 2000s style music blogging. It's killing me not to edit any of it, but... it's a time capsule. From the vault.
 
