@@ -21,11 +21,25 @@ I'm a huge fan of bands and albums that can be described as "fall music." That h
 
 Yo La Tengo is a band known, at least to fans, as having a good sense of humor. Maybe not always *in* the music, but in interviews and live shows they can be hilarious in a dry way. The relationship between Georgia Hubley and Ira Kaplan, the band's two lead singers, is no doubt the greatest love story of indie rock. Whereas people talk about pairs like Kim Gordon and Thurston Moore (RIP) of Sonic Youth, Georgia and Ira have always written the most tender and aware relationship songs. [The Crying of Lot G](https://www.youtube.com/watch?v=fEjT-TS7QlY) off *And Then Nothing Turned Itself Inside-Out* is not just one of the best relationship songs ever, but one of the best songs ever, period. Ira's narration could not be better as he sings-talks: 
 
-> You say that all we ever do is fight Gee, I don't know that that's true. then I wonder, am I right? or is that part of our problem? Maybe I'm out of my mind. Maybe I'm blocking out the truth. But it seems like just a little thing, like you don't want to listen, and I can't shut up.
+> You say that all we ever do is fight
+> 
+> Gee, I don't know that that's true.
+>  
+> Then I wonder, am I right?
+> 
+> Or is that part of our problem? 
+> 
+> Maybe I'm out of my mind. 
+> 
+> Maybe I'm blocking out the truth. 
+> 
+> But it seems like just a little thing, like you don't want to listen, and I can't shut up.
 
 The way the song ends is so movingly delivered by both Ira and Georgia that it's hard not to tear up, even after hearing it for hundredth time: 
 
-> The way that I feel when you laugh is like laughing. The way that I feel when you cry is so bad.
+> The way that I feel when you laugh is like laughing. 
+> 
+> The way that I feel when you cry is so bad.
 
 But okay -- this is about *Painful* and here I am talking about a song off another album. That's partially because I couldn't ignore that song, but also to give context how incredibly this band both writes songs and delivers them. *Painful* has its own take on this with the brutally-delivered [I Was the Fool Beside You for Too Long](https://www.youtube.com/watch?v=mVRjJ5rY2IU). The song has barely any words, but ends with one of the greatest turns of phrase I've heard in music: "The things about you that would drive me wild / still drive me wild / but now in a different way." The words themselves aren't done justice without hearing Ira's voice singing them. You can hear the frustration of all the friendships and relationships they sum up when the words come out of his mouth. 
 
