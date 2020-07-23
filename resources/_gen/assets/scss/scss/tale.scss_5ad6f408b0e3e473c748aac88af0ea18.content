@@ -251,7 +251,8 @@ everything at the top of the site including the black border-bottom
     justify-self: end;
     text-align: center; }
     .individual-post > .tags > .tagslist {
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: center; }
   .individual-post > .whole-post {
     grid-area: 2 / 1 / 2 / 4;
     font: 100 1.2rem "EB Garamond", serif; }
@@ -313,11 +314,11 @@ everything at the top of the site including the black border-bottom
   .post-summary > .tags {
     font: 100 0.7rem "Vollkorn", serif;
     grid-area: 1 / 3 / 1 / 3;
-    justify-self: stretch;
-    text-align: center;
-    margin-left: 7rem; }
+    justify-self: end;
+    text-align: center; }
     .post-summary > .tags > .tagslist {
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: center; }
   .post-summary > .feed-post {
     font: 100 1.2rem "EB Garamond", serif;
     grid-area: 2 / 1 / 2 / 4; }
