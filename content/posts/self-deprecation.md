@@ -63,7 +63,7 @@ I am forced out of the groove because my brain cannot even get itself back into 
 
 And hey, I don't want to leave the wrong impression: My grudges have *not* been invalidated. All of these people who've been invited by me to jump in on me have, actually, ended up proving themselves more tangibly to be tools, or just kind of annoying, as time has gone on. And not even tools, or kind of annoying, to me, necessarily -- just in general, to others, to society.
 
-Does this mean I will be nicer to myself going forward? Hard to say! I think it might, for the time being, but I can't be sure. Because... Putting all of this together has not given me second thoughts about some of my more innocent go-to tests. In situations where I am exchanging location history with strangers, I don't see myself no longer sometimes going with, 'Well, my family moved to Colorado when I was nine months, so I don't know that I quite qualify for one of those NATIVE bumperstickers, but...' And there will always be a little chuckle and then they will say:
+Does this mean I will be nicer to myself going forward? Hard to say! I think it might, for the time being, but I can't be sure. Because... Putting all of this together has not given me second thoughts about some of my more innocent go-to tests. In situations where I am exchanging location history with strangers, I don't see myself no longer sometimes going with, 'Well, my family moved to Colorado when I was nine months, so I don't know that I quite qualify for one of those [NATIVE bumperstickers](https://denverite.com/2018/05/25/surprise-colorado-natives-inventor-beloved-bumper-sticker-utah/), but...' And there will always be a little chuckle and then they will say:
 
 1. Oh, you're fine, that counts. (Chill, maybe too chill.)
 2. Those stickers are so stupid! (Either from out of state themselves or 'I was born here and I hate those things' -- Ha, dare I say, same!)
@@ -78,6 +78,6 @@ Does this mean I will be nicer to myself going forward? Hard to say! I think it 
 
 <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=950698886/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/artwork=small/track=1468460924/transparent=true/" seamless><a href="http://holysons.bandcamp.com/album/decline-of-the-west-vol-i-ii">Decline of the West, Vol. I &amp; II by Holy Sons</a></iframe>  
 
-[Emil's wonderful cover of Eric Gaffney/Sebadoh's 'Level Anything'](https://www.youtube.com/watch?v=rA3jAKaTZcc)  
+Emil's wonderful cover of [Eric Gaffney/Sebadoh's 'Level Anything'](https://www.youtube.com/watch?v=rA3jAKaTZcc)  
 
 [^1]: This is not self-deprecation! It's a relevant fact!
