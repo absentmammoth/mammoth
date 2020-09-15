@@ -6,6 +6,10 @@ draft: false
 layout: link-list
 ---
 
+### 9-19-20
+<center> {{< tweet 1304283789221335040 >}} </center>
+
+
 ### 7-15-20  
 
 #### 'lord of the flies' didn't just feel untrue: it was
