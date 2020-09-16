@@ -15,121 +15,119 @@ pygmentsUseClasses = true
 # get information about the Git repo, such as last commit to a file
 # enableGitInfo = true
 
-paginate = "5"
-enableRobotsTXT = true
 canonifyURLs = true
 enableEmoji = true
+enableRobotsTXT = true
+paginate = "5"
 
 [params]
-  author = "marshall"
-  image = "/img/me.png"
-  # DateForm = "mon jan 2, 2006 | 03:04PM"
-  # WebMentionDomain = "www.absentmammoth.org"
-  # MaxWebmentions = "100"
-  AuthorizationEndpoint = "https://indieauth.com/auth"
-  TokenEndpoint = "https://tokens.indieauth.com/token"
-  Auth = "https://indieauth.com/auth"
-  mainSections = "posts"
+author = "marshall"
+image = "/img/me.png"
+# DateForm = "mon jan 2, 2006 | 03:04PM"
+# WebMentionDomain = "www.absentmammoth.org"
+# MaxWebmentions = "100"
+Auth = "https://indieauth.com/auth"
+AuthorizationEndpoint = "https://indieauth.com/auth"
+TokenEndpoint = "https://tokens.indieauth.com/token"
+mainSections = "posts"
 
 [frontmatter]
-  date = ["publishDate", "date", "lastmod"]
-  lastmod = ["lastmod", "date", "publishDate"]
-  # can also use '":fileModTime", ":git",'
-  publishDate = ["publishDate", "date"]
-  expiryDate = ["expiryDate"]
+date = ["publishDate", "date", "lastmod"]
+lastmod = ["lastmod", "date", "publishDate"]
+# can also use '":fileModTime", ":git",'
+expiryDate = ["expiryDate"]
+publishDate = ["publishDate", "date"]
 
 [permalinks]
 # mf2 = "/mf2/:slug/"
-  posts = "/posts/:year/:month/:day/:slug/"
-  tags = "/tags/:title/"
+posts = "/posts/:year/:month/:day/:slug/"
+tags = "/tags/:title/"
 
 [taxonomies]
-  tag = "tags"
+tag = "tags"
 
 [outputs]
-  home = ["HTML", "RSS"]
-  section = ["HTML", "RSS"]
-  page = ["HTML"]
+home = ["HTML", "RSS"]
+page = ["HTML"]
+section = ["HTML", "RSS"]
 
 [outputFormats]
 [outputFormats.RSS]
-  mediatype = "application/rss"
-  baseName = "feed"
-  isPlainText = true
-  notAlternative = true
+baseName = "feed"
+isPlainText = true
+mediatype = "application/rss"
+notAlternative = true
 
 [markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "dracula"
-    tabWidth = 4
-  [markup.tableOfContents]
-    endLevel = 4
-    ordered = false
-    startLevel = 3
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = false
-    [markup.goldmark.renderer]
-      unsafe = true
-
-
-
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "dracula"
+tabWidth = 4
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 3
+[markup.goldmark]
+[markup.goldmark.extensions]
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = false
+[markup.goldmark.renderer]
+unsafe = true
 
 [menu]
-  [[menu.main]]
-    identifier = "now"
-    name = "/now"
-    title = "/now"
-    url = "/now/"
-    weight = 1
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/posts/"
-    weight = 10
+[[menu.main]]
+identifier = "now"
+name = "/now"
+title = "/now"
+url = "/now/"
+weight = 1
+[[menu.main]]
+identifier = "posts"
+name = "posts"
+title = "posts"
+url = "/posts/"
+weight = 10
 #  [[menu.main]]
 #    identifier = "links"
 #    name = "links"
 #    title = "links"
 #   url = "/kind/bookmarks/"
 #    weight = 11
-  [[menu.main]]
-    identifier = "topics"
-    name = "topics"
-    title = "topics"
-    url = "/tags/"
-    weight = 30
-  [[menu.main]]
-    identifier = "link list"
-    name = "link list"
-    title = "link list"
-    url = "/link-list/"
-    weight = 40
-  [[menu.main]]
-    identifier = "rss"
-    name = "rss" 
-    title = "rss"
-    url = "/feed.xml"
-    weight= 50
-  [[menu.main]]
-    identifier = "notes"
-    name = "garden" 
-    title = "notes"
-    url = "https://garden.absentmammoth.org"
-    weight= 60
+[[menu.main]]
+identifier = "topics"
+name = "topics"
+title = "topics"
+url = "/tags/"
+weight = 30
+[[menu.main]]
+identifier = "link list"
+name = "link list"
+title = "link list"
+url = "/link-list/"
+weight = 40
+[[menu.main]]
+identifier = "rss"
+name = "rss"
+title = "rss"
+url = "/feed.xml"
+weight = 50
+[[menu.main]]
+identifier = "notes"
+name = "garden"
+title = "notes"
+url = "https://garden.absentmammoth.org"
+weight = 60
 # "<label>rss</label><i class='fa fa-rss fa-fw'></i>" code will include rss icon
 #  [[menu.main]]
 #    identifier = "search"

@@ -174,7 +174,7 @@ pre,
 code {
 	font: 600 0.8rem $monospaced;
 	position: relative;
-	max-width: 35rem;
+	max-width: 45rem;
 	max-height: 100rem;
 	margin: 0.8rem auto 0.8rem auto;
 }
@@ -218,7 +218,7 @@ pre code {
 	display: block;
 	margin: auto;
 	max-width: 100%;
-	white-space: pre-line;
+	white-space: pre-wrap;
 }
 
 .highlight {
