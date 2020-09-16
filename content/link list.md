@@ -1,12 +1,16 @@
 ---
 title: link list
 date: 2020-02-25T20:01:24-07:00
-lastmod: 2020-07-15T21:44:24-07:00
+lastmod: 2020-09-15T18:53:24-07:00
 draft: false
 layout: link-list
 ---
 
-### 9-19-20
+### 9-15-20
+
+[The New Topographics, Dark Ecology, and the Energy Infrastructure of Nations: Considering Agency in the Photographs of Edward Burtynsky and Mitch Epstein from a Post-Anarchist Perspective](http://imaginations.glendon.yorku.ca/?p=3523)
+
+### 9-14-20
 <center> {{< tweet 1304283789221335040 >}} </center>
 
 
