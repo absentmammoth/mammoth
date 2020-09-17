@@ -139,7 +139,7 @@ code {
   font: 600 0.8rem "Source Code Pro", Menlo, Inconsolata, monospace;
   position: relative;
   max-width: 45rem;
-  max-height: 100rem;
+  max-height: 20rem;
   margin: 0.8rem auto 0.8rem auto; }
 
 pre {
@@ -149,16 +149,18 @@ pre {
   color: #f8f8f2;
   background-color: #272822;
   border-radius: 0.4rem;
-  line-height: 1.4;
   padding: 0.8rem; }
 
+/*played around with padding and vertical-align tweaks on 9-16, not sure how good ` ` looks now but I think better?*/
 code {
   background-color: #011627;
-  border-radius: 6px;
+  border-radius: 0.4rem;
   color: #c792ea;
   font: 500 0.6rem "Source Code Pro", Menlo, Inconsolata, monospace;
-  padding: 0.1rem 0.3rem;
-  margin: 0 0.1rem 0 0.1rem; }
+  padding: 0.15rem 0.2rem;
+  margin: 0.1rem 0.1rem;
+  white-space: pre;
+  vertical-align: 0.05rem; }
   code a, code .media-list > .fade, code .post-summary > .h-feed-meta, code .individual-post > .post-meta {
     color: #e8afda; }
 
