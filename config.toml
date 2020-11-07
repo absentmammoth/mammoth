@@ -1,5 +1,5 @@
 baseURL = "/"
-
+publishdir = "public"
 theme = "tale"
 
 title = "wooly mammoth's mighty absence"
@@ -32,7 +32,7 @@ TokenEndpoint = "https://tokens.indieauth.com/token"
 mainSections = "posts"
 
 [frontmatter]
-date = ["publishDate", "date", "lastmod"]
+date = ["date", "lastmod"]
 lastmod = ["lastmod", "date", "publishDate"]
 # can also use '":fileModTime", ":git",'
 expiryDate = ["expiryDate"]
