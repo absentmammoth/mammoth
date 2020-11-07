@@ -1,7 +1,7 @@
 ---
 title: 'How to See Through Fog: A Project'
 date: 2020-11-06T21:56:05-06:00
-draft: true
+draft: false
 description: 'A series on nice things during a bad time, finding a project edition.'
 tags:
   - fog series
