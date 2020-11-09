@@ -6,9 +6,14 @@ draft: false
 layout: link-list
 ---
 
+### 11-9-20
+#### Steven Tyler, Julien Baker, Ben Harper, Jason Isbell, Joe Walsh, and other sober musicians on how to thrive creatively without drugs or booze.
+
+* [Creating While Clean](https://www.gq.com/story/clean-musicians)
+
 ### 9-15-20
 
-[The New Topographics, Dark Ecology, and the Energy Infrastructure of Nations: Considering Agency in the Photographs of Edward Burtynsky and Mitch Epstein from a Post-Anarchist Perspective](http://imaginations.glendon.yorku.ca/?p=3523)
+* [The New Topographics, Dark Ecology, and the Energy Infrastructure of Nations: Considering Agency in the Photographs of Edward Burtynsky and Mitch Epstein from a Post-Anarchist Perspective](http://imaginations.glendon.yorku.ca/?p=3523)
 
 ### 9-14-20
 <center> {{< tweet 1304283789221335040 >}} </center>
