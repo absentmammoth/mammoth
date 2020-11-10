@@ -16,7 +16,7 @@ layout: link-list
 * [The New Topographics, Dark Ecology, and the Energy Infrastructure of Nations: Considering Agency in the Photographs of Edward Burtynsky and Mitch Epstein from a Post-Anarchist Perspective](http://imaginations.glendon.yorku.ca/?p=3523)
 
 ### 9-14-20
-#### <center> {{< tweet 1304283789221335040 >}} </center>
+#### {{< tweet 1304283789221335040 >}}
 
 
 ### 7-15-20  
