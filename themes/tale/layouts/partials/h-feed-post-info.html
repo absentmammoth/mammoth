@@ -1,8 +1,7 @@
 <div class="feed-info">
-            {{ if eq .PublishDate .Lastmod }}
-        {{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower | }}
-            {{ else }}
-        {{ .PublishDate.Format "Mon, January 2, 2006 | 03:04PM" | lower }} <br />
-        <span>updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
-            {{ end }}
+    {{ .Date.Format "Mon, January 2, 2006 | 03:04PM" | lower | }} {{ if ne .Date .Lastmod}}
+    <br>
+    <span>updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
+    </br>
+    {{ end }}
 </div>

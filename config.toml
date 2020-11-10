@@ -32,10 +32,9 @@ TokenEndpoint = "https://tokens.indieauth.com/token"
 mainSections = "posts"
 
 [frontmatter]
-date = ["date", "lastmod"]
-lastmod = ["lastmod", "date", "publishDate"]
-# can also use '":fileModTime", ":git",'
+date = ["date", "publishDate", "lastmod"]
 expiryDate = ["expiryDate"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
 publishDate = ["publishDate", "date"]
 
 [permalinks]

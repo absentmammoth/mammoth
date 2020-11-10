@@ -14,11 +14,11 @@ html {
   color: $default-color;
   overflow-y: scroll;
 }
-
+// changed width from 30vw to 45vw on 11-9-20
 body {
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 30vw);
+  width: calc(100% - 45vw);
   background-color: $grey-1;
 }
 
