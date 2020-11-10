@@ -10,46 +10,28 @@
   -webkit-font-smoothing: subpixel-antialiased; }
 
 html {
-  font-size: calc(62.5% + 1vw);
   font-family: "EB Garamond", serif;
   color: #534c5d;
-  overflow-y: scroll; }
+  font-size: 18px; }
 
 body {
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 45vw);
+  width: 60vw;
   background-color: #fcfcfc; }
 
-@media (max-width: 1280px) {
+@media (min-width: 1441px) and (max-width: 5000px) {
   html {
-    font-size: calc(62.5% + 1vw); }
+    font-size: 1.2vw; }
   body {
-    width: calc(65vw); } }
+    width: 70vw;
+    max-width: 80ch; } }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 1440px) {
   html {
-    font-size: calc(45% + 1vw); }
+    font-size: 1.5vw; }
   body {
-    width: 85vw; } }
-
-@media (max-width: 530px) {
-  html {
-    font-size: calc(35% + 1vw); }
-  body {
-    width: 90vw; } }
-
-@media (max-width: 375px) {
-  html {
-    font-size: calc(30% + 1vw); }
-  body {
-    width: 90vw; } }
-
-@media (max-width: 321px) {
-  html {
-    font-size: calc(28% + 1vw); }
-  body {
-    width: 90vw; } }
+    width: 75vw; } }
 
 h1,
 h2,
@@ -113,7 +95,7 @@ table {
 .topics-terms {
   margin-bottom: 0.8rem; }
   .topics-terms > h2 {
-    font: 500 1.6rem "Vollkorn SC", serif;
+    font: 600 1.8rem "Vollkorn SC", serif;
     font-variant: all-small-caps;
     letter-spacing: 0.08rem;
     text-align: center;
@@ -196,7 +178,7 @@ everything at the top of the site including the black border-bottom
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     color: #534c5d;
-    font: 600 2rem "Vollkorn", serif; }
+    font: 600 2.2rem "Vollkorn", serif; }
     .nav-header > .headerlink > .title:hover, .nav-header > .headerlink > .title:focus {
       opacity: 0.6; }
 
@@ -204,10 +186,9 @@ everything at the top of the site including the black border-bottom
   margin: 0 0 0.8rem 0;
   display: flex;
   justify-content: space-between;
-  grid-gap: calc(1vw);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
   .header-menu > .links {
-    font: 500 1.4rem "Vollkorn", serif;
+    font: 500 1.8rem "Vollkorn", serif;
     letter-spacing: 0.06rem;
     list-style-type: none; }
     .header-menu > .links > a, .header-menu > .media-list.links > .fade, .header-menu > .post-summary.links > .h-feed-meta, .header-menu > .individual-post.links > .post-meta {
@@ -339,7 +320,7 @@ everything at the top of the site including the black border-bottom
 .media-list > h2,
 .archive-main > h2 {
   color: #534c5d;
-  font: 600 1.6rem "Vollkorn SC", serif;
+  font: 600 1.8rem "Vollkorn SC", serif;
   font-variant: all-small-caps;
   margin-top: -0.4rem;
   letter-spacing: 0.08rem;
@@ -348,20 +329,20 @@ everything at the top of the site including the black border-bottom
 .media-list > h3,
 .archive-main > h3 {
   color: #534c5d;
-  font: 600 1.4rem "Vollkorn SC", serif;
+  font: 600 1.6rem "Vollkorn SC", serif;
   font-variant: all-small-caps;
   letter-spacing: 0.08rem;
   text-align: center; }
 
 .media-list > h4,
 .archive-main > h4 {
-  font: 400 1rem "EB Garamond", serif;
+  font: 400 1.2rem "EB Garamond", serif;
   margin-top: 0.4rem; }
 
 .media-list > ul > li,
 .archive-main > ul > li {
   list-style-type: none;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
 
 .media-list > ul > li:before,
 .archive-main > ul > li:before {
@@ -369,7 +350,7 @@ everything at the top of the site including the black border-bottom
   vertical-align: text-top; }
 
 .list-info {
-  font: 500 0.9rem "Vollkorn", serif;
+  font: 500 1rem "Vollkorn", serif;
   letter-spacing: 0.06rem;
   text-align: center;
   margin-top: 0.2rem; }

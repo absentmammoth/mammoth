@@ -5,13 +5,13 @@
 // media-list.md is currently {{ .Content }} in a div called media-list in the html file of the same name.
 
 .media-list {
-  font-size: 1.2rem;
+  font-size: $body-text;
 }
 
 .media-list > h2,
 .archive-main > h2 {
   color: $default-color;
-  font: 600 1.6rem $smallcaps;
+  font: 600 $h2-custom $smallcaps;
   font-variant: all-small-caps;
   margin-top: -0.4rem;
   letter-spacing: 0.08rem;
@@ -21,7 +21,7 @@
 .media-list > h3,
 .archive-main > h3 {
   color: $default-color;
-  font: 600 1.4rem $smallcaps;
+  font: 600 $h3-custom $smallcaps;
   font-variant: all-small-caps;
   letter-spacing: 0.08rem;
   text-align: center;
@@ -29,14 +29,14 @@
 
 .media-list > h4,
 .archive-main > h4 {
-  font: 400 1rem $serif-primary;
+  font: 400 $h4-custom $serif-primary;
   margin-top: 0.4rem;
 }
 
 .media-list > ul > li,
 .archive-main > ul > li {
   list-style-type: none;
-  font-size: 1rem;
+  font-size: $link-list-link;
 }
 
 .media-list > ul > li:before,
@@ -50,7 +50,7 @@
 }
 
 .list-info {
-  font: 500 0.9rem $header;
+  font: 500 $list-info-size $header;
   letter-spacing: 0.06rem;
   text-align: center;
   margin-top: 0.2rem;
@@ -61,12 +61,12 @@
 }
 
 .archive-link {
-  font: 0.8rem $serif-primary;
+  font: $archive-link $serif-primary;
   text-align: center;
   margin: 0.8rem 0 0.8rem 0;
 }
 
 .archive-main.md {
   margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  font-size: $body-text;
 }

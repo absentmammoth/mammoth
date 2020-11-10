@@ -3,35 +3,34 @@ everything at the top of the site including the black border-bottom
 */
 
 .nav-header {
-	margin: 0.8rem auto;
-	border-bottom: 0.1rem solid $default-color;
+  margin: 0.8rem auto;
+  border-bottom: 0.1rem solid $default-color;
 
-	> .headerlink > .title {
-		word-spacing: 0.3rem;
-		@include transition(all 0.2s ease-out);
-		color: $default-color;
-		font: 600 2rem $header;
+  > .headerlink > .title {
+    word-spacing: 0.3rem;
+    @include transition(all 0.2s ease-out);
+    color: $default-color;
+    font: 600 $header-text $header;
 
-		&:hover,
-		&:focus {
-			opacity: 0.6;
-		}
-	}
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
 }
 
 .header-menu {
-	margin: 0 0 0.8rem 0;
-	display: flex;
-	justify-content: space-between;
-	grid-gap: calc(1vw);
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	> .links {
-		font: 500 1.4rem $header;
-		letter-spacing: 0.06rem;
-		list-style-type: none;
+  margin: 0 0 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  > .links {
+    font: 500 $header-links $header;
+    letter-spacing: 0.06rem;
+    list-style-type: none;
 
-		> a {
-			display: inline-block;
-		}
-	}
+    > a {
+      display: inline-block;
+    }
+  }
 }
