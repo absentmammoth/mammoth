@@ -1,10 +1,14 @@
 ---
 title: link list
 date: 2020-02-25T20:01:24-07:00
-lastmod: 2020-09-15T18:53:24-07:00
+lastmod: 2020-11-10T08:42:24-07:00
 draft: false
 layout: link-list
 ---
+
+### 11-10-20
+* [Silence Like Scouring Sand: One of America’s quietest places, and the valiant effort to keep it that way](https://orionmagazine.org/article/silence-like-scouring-sand/)
+* [Muddling Through: A Depression Memoir Like No Other](https://www.commonwealmagazine.org/muddling-through)
 
 ### 11-9-20
 #### Steven Tyler, Julien Baker, Ben Harper, Jason Isbell, Joe Walsh, and other sober musicians on how to thrive creatively without drugs or booze.

@@ -18,7 +18,7 @@ pygmentsUseClasses = true
 canonifyURLs = true
 enableEmoji = true
 enableRobotsTXT = true
-paginate = "5"
+paginate = "4"
 
 [params]
 author = "marshall"
