@@ -22,16 +22,23 @@ body {
 
 @media (min-width: 1441px) and (max-width: 5000px) {
   html {
+    font-size: 1.3vw; }
+  body {
+    width: 70vw;
+    max-width: 80ch; } }
+
+@media (min-width: 801px) and (max-width: 1440px) {
+  html {
     font-size: 1.2vw; }
   body {
     width: 70vw;
     max-width: 80ch; } }
 
-@media (min-width: 320px) and (max-width: 1440px) {
+@media (min-width: 320px) and (max-width: 800px) {
   html {
-    font-size: 1.5vw; }
+    font-size: 2.2vw; }
   body {
-    width: 75vw; } }
+    width: 80vw; } }
 
 h1,
 h2,
