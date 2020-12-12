@@ -1,6 +1,7 @@
 ## Site To Do List
 
 #### For sure:
+- [ ] Figure out what is going on with the tag css (text-align/self-justify)
 - [ ] Clean up CSS, especially grid and font-related, to reduce redundant/unnecessary lines
   - [x] base scss
   - [x] additional-thanks-to scss
