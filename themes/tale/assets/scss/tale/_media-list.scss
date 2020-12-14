@@ -4,24 +4,22 @@
 // I am not sure that it is RSCSS compliant or that it won't break other things on the site.
 // media-list.md is currently {{ .Content }} in a div called media-list in the html file of the same name.
 
-.media-list {
-  font-size: $body-text;
-}
-
 .media-list > h2,
 .archive-main > h2 {
-  color: $default-color;
-  font: 600 $h2-custom $smallcaps;
-  font-variant: all-small-caps;
-  margin-top: -0.4rem;
+  font-family: $smallcaps;
+  font-weight: 600;
   letter-spacing: 0.08rem;
+  font-variant: all-small-caps;
+  line-height: 1;
+  margin-bottom: .8rem;
   text-align: center;
 }
 
 .media-list > h3,
 .archive-main > h3 {
   color: $default-color;
-  font: 600 $h3-custom $smallcaps;
+  font-family: $smallcaps;
+  font-weight: 600;
   font-variant: all-small-caps;
   letter-spacing: 0.08rem;
   text-align: center;
@@ -29,14 +27,15 @@
 
 .media-list > h4,
 .archive-main > h4 {
-  font: 400 $h4-custom $serif-primary;
-  margin-top: 0.4rem;
+  font-family: $serif-primary;
+  font-weight: 400;
 }
 
 .media-list > ul > li,
 .archive-main > ul > li {
   list-style-type: none;
   font-size: $link-list-link;
+  margin-bottom: .4rem;
 }
 
 .media-list > ul > li:before,
@@ -50,10 +49,10 @@
 }
 
 .list-info {
-  font: 500 $list-info-size $header;
+  font-family: $header;
+  font-size: 80%;
   letter-spacing: 0.06rem;
   text-align: center;
-  margin-top: 0.2rem;
   // obviously normally 'italic' but removing for now
   > .italicinfo {
     font-style: none;

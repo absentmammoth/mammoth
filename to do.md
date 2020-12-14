@@ -2,6 +2,7 @@
 
 #### For sure:
 - [ ] Figure out what is going on with the tag css (text-align/self-justify)
+- [ ] Fix post meta info on smaller displays (overflows on iphone)
 - [ ] Clean up CSS, especially grid and font-related, to reduce redundant/unnecessary lines
   - [x] base scss
   - [x] additional-thanks-to scss

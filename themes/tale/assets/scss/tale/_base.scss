@@ -23,17 +23,17 @@ body {
 
 @media (min-width: 1441px) and (max-width: 5000px) {
   html {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
   }
   body {
     width: 70vw;
-    max-width: 80ch;
+    max-width: 72ch;
   }
 }
 
 @media (min-width: 801px) and (max-width: 1440px) {
   html {
-    font-size: 1.2vw;
+    font-size: 1.9vw;
   }
   body {
     width: 70vw;
@@ -43,10 +43,10 @@ body {
 
 @media (min-width: 320px) and (max-width: 800px) {
   html {
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
   body {
-    width: 80vw;
+    width: 90vw;
   }
 }
 
@@ -106,7 +106,6 @@ table {
 
   .mammoth-hcard {
     font-family: $serif-primary;
-    font-size: $body-text;
 
     > .u-photo {
       display: inline-block;
