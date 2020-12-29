@@ -29,14 +29,14 @@ body {
     font-size: 1.5vw; }
   body {
     width: 70vw;
-    max-width: 72ch; } }
+    max-width: 60ch; } }
 
 @media (min-width: 801px) and (max-width: 1440px) {
   html {
     font-size: 1.9vw; }
   body {
     width: 70vw;
-    max-width: 80ch; } }
+    max-width: 60ch; } }
 
 @media (min-width: 320px) and (max-width: 800px) {
   html {
@@ -188,7 +188,7 @@ everything at the top of the site including the black border-bottom
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     color: #534c5d;
-    font: 600 2.2rem "Vollkorn", serif; }
+    font: 600 2rem "Vollkorn", serif; }
     .nav-header > .headerlink > .title:hover, .nav-header > .headerlink > .title:focus {
       opacity: 0.6; }
 
@@ -198,7 +198,7 @@ everything at the top of the site including the black border-bottom
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
   .header-menu > .links {
-    font: 500 1.8rem "Vollkorn", serif;
+    font: 500 1.5rem "Vollkorn", serif;
     letter-spacing: 0.06rem;
     list-style-type: none; }
     .header-menu > .links > a, .header-menu > .media-list.links > .fade, .header-menu > .post-summary.links > .h-feed-meta, .header-menu > .individual-post.links > .post-meta {
