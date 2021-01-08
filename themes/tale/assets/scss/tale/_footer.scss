@@ -1,5 +1,6 @@
 footer {
-	font: 100 1.2rem $serif-primary;
+	font-family: $serif-primary;
+	font-weight: 100;
 	border-top: 0.1rem solid $grey-3;
 	margin: 0.8rem auto;
 
@@ -31,7 +32,7 @@ footer {
 
 	> .credits {
 		text-align: center;
-		font: 100 0.8rem $serif-primary;
+		font: 100 .8rem $serif-primary;
 		max-width: 100%;
 	}
 }

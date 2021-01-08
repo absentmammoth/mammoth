@@ -20,10 +20,16 @@ $img-em: 0.9rem;
 $tags-text: 1.8rem;
 $tags-text-ul: 1rem;
 $code-text: 0.6rem;
+$high-res-text: 1.5vw;
+$mid-res-text: 1.9vw;
+$low-res-text: 3.6vw;
 
 //Font sizes, _header.scss
-$header-text: 2rem;
-$header-links: 1.5rem;
+$header-text: 1.8rem;
+$header-links: 1.2rem;
+//Header font sizes for small screens
+$small-header-text: 1.5rem;
+$small-header-link-text: 1.1rem;
 
 //Font sizes, _media-list.scss
 $h2-custom: 1.8rem;
