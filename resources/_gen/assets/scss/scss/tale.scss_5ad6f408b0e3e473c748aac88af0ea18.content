@@ -243,7 +243,6 @@ everything at the top of the site including the black border-bottom
     .individual-post > .post-meta > a > .post-info, .individual-post > .media-list.post-meta > .fade > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
       font-family: "Vollkorn", serif;
       font-weight: 100;
-      font-size: 80%;
       letter-spacing: 0.04rem; }
     .individual-post > .post-meta > a > .post-title, .individual-post > .media-list.post-meta > .fade > .post-title, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, .individual-post > .individual-post.post-meta > .post-meta > .post-title {
       font-family: "Vollkorn SC", serif;
@@ -309,7 +308,6 @@ everything at the top of the site including the black border-bottom
     .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .media-list.h-feed-meta > .fade > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
       font-family: "Vollkorn", serif;
       font-weight: 100;
-      font-size: 80%;
       letter-spacing: 0.04rem; }
     .post-summary > .h-feed-meta > a > .feed-title, .post-summary > .media-list.h-feed-meta > .fade > .feed-title, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title {
       font-family: "Vollkorn SC", serif;

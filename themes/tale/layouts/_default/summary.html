@@ -5,13 +5,13 @@
             {{ partial "h-feed-title.html" . }}
         </a>
     </div>
-        {{ partial "tags.html" . }}
-        
-        {{ if isset .Params "summary" }}
-        {{ .Params.Summary }}
-        {{ else }}
-        <div class="feed-post">
-            {{ .Summary }}
-        </div>
-        {{ end }}       
+    <!-- {{ partial "tags.html" . }} -->
+
+    {{ if isset .Params "summary" }}
+    {{ .Params.Summary }}
+    {{ else }}
+    <div class="feed-post">
+        {{ .Summary }}
+    </div>
+    {{ end }}
 </div>
