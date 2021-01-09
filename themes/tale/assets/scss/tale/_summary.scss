@@ -23,14 +23,15 @@
 		}
 	}
 
-	> .tags {
-		font-family: $header;
-		font-size: 80%;
+	//  1-8-21: hiding for now
+	// > .tags {
+	// 	font-family: $header;
+	// 	font-size: 80%;
 
-		> .tagslist {
-			list-style-type: none;
-		}
-	}
+	// 	> .tagslist {
+	// 		list-style-type: none;
+	// 	}
+	// }
 
 	> .feed-post {
 		font-family: $serif-primary;
@@ -44,7 +45,7 @@
 		}
 		> h6 {
 			font-family: $header;
-			font-size: 65%;
+			font-size: 70%;
 			margin-top: .8rem;
 		} 
 	}

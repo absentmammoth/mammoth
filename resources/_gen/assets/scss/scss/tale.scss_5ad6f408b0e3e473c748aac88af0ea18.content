@@ -20,57 +20,8 @@ html {
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 60vw;
+  width: 70vw;
   background-color: #fcfcfc; }
-
-@media (min-width: 1441px) and (max-width: 5000px) {
-  html {
-    font-size: 1.5vw; }
-  body {
-    width: 70vw;
-    max-width: 60ch; }
-    body .h-card > .mammoth-hcard > .u-photo {
-      width: 2.2rem;
-      height: 2.2rem; } }
-
-@media (min-width: 801px) and (max-width: 1440px) {
-  html {
-    font-size: 1.9vw; }
-  body {
-    width: 70vw;
-    max-width: 60ch; }
-    body .h-card > .mammoth-hcard > .u-photo {
-      width: 2.2rem;
-      height: 2.2rem; } }
-
-@media (min-width: 320px) and (max-width: 800px) {
-  html {
-    font-size: 3.6vw; }
-  body {
-    width: 90vw; }
-    body .nav-header > .headerlink > .title {
-      font-size: 1.5rem; }
-    body .header-menu > .links {
-      font-size: 1.1rem; }
-    body .post-summary > .h-feed-meta > a > .feed-info, body .post-summary > .media-list.h-feed-meta > .fade > .feed-info, body .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info, body .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info {
-      font-size: 90%; }
-    body .post-summary > .h-feed-meta > a > .feed-title, body .post-summary > .media-list.h-feed-meta > .fade > .feed-title, body .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title, body .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title {
-      font-size: 1.5rem; }
-    body .post-summary > .tags > .tagsfont {
-      font-size: 100%; }
-    body .post-summary > .tags > .tagslist {
-      font-size: 100%; }
-    body .individual-post > .post-meta > a > .post-info, body .individual-post > .media-list.post-meta > .fade > .post-info, body .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, body .individual-post > .individual-post.post-meta > .post-meta > .post-info {
-      font-size: 90%; }
-    body .individual-post > .post-meta > a > .post-title, body .individual-post > .media-list.post-meta > .fade > .post-title, body .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, body .individual-post > .individual-post.post-meta > .post-meta > .post-title {
-      font-size: 1.5rem; }
-    body .individual-post > .tags > .tagsfont {
-      font-size: 100%; }
-    body .individual-post > .tags > .tagslist {
-      font-size: 100%; }
-    body .h-card > .mammoth-hcard > .u-photo {
-      width: 2.2rem;
-      height: 2.2rem; } }
 
 h1,
 h2,
@@ -134,14 +85,15 @@ table {
 .topics-terms {
   margin-bottom: 0.8rem; }
   .topics-terms > h2 {
-    font: 600 1.8rem "Vollkorn SC", serif;
+    font: 600 1.5rem "Vollkorn SC", serif;
     font-variant: all-small-caps;
     letter-spacing: 0.08rem;
     text-align: center;
-    margin-top: -0.4rem; }
-  .topics-terms > .topicsul {
-    font: 500 1rem "Vollkorn", serif;
     margin-top: -0.4rem;
+    margin-bottom: .8rem; }
+  .topics-terms > .topicsul {
+    font: 100 1rem "Vollkorn", serif;
+    margin-top: 0rem;
     text-align: center; }
 
 img.emoji {
@@ -212,7 +164,7 @@ everything at the top of the site including the black border-bottom
   margin: 0.8rem auto;
   border-bottom: 0.1rem solid #534c5d; }
   .nav-header > .headerlink > .title {
-    word-spacing: 0.3rem;
+    word-spacing: .4rem;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -315,11 +267,6 @@ everything at the top of the site including the black border-bottom
       letter-spacing: 0.08rem;
       font-variant: all-small-caps;
       line-height: 1; }
-  .post-summary > .tags {
-    font-family: "Vollkorn", serif;
-    font-size: 80%; }
-    .post-summary > .tags > .tagslist {
-      list-style-type: none; }
   .post-summary > .feed-post {
     font-family: "XCharter", "Charter", serif;
     font-weight: 100;
@@ -330,7 +277,7 @@ everything at the top of the site including the black border-bottom
       margin-bottom: 0; }
     .post-summary > .feed-post > h6 {
       font-family: "Vollkorn", serif;
-      font-size: 65%;
+      font-size: 70%;
       margin-top: .8rem; }
 
 .post-summary:nth-child(n + 3) {
@@ -338,8 +285,7 @@ everything at the top of the site including the black border-bottom
 
 .media-list > h2,
 .archive-main > h2 {
-  font-family: "Vollkorn SC", serif;
-  font-weight: 600;
+  font: 600 1.5rem "Vollkorn SC", serif;
   letter-spacing: 0.08rem;
   font-variant: all-small-caps;
   line-height: 1;
@@ -349,21 +295,20 @@ everything at the top of the site including the black border-bottom
 .media-list > h3,
 .archive-main > h3 {
   color: #534c5d;
-  font-family: "Vollkorn SC", serif;
-  font-weight: 600;
+  font: 600 1.4rem "Vollkorn SC", serif;
   font-variant: all-small-caps;
   letter-spacing: 0.08rem;
   text-align: center; }
 
 .media-list > h4,
 .archive-main > h4 {
-  font-family: "XCharter", "Charter", serif;
-  font-weight: 400; }
+  font: 100 1rem "XCharter", "Charter", serif; }
 
 .media-list > ul > li,
 .archive-main > ul > li {
   list-style-type: none;
-  font-size: 1.2rem;
+  font-family: "XCharter", "Charter", serif;
+  font-size: 1rem;
   margin-bottom: .4rem; }
 
 .media-list > ul > li:before,
@@ -373,20 +318,10 @@ everything at the top of the site including the black border-bottom
 
 .list-info {
   font-family: "Vollkorn", serif;
-  font-size: 80%;
   letter-spacing: 0.06rem;
   text-align: center; }
   .list-info > .italicinfo {
     font-style: none; }
-
-.archive-link {
-  font: 0.8rem "XCharter", "Charter", serif;
-  text-align: center;
-  margin: 0.8rem 0 0.8rem 0; }
-
-.archive-main.md {
-  margin-bottom: 0.8rem;
-  font-size: 1.2rem; }
 
 .pagination {
   margin: 0.8rem auto 0.8rem auto;
@@ -734,5 +669,54 @@ that <hr> is now set to 0 margin*/
 /* GenericUnderline */
 .chroma .gl {
   text-decoration: underline; }
+
+@media (min-width: 1441px) and (max-width: 5000px) {
+  html {
+    font-size: 1.5vw; }
+  body {
+    width: 70vw;
+    max-width: 60ch; }
+    body .h-card > .mammoth-hcard > .u-photo {
+      width: 2.2rem;
+      height: 2.2rem; } }
+
+@media (min-width: 801px) and (max-width: 1440px) {
+  html {
+    font-size: 2vw; }
+  body {
+    width: 70vw;
+    max-width: 60ch; }
+    body .h-card > .mammoth-hcard > .u-photo {
+      width: 2.2rem;
+      height: 2.2rem; } }
+
+@media (min-width: 320px) and (max-width: 800px) {
+  html {
+    font-size: 3.6vw; }
+  body {
+    width: 90vw; }
+    body .nav-header > .headerlink > .title {
+      font-size: 1.5rem; }
+    body .header-menu > .links {
+      font-size: 1.1rem; }
+    body .post-summary > .h-feed-meta > a > .feed-info, body .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, body .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info, body .post-summary > .media-list.h-feed-meta > .fade > .feed-info {
+      font-size: 90%; }
+    body .post-summary > .h-feed-meta > a > .feed-title, body .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-title, body .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-title, body .post-summary > .media-list.h-feed-meta > .fade > .feed-title {
+      font-size: 1.5rem; }
+    body .post-summary > .tags > .tagsfont {
+      font-size: 100%; }
+    body .post-summary > .tags > .tagslist {
+      font-size: 100%; }
+    body .individual-post > .post-meta > a > .post-info, body .individual-post > .individual-post.post-meta > .post-meta > .post-info, body .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, body .individual-post > .media-list.post-meta > .fade > .post-info {
+      font-size: 90%; }
+    body .individual-post > .post-meta > a > .post-title, body .individual-post > .individual-post.post-meta > .post-meta > .post-title, body .individual-post > .post-summary.post-meta > .h-feed-meta > .post-title, body .individual-post > .media-list.post-meta > .fade > .post-title {
+      font-size: 1.5rem; }
+    body .individual-post > .tags > .tagsfont {
+      font-size: 100%; }
+    body .individual-post > .tags > .tagslist {
+      font-size: 100%; }
+    body .h-card > .mammoth-hcard > .u-photo {
+      width: 2.2rem;
+      height: 2.2rem; } }
 
 /*# sourceMappingURL=style.css.map */

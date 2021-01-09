@@ -17,11 +17,11 @@ $monospaced: 'Source Code Pro', Menlo, Inconsolata, monospace;
 //Font sizes, _base.scss
 $body-text: 1.2rem;
 $img-em: 0.9rem;
-$tags-text: 1.8rem;
+$tags-text: 1.5rem;
 $tags-text-ul: 1rem;
 $code-text: 0.6rem;
 $high-res-text: 1.5vw;
-$mid-res-text: 1.9vw;
+$mid-res-text: 2vw;
 $low-res-text: 3.6vw;
 
 //Font sizes, _header.scss
@@ -32,12 +32,12 @@ $small-header-text: 1.5rem;
 $small-header-link-text: 1.1rem;
 
 //Font sizes, _media-list.scss
-$h2-custom: 1.8rem;
-$h3-custom: 1.6rem;
-$h4-custom: 1.2rem;
-$list-info-size: 1rem;
-$link-list-link: 1.2rem;
-$archive-link: 0.8rem;
+$h2-custom: 1.5rem;
+$h3-custom: 1.4rem;
+$h4-custom: 1rem;
+// $list-info-size: 1rem; -> off as of 1-8-21
+$link-list-link: 1rem;
+// $archive-link: 0.8rem; -> off as of 1-8-21
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;

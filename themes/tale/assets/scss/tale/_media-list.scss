@@ -6,8 +6,7 @@
 
 .media-list > h2,
 .archive-main > h2 {
-  font-family: $smallcaps;
-  font-weight: 600;
+  font: 600 $h2-custom $smallcaps;
   letter-spacing: 0.08rem;
   font-variant: all-small-caps;
   line-height: 1;
@@ -18,8 +17,7 @@
 .media-list > h3,
 .archive-main > h3 {
   color: $default-color;
-  font-family: $smallcaps;
-  font-weight: 600;
+  font: 600 $h3-custom $smallcaps;
   font-variant: all-small-caps;
   letter-spacing: 0.08rem;
   text-align: center;
@@ -27,13 +25,13 @@
 
 .media-list > h4,
 .archive-main > h4 {
-  font-family: $serif-primary;
-  font-weight: 400;
+  font: 100 $h4-custom $serif-primary;
 }
 
 .media-list > ul > li,
 .archive-main > ul > li {
   list-style-type: none;
+  font-family: $serif-primary;
   font-size: $link-list-link;
   margin-bottom: .4rem;
 }
@@ -50,22 +48,10 @@
 
 .list-info {
   font-family: $header;
-  font-size: 80%;
   letter-spacing: 0.06rem;
   text-align: center;
   // obviously normally 'italic' but removing for now
   > .italicinfo {
     font-style: none;
   }
-}
-
-.archive-link {
-  font: $archive-link $serif-primary;
-  text-align: center;
-  margin: 0.8rem 0 0.8rem 0;
-}
-
-.archive-main.md {
-  margin-bottom: 0.8rem;
-  font-size: $body-text;
 }

@@ -16,82 +16,8 @@ html {
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 60vw;
+  width: 70vw;
   background-color: $grey-1;
-}
-
-@media (min-width: 1441px) and (max-width: 5000px) {
-  html {
-    font-size: $high-res-text;
-  }
-  body {
-    width: 70vw;
-    max-width: 60ch;
-    .h-card > .mammoth-hcard > .u-photo {
-      width: 2.2rem;
-      height: 2.2rem;
-    }
-  }
-}
-
-@media (min-width: 801px) and (max-width: 1440px) {
-  html {
-    font-size: $mid-res-text;
-  }
-  body {
-    width: 70vw;
-    max-width: 60ch;
-    .h-card > .mammoth-hcard > .u-photo {
-      width: 2.2rem;
-      height: 2.2rem;
-    }
-  }
-}
-
-// 1-7-21 special adjustments for super small phone screens, body text is now bigger, title header and links smaller, and post meta larger (incl tags)
-@media (min-width: 320px) and (max-width: 800px) {
-  html {
-      font-size: $low-res-text;
-  }
-  body {
-
-    width: 90vw;
-   
-    .nav-header > .headerlink > .title {
-      font-size: $small-header-text;
-    }
-    .header-menu > .links {
-      font-size: $small-header-link-text;
-    }
-    .post-summary > .h-feed-meta > a > .feed-info {
-      font-size: 90%;
-    }
-    .post-summary > .h-feed-meta > a > .feed-title {
-      font-size: $small-header-text;
-    }
-    .post-summary > .tags > .tagsfont {
-      font-size: 100%;
-    }
-    .post-summary > .tags > .tagslist {
-      font-size: 100%;
-    }
-    .individual-post > .post-meta > a > .post-info {
-      font-size: 90%;
-    }
-    .individual-post > .post-meta > a > .post-title {
-      font-size: $small-header-text;
-    }
-    .individual-post > .tags > .tagsfont {
-      font-size: 100%;
-    }
-    .individual-post > .tags > .tagslist {
-      font-size: 100%;
-    }
-    .h-card > .mammoth-hcard > .u-photo {
-      width: 2.2rem;
-      height: 2.2rem;
-    }
-  }
 }
 
 h1,
@@ -175,10 +101,11 @@ table {
     letter-spacing: 0.08rem;
     text-align: center;
     margin-top: -0.4rem;
+    margin-bottom: .8rem;
   }
   > .topicsul {
-    font: 500 $tags-text-ul $header;
-    margin-top: -0.4rem;
+    font: 100 $tags-text-ul $header;
+    margin-top: 0rem;
     text-align: center;
   }
 }
