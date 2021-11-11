@@ -1,38 +1,38 @@
 footer {
-	font-family: $serif-primary;
-	font-weight: 100;
-	border-top: 0.1rem solid $grey-3;
-	margin: 0.8rem auto;
+  font-family: $serif-primary;
+  font-weight: 100;
+  border-top: 0.1rem solid $grey-3;
+  margin: 0.8rem auto;
 
-	> .grid-container {
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 100%;
-		align-items: stretch;
-		justify-items: center;
-		margin-top: 0.8rem;
-		max-width: 100%;
+  > .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: stretch;
+    justify-items: center;
+    margin-top: 0.8rem;
+    max-width: 100%;
 
-		> .gridleft {
-			grid-area: 1 / 1 / 1 / 1;
-			> .mysites > .contact {
-				list-style: none;
-			}
-		}
+    > .gridleft {
+      grid-area: 1 / 1 / 1 / 1;
+      > .mysites > .contact {
+        list-style: none;
+      }
+    }
 
-		> .gridright {
-			grid-area: 1 / 2 / 1 / 2;
-			> .h-card > .u-photo {
-				display: inline-block;
-				width: 4em;
-				height: 4em;
-			}
-		}
-	}
+    > .gridright {
+      grid-area: 1 / 2 / 1 / 2;
+      > .h-card > .u-photo {
+        display: inline-block;
+        width: 4em;
+        height: 4em;
+      }
+    }
+  }
 
-	> .credits {
-		text-align: center;
-		font: 100 .8rem $serif-primary;
-		max-width: 100%;
-	}
+  > .credits {
+    text-align: center;
+    font: 100 0.8rem $serif-primary;
+    max-width: 100%;
+  }
 }

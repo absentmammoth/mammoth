@@ -66,6 +66,18 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -45%;
+  width: 30%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  position: relative; }
+
 .h-card {
   margin-bottom: 2.4rem; }
   .h-card .mammoth-hcard {
@@ -88,7 +100,7 @@ table {
     font-variant: all-small-caps;
     letter-spacing: 0.08rem;
     text-align: center;
-    margin: -0.4rem 0 .8rem 0; }
+    margin: -0.4rem 0 0.8rem 0; }
   .topics-terms > .topicsul {
     font: 100 1rem "Vollkorn", serif;
     margin-top: 0rem;
@@ -189,7 +201,7 @@ everything at the top of the site including the black border-bottom
   grid-template-rows: 1fr; }
   .individual-post > .post-meta {
     text-align: left;
-    margin-bottom: .8rem; }
+    margin-bottom: 0.8rem; }
     .individual-post > .post-meta > a > .post-info, .individual-post > .media-list.post-meta > .fade > .post-info, .individual-post > .post-summary.post-meta > .h-feed-meta > .post-info, .individual-post > .individual-post.post-meta > .post-meta > .post-info {
       font-family: "Vollkorn", serif;
       font-weight: 100;
@@ -254,7 +266,7 @@ everything at the top of the site including the black border-bottom
   grid-template-rows: 1fr; }
   .post-summary > .h-feed-meta {
     text-align: left;
-    margin-bottom: .8rem; }
+    margin-bottom: 0.8rem; }
     .post-summary > .h-feed-meta > a > .feed-info, .post-summary > .media-list.h-feed-meta > .fade > .feed-info, .post-summary > .individual-post.h-feed-meta > .post-meta > .feed-info, .post-summary > .post-summary.h-feed-meta > .h-feed-meta > .feed-info {
       font-family: "Vollkorn", serif;
       font-weight: 100;
@@ -276,7 +288,7 @@ everything at the top of the site including the black border-bottom
     .post-summary > .feed-post > h6 {
       font-family: "Vollkorn", serif;
       font-size: 70%;
-      margin-top: .8rem; }
+      margin-top: 0.8rem; }
 
 .post-summary:nth-child(n + 3) {
   margin-top: 1.6rem; }
@@ -334,8 +346,7 @@ everything at the top of the site including the black border-bottom
     transition: all 0.2s ease-out;
     color: #8d6dab;
     font-family: "XCharter", "Charter", serif;
-    font-size: 0.7rem;
-    vertical-align: text-top; }
+    font-size: 0.7rem; }
     .pagination a.top:focus .pagination a.top:hover, .pagination .individual-post > .top.post-meta:focus .pagination a.top:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination a.top:hover, .pagination .media-list > .top.fade:focus .pagination a.top:hover, .pagination a.top:focus .pagination .individual-post > .top.post-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .individual-post > .top.post-meta:hover, .pagination .media-list > .top.fade:focus .pagination .individual-post > .top.post-meta:hover, .pagination a.top:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .individual-post > .top.post-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination .media-list > .top.fade:focus .pagination .post-summary > .top.h-feed-meta:hover, .pagination a.top:focus .pagination .media-list > .top.fade:hover, .pagination .individual-post > .top.post-meta:focus .pagination .media-list > .top.fade:hover, .pagination .post-summary > .top.h-feed-meta:focus .pagination .media-list > .top.fade:hover, .pagination .media-list > .top.fade:focus .pagination .media-list > .top.fade:hover {
       opacity: 0.6; }
 

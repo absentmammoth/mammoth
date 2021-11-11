@@ -71,6 +71,19 @@ table {
   margin-right: auto;
 }
 
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -45%;
+  width: 30%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $sidenote-text;
+  line-height: 1.2;
+  position: relative;
+}
+
 .h-card {
   margin-bottom: 2.4rem;
 
@@ -99,7 +112,7 @@ table {
     font-variant: all-small-caps;
     letter-spacing: 0.08rem;
     text-align: center;
-    margin: -0.4rem 0 .8rem 0;
+    margin: -0.4rem 0 0.8rem 0;
   }
   > .topicsul {
     font: 100 $tags-text-ul $header;

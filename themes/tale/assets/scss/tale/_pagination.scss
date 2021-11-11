@@ -1,22 +1,21 @@
 .pagination {
-	margin: 0.8rem auto 0.8rem auto;
-	font-family: $header;
-	text-align: center;
-	list-style: none;
+  margin: 0.8rem auto 0.8rem auto;
+  font-family: $header;
+  text-align: center;
+  list-style: none;
 
-	> .leftarrow-hidden {
-		opacity: 0%;
-	}
+  > .leftarrow-hidden {
+    opacity: 0%;
+  }
 
-	a.top {
-		@include transition(all 0.2s ease-out);
-		color: $purple;
-		font-family: $serif-primary;
-		font-size: 0.7rem;
-		vertical-align: text-top;
+  a.top {
+    @include transition(all 0.2s ease-out);
+    color: $purple;
+    font-family: $serif-primary;
+    font-size: 0.7rem;
 
-		&:focus &:hover {
-			opacity: 0.6;
-		}
-	}
+    &:focus &:hover {
+      opacity: 0.6;
+    }
+  }
 }
