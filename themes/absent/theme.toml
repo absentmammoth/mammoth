@@ -5,7 +5,6 @@ description = ""
 features = []
 homepage = "https://absentmammoth.org"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
 min_version = "0.41.0"
 name = "Absent"
 tags = []
@@ -13,9 +12,3 @@ tags = []
 [author]
 homepage = "https://absentmammoth.org"
 name = "marshall"
-
-# If porting an existing theme
-[original]
-homepage = ""
-name = ""
-repo = ""

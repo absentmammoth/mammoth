@@ -3,10 +3,13 @@
     padding-top: $pad-small;
   }
   > p {
-    padding: 0 4px $pad-small 4px;
+    padding: 0 0 $pad-small 0;
+  }
+  h6:first-of-type {
+    margin: 1.6rem auto 0rem auto;
   }
   h6 {
-    margin: auto auto 0.8rem auto;
+    margin: 0.8rem auto 0.8rem auto;
   }
   ol {
     padding-left: 0;
@@ -26,10 +29,8 @@
 }
 
 .summary-post {
-  border: 3px solid hsla(271, 55%, 55%, 0.1);
-  border-radius: 12px;
   p {
-    padding: 0 4px;
+    padding: 0;
   }
 }
 .monthly-list {

@@ -4,11 +4,11 @@
     border-radius: 8px;
     margin-top: $margin-small;
     text-align: center;
-    padding: 3px 3px 0 3px;
   }
   .post-info {
     font-family: $serif;
     font-weight: 400;
+    font-size: 90%;
     letter-spacing: $spacing-small;
     width: fit-content;
     margin: auto;
@@ -28,6 +28,7 @@
   .summary-post-info {
     font-family: $serif;
     font-weight: 400;
+    font-size: 90%;
     letter-spacing: $spacing-small;
     width: fit-content;
     margin: auto;
@@ -44,8 +45,7 @@
 
   .summary-meta {
     background: hsla(271, 55%, 55%, 0.1);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 8px;
     text-align: center;
   }
   p:first-of-type {

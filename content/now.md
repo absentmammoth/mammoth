@@ -1,15 +1,36 @@
 ---
 title: /now
 date: 2020-02-24T20:13:24-07:00
-lastmod: 2020-07-15T21:50:51-07:00
+lastmod: 2022-02-28T11:52:00-07:00
 draft: false
 tags:
 - now
 ---
 
+<style type = "text/css" rel="stylesheet">
+article img {
+    height: 3rem;
+    width: 3rem;
+    margin: -.4rem auto 1rem;
+}
+html body div.container article.post img {
+    margin-top: .4rem;
+}
+</style>
+
+###### february 28th, 2022:
+
+i've rewritten the css/html of the site so that it is now, i think, all mine! i've put this off for ages, having started it early last year and then put it on hold for several months. but it's now new from the ground up, using grid for the layout and with some changes to how the html partials for the site are setup. besides some minor aesthetic tweaks, it doesn't look hugely different on the outside. my plan next is to add some tufte-style sidenotes for posts and maybe something on the right side of the screen for larger monitors given that there is a lot of whitespace now that the site is left-justified. 
+
+overall, i'm happy with the changes i've made. i felt some confusion, once again, over how hugo creates html when building the site, so the grid setup felt more complicated than maybe it would have otherwise. but, i think the site is in a good place now and i am finally satisfied-ish with how the font sizes scale across display sizes. it took a *long* time for me to get it setup where the header wouldn't wrap at certain weird, unpredictable resolutions. now, from 320px on, it should remain on one line. 
+
+<img src = "/images/me.png">
+
 a /now page is a bit different than an 'about' page. it's explained in more detail on [nownownow](https://nownownow.com/about), but the basic idea is to just include a little about what is going on in a person's life right Now -- like you'd say if you were catching up with an old friend after a long time apart.  
 
-so, for me -- february 24th, 2020:
+so, for me -- 
+
+###### february 24th, 2020:
 
 i'm (almost) 30 and currently living in <span class="p-locality">colorado springs, colorado</span> with my wife and dog. my wife and i are both undergoing treatment for autoimmune diseases, but, now that i am in remission, the dog and i are able to get out and hike a few times a month again.
 
@@ -22,6 +43,7 @@ In the great void of my life I could feel the shape of what was missing</a></spa
 <div style="text-align:center"><span><a href="https://www.youtube.com/watch?v=ZDpMhA_srcM">Like the way the wooly mammoth stands so tall and bold in our minds
 </a></span></div>
 
+<img src = "/images/me.png">
 
 
 
