@@ -150,17 +150,16 @@ img + em {
     padding: 0;
     margin: 0; }
 
-.post > p:first-of-type {
-  padding-top: 0.8rem; }
-
-.post > p {
-  padding-bottom: 0.8rem; }
-
-.post h6 {
-  margin: auto auto 0.8rem auto; }
-
-.post ol {
-  padding-left: 0; }
+.post {
+  border: 3px solid transparent; }
+  .post > p:first-of-type {
+    padding-top: 0.8rem; }
+  .post > p {
+    padding: 0 4px 0.8rem 4px; }
+  .post h6 {
+    margin: auto auto 0.8rem auto; }
+  .post ol {
+    padding-left: 0; }
 
 .footnotes {
   background: rgba(142, 77, 203, 0.1);
@@ -177,6 +176,9 @@ img + em {
   border-radius: 12px; }
   .summary-post p {
     padding: 0 4px; }
+
+.monthly-list {
+  margin: 0.8rem 0 0 0; }
 
 footer {
   display: grid;
@@ -240,7 +242,7 @@ footer {
     color: #534c5d;
     letter-spacing: 0.1rem;
     width: fit-content;
-    padding: 0 1rem;
+    padding: 0 0.8rem;
     margin: auto; }
   .summary-post .summary-meta {
     background: rgba(142, 77, 203, 0.1);
