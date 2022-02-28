@@ -150,16 +150,17 @@ img + em {
     padding: 0;
     margin: 0; }
 
-.post {
-  border: 3px solid transparent; }
-  .post > p:first-of-type {
-    padding-top: 0.8rem; }
-  .post > p {
-    padding: 0 4px 0.8rem 4px; }
-  .post h6 {
-    margin: auto auto 0.8rem auto; }
-  .post ol {
-    padding-left: 0; }
+.post > p:first-of-type {
+  padding-top: 0.8rem; }
+
+.post > p {
+  padding: 0 4px 0.8rem 4px; }
+
+.post h6 {
+  margin: auto auto 0.8rem auto; }
+
+.post ol {
+  padding-left: 0; }
 
 .footnotes {
   background: rgba(142, 77, 203, 0.1);
@@ -210,7 +211,8 @@ footer {
   background: rgba(142, 77, 203, 0.1);
   border-radius: 8px;
   margin-top: 0.8rem;
-  text-align: center; }
+  text-align: center;
+  padding: 3px 3px 0 3px; }
 
 .post .post-info {
   font-family: "Vollkorn";
@@ -225,7 +227,6 @@ footer {
   color: #534c5d;
   letter-spacing: 0.1rem;
   width: fit-content;
-  padding: 0 0.8rem;
   margin: auto; }
 
 .summary-post {
@@ -242,7 +243,6 @@ footer {
     color: #534c5d;
     letter-spacing: 0.1rem;
     width: fit-content;
-    padding: 0 0.8rem;
     margin: auto; }
   .summary-post .summary-meta {
     background: rgba(142, 77, 203, 0.1);

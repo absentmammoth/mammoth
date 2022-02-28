@@ -4,6 +4,7 @@
     border-radius: 8px;
     margin-top: $margin-small;
     text-align: center;
+    padding: 3px 3px 0 3px;
   }
   .post-info {
     font-family: $serif;
@@ -18,7 +19,6 @@
     color: $default-color;
     letter-spacing: $spacing-medium;
     width: fit-content;
-    padding: 0 $pad-small;
     margin: auto;
   }
 }
@@ -39,7 +39,6 @@
     color: $default-color;
     letter-spacing: $spacing-medium;
     width: fit-content;
-    padding: 0 $pad-small;
     margin: auto;
   }
 
