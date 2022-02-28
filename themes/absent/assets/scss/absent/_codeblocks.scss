@@ -1,0 +1,30 @@
+pre {
+  margin: 0 auto;
+  padding: $pad-small;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+code {
+  padding: 0;
+  font: 400 0.75rem $monospaced;
+  span {
+    font: 400 0.6rem $monospaced;
+  }
+}
+
+p code {
+  background: hsla(271, 55%, 55%, 0.1);
+  padding: 3px 0;
+  border-radius: 8px;
+}
+
+pre code {
+  white-space: pre-wrap;
+}
+
+.highlight {
+  .lineno {
+    color: $purple;
+  }
+}

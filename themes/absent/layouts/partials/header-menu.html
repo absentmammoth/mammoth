@@ -1,0 +1,11 @@
+<ul class="header-menu">
+  {{ $currentPage := . }} {{ range .Site.Menus.main }}
+  <li class="links">
+    <a href="{{ .URL }}">
+      {{ .Pre }}
+      <span>{{ .Name }}</span>
+      {{ .Post }}
+    </a>
+  </li>
+  {{ end }}
+</ul>

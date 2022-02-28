@@ -1,0 +1,34 @@
+.post {
+  > p:first-of-type {
+    padding-top: $pad-small;
+  }
+  > p {
+    padding-bottom: $pad-small;
+  }
+  h6 {
+    margin: auto auto 0.8rem auto;
+  }
+  ol {
+    padding-left: 0;
+  }
+}
+
+.footnotes {
+  background: hsla(271, 55%, 55%, 0.1);
+  border-radius: 8px;
+  padding: $pad-small $pad-medium;
+  font-size: 90%;
+  margin: auto;
+  > hr {
+    margin: 0;
+    border: none;
+  }
+}
+
+.summary-post {
+  border: 3px solid hsla(271, 55%, 55%, 0.1);
+  border-radius: 12px;
+  p {
+    padding: 0 4px;
+  }
+}

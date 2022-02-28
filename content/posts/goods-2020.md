@@ -8,6 +8,8 @@ tags:
 - lists
 ---
 
+[annoying](annoying-guy-music.md)
+
 Things I saw, listened to, read, or otherwise happened to me in 2020. Well, the things I liked.
 
 <!--more-->

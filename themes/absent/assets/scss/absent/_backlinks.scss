@@ -1,0 +1,11 @@
+.bl-section {
+  background: hsla(271, 55%, 55%, 0.1);
+  border-radius: 8px;
+  padding: $pad-small $pad-medium;
+
+  .backlinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

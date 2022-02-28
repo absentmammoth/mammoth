@@ -1,0 +1,33 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: $pad-medium 0;
+  margin: auto;
+
+  img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .grid-left {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    .contact {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+  .mammoth-hcard {
+    margin: 0;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+  .credits {
+    grid-column: 1 / 2 span;
+    grid-row: 2 / 2;
+    max-width: 80ch;
+    justify-self: center;
+    padding-top: $pad-small;
+  }
+}

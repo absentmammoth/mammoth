@@ -1,0 +1,25 @@
+.nav-header {
+  margin-right: $margin-medium;
+  border-bottom: 0.1rem solid $default-color;
+  width: fit-content;
+  .headerlink {
+    text-decoration: none;
+    > h1 {
+      border-radius: 8px;
+      width: fit-content;
+      color: $default-color;
+      letter-spacing: $spacing-medium;
+      word-spacing: 0.4rem;
+      font-size: 1.9rem;
+    }
+  }
+}
+
+.header-menu {
+  list-style-type: none;
+  padding: 0;
+
+  .links {
+    font-size: 1.2rem;
+  }
+}

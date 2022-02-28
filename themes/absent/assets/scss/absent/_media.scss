@@ -1,0 +1,85 @@
+/* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ shrug
+hold onto this: font-size: #{'clamp(.75rem, -2.15rem + 16vw, 1rem)'};*/
+
+@media (max-width: 899px) {
+  html {
+    font-size: #{'clamp(16px, -1rem + 4.5vw, 40px)'};
+  }
+
+  .container {
+    margin: 0.5rem auto 0;
+    max-width: 85%;
+    width: fit-content;
+    grid-column-gap: 0;
+    line-height: 1.5;
+    footer img {
+      display: inline-block;
+      width: 3.125rem;
+      height: 3.125rem;
+      transform: none;
+      vertical-align: text-bottom;
+    }
+  }
+
+  .nav-header {
+    margin-right: 0;
+    border-width: 2px;
+    .headerlink {
+      h1 {
+        font-size: #{'clamp(26px, -1.2rem + 7vw, 60px)'};
+      }
+    }
+    .links {
+      font-size: 1.3rem;
+    }
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 599px) {
+  html {
+    font-size: #{'clamp(16px, .9rem + .5vw, 24px)'};
+  }
+
+  .container {
+    margin: 0.5rem auto 0;
+    max-width: 92%;
+    width: fit-content;
+    grid-column-gap: 0;
+    line-height: 1.5;
+    footer img {
+      display: inline-block;
+      width: 3.125rem;
+      height: 3.125rem;
+      transform: none;
+      vertical-align: text-bottom;
+    }
+  }
+
+  .nav-header {
+    margin-right: 0;
+    .headerlink {
+      h1 {
+        font-size: #{'clamp(18px, -.5rem + 7.5vw, 40px)'};
+        font-weight: 400;
+        letter-spacing: 0;
+        word-spacing: 0;
+      }
+    }
+    .links {
+      font-size: 1.2rem;
+    }
+  }
+
+  .h-card .mammoth-hcard .u-photo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

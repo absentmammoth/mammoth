@@ -6,3 +6,4 @@ draft: true
 ---
 
 <!--more-->
+Text:  {{< marginnote  "cover" >}} {{< /marginnote >}}

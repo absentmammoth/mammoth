@@ -1,0 +1,38 @@
+.credits-style {
+  p:first-of-type {
+    padding-top: $pad-small;
+  }
+  p {
+    padding-bottom: $pad-small;
+  }
+  h6 {
+    margin: auto auto 0.8rem auto;
+  }
+  ol {
+    padding-left: 0;
+  }
+  > ul {
+    list-style-type: none;
+    sup:before {
+      content: '[';
+    }
+
+    sup:after {
+      content: ']';
+    }
+
+    sup {
+      font: 100 0.7rem $header;
+    }
+  }
+
+  > ul > li {
+    margin-bottom: 0.2rem;
+  }
+
+  > ul > li:before {
+    content: '\232A';
+    vertical-align: text-top;
+    padding-right: 0.2rem;
+  }
+}

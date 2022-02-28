@@ -8,10 +8,11 @@ layout: additional-thanks-to
 
 * [Hank Ewbank](https://dribbble.com/hankewbank), for the cute lil shadow puppet mammoth display picture, as well as for showing me...
 * Matthew Butterick's [practicaltypography.com](https://www.practicaltypography.com)[^1]
+* Though I have rewritten the css from scratch, Jamie Tanna's [Hugo theme](https://gitlab.com/jamietanna/tale-hugo-jvt.me) was source of the original theme. Dissecting his site is how I learned almost everything I have used to write the actual css/html of Absent Mammoth. I still look at his newer site's code to better understand how Hugo works. It's great
 * ⌃ click "Inspect Element"
 * The [Hugo docs](https://gohugo.io/documentation/) (for the most part)
 * Countless search results that led to various, occasionally contradictory, guides and examples that sometimes found their way into this site. Thank you, random guys on StackExchange and Medium. Some of you were helpful. Others of you could learn from some of you
-* [IndieWeb.org](https://www.indieweb.org), which contains a significant amount of helpful information re: building your own website
+* [IndieWeb.org](https://www.indieweb.org), which contains a significant amount of helpful information re: building your own website. (It's also how I found jvt.me in the first place!)
 * The Wired article [How the Web Became Unreadable](https://www.wired.com/2016/10/how-the-web-became-unreadable/), which explains a misunderstanding surrounding contrast; the shift away from high contrast sites has caused developers to use harder to read font colors (e.g. grays in place of solid black[^2]) instead of dampening the harshness of bright white backgrounds[^3]
 * Markdown
 * Github (problematic)
