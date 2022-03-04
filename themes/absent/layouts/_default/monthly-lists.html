@@ -1,7 +1,7 @@
 
 {{ define "main" }}
+{{ partial "intro-monthly-lists.html" }}
   {{ range .Pages.ByLastmod }}
-  <div class="monthly-list">
 <article class="summary-post">
 
     <div class = "summary-meta">
@@ -17,10 +17,9 @@
         <h2 class="summary-post-title">{{ .Title | markdownify }}</h2>
     </a>
     </div>
-<p>
-    {{ .Summary }}
-</p>
-    </div>
+    <p>
+     {{ .Summary }}
+    </p>
 </article>
 {{ end }}
 {{ end }}
