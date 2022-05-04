@@ -31,7 +31,7 @@ body {
   grid-template-columns:
     minmax(auto, 48ch)
     minmax(0.2rem, 1fr);
-  grid-gap: 0.8rem;
+  grid-gap: $gap-small;
   margin-left: 4rem;
   margin-top: 1rem;
 }
@@ -119,4 +119,8 @@ img + em {
   display: block;
   font: 500 0.9rem $serif;
   text-align: center;
+}
+
+li:not(ul li ul li):last-child {
+  padding-bottom: $pad-small;
 }

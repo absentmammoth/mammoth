@@ -109,13 +109,16 @@ img + em {
   font: 500 0.9rem "Vollkorn";
   text-align: center; }
 
+li:not(ul li ul li):last-child {
+  padding-bottom: 0.8rem; }
+
+/* padding top reduced to allow for u-photo */
 .h-card {
-  margin: 2rem 0 0.8rem 0; }
+  padding: 1rem 0 0.8rem 0; }
   .h-card .mammoth-hcard > .u-photo {
     display: inline-block;
     width: 2.5rem;
     height: 2.5rem;
-    transform: none;
     vertical-align: text-bottom;
     padding: 0;
     margin: 0; }
@@ -177,27 +180,27 @@ footer {
     justify-self: center;
     padding-top: 0.8rem; }
 
-.post .post-meta {
-  background: rgba(142, 77, 203, 0.1);
-  border-radius: 8px;
-  margin-top: 0.8rem;
-  text-align: center; }
-
-.post .post-info {
-  font-family: "Vollkorn";
-  font-weight: 400;
-  font-size: 90%;
-  letter-spacing: 0.04rem;
-  width: fit-content;
-  margin: auto; }
-
-.post .post-title {
-  font-family: "Vollkorn";
-  border-radius: 8px;
-  color: #534c5d;
-  letter-spacing: 0.1rem;
-  width: fit-content;
-  margin: auto; }
+.post {
+  padding-top: 2rem; }
+  .post .post-meta {
+    background: rgba(142, 77, 203, 0.1);
+    border-radius: 8px;
+    margin-top: 0.8rem;
+    text-align: center; }
+  .post .post-info {
+    font-family: "Vollkorn";
+    font-weight: 400;
+    font-size: 90%;
+    letter-spacing: 0.04rem;
+    width: fit-content;
+    margin: auto; }
+  .post .post-title {
+    font-family: "Vollkorn";
+    border-radius: 8px;
+    color: #534c5d;
+    letter-spacing: 0.1rem;
+    width: fit-content;
+    margin: auto; }
 
 .summary-post {
   margin-bottom: 0.8rem; }
@@ -224,7 +227,8 @@ footer {
 
 .nav-header {
   margin-right: 1rem;
-  border-bottom: 0.1rem solid #534c5d;
+  /* border would go here: */
+  /* border-bottom: 0.1rem solid $default-color; */
   width: fit-content; }
   .nav-header .headerlink {
     text-decoration: none; }

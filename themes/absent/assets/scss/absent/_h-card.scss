@@ -1,11 +1,11 @@
+/* padding top reduced to allow for u-photo */
 .h-card {
-  margin: $margin-large 0 $margin-small 0;
+  padding: 1rem 0 $pad-small 0;
   .mammoth-hcard {
     > .u-photo {
       display: inline-block;
       width: 2.5rem;
       height: 2.5rem;
-      transform: none;
       vertical-align: text-bottom;
       padding: 0;
       margin: 0;
