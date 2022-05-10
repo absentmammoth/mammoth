@@ -113,7 +113,7 @@ li:not(ul li ul li):last-child {
   padding-bottom: 0.8rem; }
 
 /* padding top reduced to allow for u-photo */
-.h-card {
+.h-card .mammoth-hcard {
   padding: 1rem 0 0.8rem 0; }
   .h-card .mammoth-hcard > .u-photo {
     display: inline-block;

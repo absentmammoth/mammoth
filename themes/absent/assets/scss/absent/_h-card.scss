@@ -1,7 +1,7 @@
 /* padding top reduced to allow for u-photo */
 .h-card {
-  padding: 1rem 0 $pad-small 0;
   .mammoth-hcard {
+    padding: 1rem 0 $pad-small 0;
     > .u-photo {
       display: inline-block;
       width: 2.5rem;
