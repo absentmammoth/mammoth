@@ -1,10 +1,11 @@
 .post {
-  padding-top: $pad-large;
   .post-meta {
     background: hsla(271, 55%, 55%, 0.1);
-    border-radius: 8px;
-    margin-top: $margin-small;
+    border-radius: 4px;
     text-align: center;
+    padding: $pad-background;
+    line-height: 1.25;
+    margin-bottom: $margin-medium;
   }
   .post-info {
     font-family: $serif;
@@ -25,7 +26,15 @@
 }
 
 .summary-post {
-  margin-bottom: $margin-small;
+    .summary-meta {
+    background: hsla(271, 55%, 55%, 0.1);
+    border-radius: 4px;
+    padding: $pad-background;
+    text-align: center;
+    line-height: 1.25;
+    margin-bottom: $margin-medium;
+  }
+
   .summary-post-info {
     font-family: $serif;
     font-weight: 400;
@@ -43,13 +52,7 @@
     width: fit-content;
     margin: auto;
   }
-
-  .summary-meta {
-    background: hsla(271, 55%, 55%, 0.1);
-    border-radius: 8px;
-    text-align: center;
-  }
-  p:first-of-type {
-    margin-top: $margin-small;
+  p:last-child {
+    margin-bottom: $margin-medium;
   }
 }

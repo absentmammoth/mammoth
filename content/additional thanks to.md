@@ -18,7 +18,7 @@ layout: additional-thanks-to
 * Github (problematic)
 * [RSCSS](https://rscss.io)
 * The Boris album art below. I had played around with different purples and softer blacks until I saw it and all was clear to me. I didn't think I could get away with my `<a>` purple being quite that dark and also keep it from blending in with the default font color, but I did use a color picker and then fiddle with the hsl a bit to get it light enough. The art is by [Mami Saitou](https://mamisaitou.com)
-![](/img/IMG_0072.jpeg)
+![](/images/evol-saitou.png)
 
 [^1]:This site is exactly the kind of thing that I love -- clear, opinionated, and it explains the underlying theory and reasoning behind what he is advocating. While (because?) I am an absolute amateur, or less than, it helps me to have a resource like this to turn to. Even if it's completely wrong, it is at least complete! Worth the $9.
 [^2]: These grays trade a problem with high contrast for one of not enough contrast. What seems to be more beneficial to readers is a non-white background, or a dimmer white, which I have experimented with on this site. The font is still a dark, DARK, purple (`$default-color: hsl(266, 1%, 29%);`), and the background barely indistguishable from white. But! I think that the soft purple and black makes the barely not-white seem less harsh.

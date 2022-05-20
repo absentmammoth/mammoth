@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: #{'clamp(12px, 1.2rem + .3vw, 60px)'};
+  font-size: #{'clamp(12px, .1rem + 2vw, 36px)'};
 }
 
 html,
@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  line-height: 1.45;
+  line-height: 1.5;
   font-family: $serif;
   font-weight: 400;
   color: $default-color;
@@ -29,18 +29,19 @@ body {
 .container {
   display: grid;
   grid-template-columns:
-    minmax(auto, 48ch)
+    minmax(auto, 55ch)
     minmax(0.2rem, 1fr);
-  grid-gap: $gap-small;
+  grid-gap: $gap;
   margin-left: 4rem;
-  margin-top: 1rem;
+  margin-top: $margin-large;
 }
 
 /* https://mastery.games/post/article-grid-layout/ */
 /* Grid layout */
 
-span {
-  font-family: Vollkorn;
+span, p, a {
+  font-family: $serif;
+  font-size: $font-body;
 }
 
 img,
@@ -75,12 +76,13 @@ h3,
 h4,
 h5,
 h6 {
-  word-spacing: 0.1rem;
+  word-spacing: .2rem;
 }
 
 a:not(.headerlink) {
   color: $purple;
   text-decoration: none;
+
   &:hover {
     background: hsla(271, 55%, 55%, 0.1);
     color: $default-color;
@@ -91,14 +93,21 @@ a:not(.headerlink) {
 
 blockquote {
   border-left: 0.19rem solid $purple;
-  border-radius: 8px;
+  border-radius: 4px;
   background: hsla(271, 55%, 55%, 0.1);
   color: $default-color;
-  margin-bottom: 0.8rem;
+  margin-bottom: $margin-medium;
   padding: $pad-small;
   > p {
     padding: 0;
     margin: 0;
+  }
+}
+
+.pagination {
+  margin: 0 auto $margin-large auto;
+  .leftarrow-hidden {
+    color: transparent;
   }
 }
 
@@ -119,8 +128,4 @@ img + em {
   display: block;
   font: 500 0.9rem $serif;
   text-align: center;
-}
-
-li:not(ul li ul li):last-child {
-  padding-bottom: $pad-small;
 }

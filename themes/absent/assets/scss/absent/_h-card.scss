@@ -1,14 +1,18 @@
-/* padding top reduced to allow for u-photo */
 .h-card {
-  .mammoth-hcard {
-    padding: 1rem 0 $pad-small 0;
-    > .u-photo {
-      display: inline-block;
-      width: 2.5rem;
-      height: 2.5rem;
-      vertical-align: text-bottom;
-      padding: 0;
-      margin: 0;
-    }
+  > .u-photo {
+    display: inline-block;
+    height: 4.5em;
+    width: auto;
+    margin-top: .2rem;
+  }
+}
+
+.h-card-intro {
+  margin-bottom: $margin-large;
+      > .u-photo {
+        height: 4.5em;
+        width: auto;
+        float: right;
+        shape-outside: url(/images/me.png)
   }
 }

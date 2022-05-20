@@ -1,18 +1,32 @@
 .post {
-  > p:first-of-type {
-    padding-top: $pad-small;
-  }
+  margin-bottom: $margin-large;
   > p {
-    padding: 0 0 $pad-small 0;
+    margin: 0 0 $margin-medium 0;
   }
+
+  h1, h2, h3, h4,h5 {
+    margin-bottom: $margin-small;
+  }
+
   h6:first-of-type {
-    margin: 1.6rem auto 0rem auto;
+    margin: 0 0 $margin-small 0;
   }
+
   h6 {
-    margin: 0.8rem auto 0.8rem auto;
+    font-variant: all-small-caps;
+    margin: 0 0 $margin-small 0;
   }
+
   ol {
     padding-left: 0;
+  }
+
+  ul li {
+    margin-bottom: .2rem;
+  }
+
+  ul:not(ul li ul) {
+    margin-bottom: $margin-medium;
   }
 }
 
@@ -32,7 +46,12 @@
   p {
     padding: 0;
   }
-}
-.monthly-list {
-  margin: 0.8rem 0 0 0;
+
+  p:not(:last-of-type) {
+    margin-bottom: $margin-medium;
+  }
+
+  h6 {
+    margin-bottom: $margin-small;
+  }
 }

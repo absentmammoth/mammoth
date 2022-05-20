@@ -2,7 +2,7 @@
 title: "no justice, no joy"
 date: 2021-01-16T22:07:10-07:00
 lastmod: 2021-01-16T22:07:10-07:00
-draft: false
+draft: true
 ---
 How do I feel joy and mirth when life's greatest chance for blissful irony has passed us by?
 

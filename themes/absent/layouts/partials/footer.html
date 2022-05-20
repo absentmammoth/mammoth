@@ -4,41 +4,41 @@
     <ul class="contact">
       <li>
         <span
-          ><a href="https://github.com/absentmammoth" rel="me"
+          ><a href="https://github.com/{{ .Site.Params.hCardGithub}}" rel="me"
             ><i class="fa fa-github fa-fw" title="GitHub.com Profile"></i
-            >&nbsp;@absentmammoth</a
+            >&nbsp;@{{ .Site.Params.hCardGithub }}</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="https://instagram.com/absentmammoth" rel="me"
+          ><a href="https://instagram.com/{{ .Site.Params.hCardInstagram }}" rel="me"
             ><i class="fa fa-instagram fa-fw" title="Instagram.com Profile"></i
-            >&nbsp;@absentmammoth</a
+            >&nbsp;@{{ .Site.Params.hCardInstagram }}</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="https://twitter.com/absntmammoth" rel="me"
+          ><a href="https://twitter.com/{{ .Site.Params.hCardTwitter }}" rel="me"
             ><i class="fa fa-twitter fa-fw" title="Twitter.com Profile"></i
-            >&nbsp;@absntmammoth</a
+            >&nbsp;@{{ .Site.Params.hCardTwitter }}</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="https://tumblr.com/moretherapy" rel="me"
+          ><a href="https://tumblr.com/{{ .Site.Params.hCardTumblr }}" rel="me"
             ><i class="fa fa-tumblr-square fa-fw" title="Tumblr.com Profile"></i
-            >&nbsp;@moretherapy</a
+            >&nbsp;@{{ .Site.Params.hCardTumblr }}</a
           ></span
         >
       </li>
       <li>
         <span
-          ><a href="https://www.last.fm/user/absentmammoth" rel="me"
+          ><a href="https://www.last.fm/user/{{ .Site.Params.hCardLastFM }}" rel="me"
             ><i class="fa fa-lastfm fa-fw" title="Tumblr.com Profile"></i
-            >&nbsp;@absentmammoth</a
+            >&nbsp;@{{ .Site.Params.hcardLastFM }}</a
           ></span
         >
       </li>
@@ -47,11 +47,11 @@
 
   <div class="h-card mammoth-hcard">
     <a href="http://absentmammoth.org" class="u-url u-uid p-name" rel="me"
-      >marshall</a
+      >{{ .Site.Params.hCardName }}</a
     >,<br />
-    <span class="p-job-title">freelancer,</span><br />
-    <span class="p-locality">colorado springs,</span><br />
-    <span class="p-region">colorado</span><br />
+    <span class="p-job-title">{{ .Site.Params.hCardJobTitle }},</span><br />
+    <span class="p-locality">{{ .Site.Params.hCardLocality }},</span><br />
+    <span class="p-region">{{ .Site.Params.hCardRegion }}</span><br />
     <img class="u-photo" src="/images/me.png" rel="me" />
   </div>
   <br />

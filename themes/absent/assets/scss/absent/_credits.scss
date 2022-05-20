@@ -1,9 +1,13 @@
 .credits-style {
+
+  img {
+    margin: $margin-small auto;
+  }
   p:first-of-type {
-    padding-top: $pad-small;
+    margin-top: $margin-small
   }
   p {
-    padding-bottom: $pad-small;
+    margin-bottom: $margin-small;
   }
   h6 {
     margin: auto auto 0.8rem auto;
@@ -13,6 +17,8 @@
   }
   > ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     sup:before {
       content: '[';
     }
@@ -27,12 +33,12 @@
   }
 
   > ul > li {
-    margin-bottom: 0.2rem;
+    margin-bottom: $margin-small;
   }
 
   > ul > li:before {
     content: '\232A';
     vertical-align: text-top;
-    padding-right: 0.2rem;
+    margin-right: .4rem;
   }
 }

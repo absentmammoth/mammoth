@@ -14,16 +14,18 @@ $font-headings: 1.8rem;
 $spacing-small: 0.04rem;
 $spacing-medium: 0.1rem;
 
-$pad-small: 0.8rem;
-$pad-medium: 1.6rem;
-$pad-large: 2rem;
+$gap-medium: .8rem;
+$gap: 1rem;
 
-$margin-small: 0.8rem;
-$margin-medium: 1rem;
-$margin-large: 2rem;
+$pad-small: calc(#{$gap} * .7);
+$pad-medium: calc(#{$gap} * 1.4);
+$pad-large: calc(#{$gap} * 2.1);
 
-$gap-small: .8rem;
-$gap-large: 2rem;
+$margin-small: calc(#{$gap} * .7);
+$margin-medium: calc(#{$gap} * 1.4);
+$margin-large: calc(#{$gap} * 2.1);
+
+$pad-background: .4rem;
 
 // Fonts
 $header: 'Vollkorn', sans-serif;

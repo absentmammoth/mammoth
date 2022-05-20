@@ -8,14 +8,17 @@ tags:
 ---
 
 <style type = "text/css" rel="stylesheet">
-article img {
+article img:first-of-type {
     height: 3rem;
-    width: 3rem;
-    margin: -.4rem auto 1rem;
+    width: auto;
+    margin: -.7rem auto 1.4rem;
 }
-html body div.container article.post img {
-    margin-top: .4rem;
+article img:not(:first-of-type) {
+    height: 3rem;
+    width: auto;
+    margin: .7rem auto 1.4rem;
 }
+
 </style>
 
 ###### february 28th, 2022:
