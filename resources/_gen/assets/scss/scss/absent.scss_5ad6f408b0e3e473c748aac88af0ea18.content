@@ -353,7 +353,8 @@ footer {
       transform: none;
       vertical-align: text-bottom; }
   .nav-header {
-    margin: 0 auto; }
+    margin-left: auto;
+    margin-right: auto; }
     .nav-header .headerlink h1 {
       --font-size: var(--ms-6);
       font-size: var(--final-font-size);
