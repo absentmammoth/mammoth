@@ -5,40 +5,35 @@
       <li>
         <span
           ><a href="https://github.com/{{ .Site.Params.hCardGithub}}" rel="me"
-            ><i class="fa fa-github fa-fw" title="GitHub.com Profile"></i
-            >&nbsp;@{{ .Site.Params.hCardGithub }}</a
+            >{{ partial "fontawesome.html" "github" }}{{ .Site.Params.hCardGithub }}</a
           ></span
         >
       </li>
       <li>
         <span
           ><a href="https://instagram.com/{{ .Site.Params.hCardInstagram }}" rel="me"
-            ><i class="fa fa-instagram fa-fw" title="Instagram.com Profile"></i
-            >&nbsp;@{{ .Site.Params.hCardInstagram }}</a
-          ></span
-        >
-      </li>
-      <li>
-        <span
-          ><a href="https://twitter.com/{{ .Site.Params.hCardTwitter }}" rel="me"
-            ><i class="fa fa-twitter fa-fw" title="Twitter.com Profile"></i
-            >&nbsp;@{{ .Site.Params.hCardTwitter }}</a
-          ></span
-        >
-      </li>
-      <li>
-        <span
-          ><a href="https://tumblr.com/{{ .Site.Params.hCardTumblr }}" rel="me"
-            ><i class="fa fa-tumblr-square fa-fw" title="Tumblr.com Profile"></i
-            >&nbsp;@{{ .Site.Params.hCardTumblr }}</a
+            >{{ partial "fontawesome.html" "instagram" }}{{ .Site.Params.hCardInstagram }}</a
           ></span
         >
       </li>
       <li>
         <span
           ><a href="https://www.last.fm/user/{{ .Site.Params.hCardLastFM }}" rel="me"
-            ><i class="fa fa-lastfm fa-fw" title="Tumblr.com Profile"></i
-            >&nbsp;@{{ .Site.Params.hcardLastFM }}</a
+            >{{ partial "fontawesome.html" "lastfm" }}{{ .Site.Params.hcardLastFM }}</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="https://tumblr.com/{{ .Site.Params.hCardTumblr }}" rel="me"
+            >{{ partial "fontawesome.html" "tumblr-square" }}{{ .Site.Params.hCardTumblr }}</a
+          ></span
+        >
+      </li>
+      <li>
+        <span
+          ><a href="https://twitter.com/{{ .Site.Params.hCardTwitter }}" rel="me"
+            >{{ partial "fontawesome.html" "twitter" }}{{ .Site.Params.hCardTwitter }}</a
           ></span
         >
       </li>

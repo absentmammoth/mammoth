@@ -81,7 +81,8 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%; }
+  width: 100%;
+  height: auto; }
 
 input,
 button,
@@ -147,6 +148,14 @@ img + em {
   font: 500 0.9rem "Vollkorn";
   text-align: center; }
 
+/* https://www.client9.com/using-font-awesome-icons-in-hugo/ */
+.inline-svg {
+  display: inline-block;
+  height: auto;
+  width: 1em;
+  margin-right: .4rem;
+  vertical-align: middle; }
+
 .h-card > .u-photo {
   display: inline-block;
   height: 4.5em;
@@ -203,6 +212,8 @@ img + em {
 footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  footer .fa {
+    font-size: 1em; }
   footer .grid-left {
     grid-column: 1 / 1;
     grid-row: 1 / 1;

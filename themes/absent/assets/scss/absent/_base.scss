@@ -62,7 +62,8 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 input,
@@ -140,4 +141,13 @@ img + em {
   display: block;
   font: 500 0.9rem $serif;
   text-align: center;
+}
+
+/* https://www.client9.com/using-font-awesome-icons-in-hugo/ */
+.inline-svg {
+  display: inline-block;
+  height: auto;
+  width: 1em;
+  margin-right: .4rem;
+  vertical-align: middle;
 }

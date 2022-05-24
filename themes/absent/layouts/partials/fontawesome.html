@@ -1,0 +1,8 @@
+<!-- https://www.client9.com/using-font-awesome-icons-in-hugo/ for addtl info -->
+
+<span class="inline-svg" >
+{{- $fname:=print "fontawesome/" . ".svg" -}}
+{{- $path:="<path" -}}
+{{- $fill:="<path fill=\"currentColor\"" -}}
+{{ replace (readFile $fname) $path $fill | safeHTML }}
+</span>

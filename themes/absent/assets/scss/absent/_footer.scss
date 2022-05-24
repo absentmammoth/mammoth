@@ -2,6 +2,10 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  .fa {
+    font-size: 1em;
+  }
+
   .grid-left {
     grid-column: 1 / 1;
     grid-row: 1 / 1;

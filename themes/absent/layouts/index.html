@@ -1,6 +1,9 @@
-{{ define "main" }} {{ partial "index/introduction.html" . }} {{ range where
-(.Paginator).Pages.ByLastmod.Reverse "Section" "posts" }} {{
-partial "summary.html" . }} {{ end }}
+{{ define "main" }}
+  {{ partial "index/introduction.html" . }}
+    {{ $pages := where $.Site.RegularPages ".Type" "=" "posts" }}
+    {{ range (.Paginate $pages).Pages }}
+      {{ partial "summary.html" . }}
+    {{ end }}
 <div class="pagination">
   {{ if .Paginator.HasPrev }}
   <a href="{{ .Paginator.Prev.URL }}" class="left arrow">&#8592;</a>
