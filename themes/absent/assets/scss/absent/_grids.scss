@@ -2,7 +2,7 @@
   grid-column: 1 / -1;
 }
 
-.header-menu {
+.header-menu, .header-menu-small-res {
   display: grid;
   grid-auto-flow: column;
   justify-content: start;

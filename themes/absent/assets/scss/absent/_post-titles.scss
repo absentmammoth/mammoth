@@ -10,12 +10,15 @@
   .post-info {
     font-family: $serif;
     font-weight: 400;
-    font-size: 90%;
+    --font-size: var(--ms-1);
+    font-size: var(--final-font-size);
     letter-spacing: $spacing-small;
     width: fit-content;
     margin: auto;
   }
   .post-title {
+    --font-size: var(--ms-4);
+    font-size: var(--final-font-size);
     font-family: $serif;
     border-radius: 8px;
     color: $default-color;
@@ -38,13 +41,16 @@
   .summary-post-info {
     font-family: $serif;
     font-weight: 400;
-    font-size: 90%;
+    --font-size: var(--ms-1);
+    font-size: var(--final-font-size);
     letter-spacing: $spacing-small;
     width: fit-content;
     margin: auto;
   }
 
   .summary-post-title {
+    --font-size: var(--ms-4);
+    font-size: var(--final-font-size);
     font-family: $serif;
     border-radius: 8px;
     color: $default-color;

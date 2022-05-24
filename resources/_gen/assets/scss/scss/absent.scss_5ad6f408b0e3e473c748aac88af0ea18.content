@@ -1,3 +1,26 @@
+/* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
+:root {
+  --font-size-min: 16;
+  --font-size-min-breakpoint: 320;
+  --font-size-slope: .5;
+  --font-size-breakpoint: 899;
+  --addon-multiplier: .6;
+  --addon-unit: calc(1vw - var(--font-size-breakpoint) * 1px / 100);
+  --addon: calc(var(--addon-unit) * var(--addon-multiplier));
+  --ms-ratio: 1.2;
+  --ms-0: 16;
+  --ms-1: calc(var(--ms-0) * var(--ms-ratio));
+  --ms-2: calc(var(--ms-1) * var(--ms-ratio));
+  --ms-3: calc(var(--ms-2) * var(--ms-ratio));
+  --ms-4: calc(var(--ms-3) * var(--ms-ratio));
+  --ms-5: calc(var(--ms-4) * var(--ms-ratio));
+  --ms-6: calc(var(--ms-5) * var(--ms-ratio));
+  --ms-7: calc(var(--ms-6) * var(--ms-ratio));
+  --ms-8: calc(var(--ms-7) * var(--ms-ratio)); }
+  @media only screen and (min-width: 900px) {
+    :root {
+      --font-size-slope: .2;
+      --addon-multiplier: .5; } }
 .bl-section {
   background: rgba(142, 77, 203, 0.1);
   border-radius: 8px;
@@ -14,10 +37,20 @@
   box-sizing: border-box; }
 
 * {
-  margin: 0; }
+  margin: 0;
+  --x0: var(--font-size-min-breakpoint);
+  --y0: var(--font-size-min);
+  --x1: var(--font-size-breakpoint);
+  --y1: var(--font-size);
+  --y0-new: calc(var(--y1) - (var(--y1) - var(--y0)) * var(--font-size-slope));
+  --a: calc((var(--y1) - var(--y0-new)) / (var(--x1) - var(--x0)));
+  --b: calc(var(--y0-new) - var(--a) * var(--x0));
+  --y2: calc(var(--a) * 100vw + var(--b) * 1px);
+  --final-font-size: calc(var(--y2) + var(--addon)); }
 
 html {
-  font-size: clamp(12px, .1rem + 2vw, 36px); }
+  --font-size: var(--ms-2);
+  font-size: var(--final-font-size); }
 
 html,
 body {
@@ -32,16 +65,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: minmax(auto, 55ch) minmax(0.2rem, 1fr);
+  grid-template-columns: minmax(auto, 45ch) minmax(0.2rem, 1fr);
   grid-gap: 1rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
   margin-top: calc(1rem * 2.1); }
 
 /* https://mastery.games/post/article-grid-layout/ */
 /* Grid layout */
 span, p, a {
-  font-family: "Vollkorn";
-  font-size: 1.2rem; }
+  font-family: "Vollkorn"; }
 
 img,
 picture,
@@ -142,6 +174,8 @@ img + em {
     margin: 0 0 calc(1rem * .7) 0; }
   .post ol {
     padding-left: 0; }
+  .post ol li {
+    margin-bottom: calc(1rem * 1.4); }
   .post ul li {
     margin-bottom: .2rem; }
   .post ul:not(ul li ul) {
@@ -184,7 +218,6 @@ footer {
   footer .credits {
     grid-column: 1 / -1;
     grid-row: 2 / 2;
-    max-width: 80ch;
     justify-self: center;
     margin-top: calc(1rem * 1.4); }
 
@@ -199,12 +232,15 @@ footer {
 .post .post-info {
   font-family: "Vollkorn";
   font-weight: 400;
-  font-size: 90%;
+  --font-size: var(--ms-1);
+  font-size: var(--final-font-size);
   letter-spacing: 0.04rem;
   width: fit-content;
   margin: auto; }
 
 .post .post-title {
+  --font-size: var(--ms-4);
+  font-size: var(--final-font-size);
   font-family: "Vollkorn";
   border-radius: 8px;
   color: #534c5d;
@@ -223,12 +259,15 @@ footer {
 .summary-post .summary-post-info {
   font-family: "Vollkorn";
   font-weight: 400;
-  font-size: 90%;
+  --font-size: var(--ms-1);
+  font-size: var(--final-font-size);
   letter-spacing: 0.04rem;
   width: fit-content;
   margin: auto; }
 
 .summary-post .summary-post-title {
+  --font-size: var(--ms-4);
+  font-size: var(--final-font-size);
   font-family: "Vollkorn";
   border-radius: 8px;
   color: #534c5d;
@@ -245,26 +284,34 @@ footer {
   .nav-header .headerlink {
     text-decoration: none; }
     .nav-header .headerlink > h1 {
-      word-spacing: .2rem;
+      --font-size: var(--ms-6);
+      font-size: var(--final-font-size);
+      word-spacing: .01em;
       color: #534c5d;
-      letter-spacing: .2rem;
-      font-size: 2.1rem; }
+      letter-spacing: .02em; }
 
 .header-menu {
   list-style-type: none;
   padding: 0; }
   .header-menu .links {
-    letter-spacing: .1rem; }
+    letter-spacing: .07rem; }
   .header-menu a span {
-    font-size: 1.4rem; }
+    --font-size: var(--ms-4);
+    font-size: var(--final-font-size); }
 
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
+@media screen and (min-width: 600px) {
+  .menu, .header-menu-small-res {
+    display: none;
+    visibility: hidden; } }
+
 @media (max-width: 899px) {
   html {
-    font-size: clamp(16px, -1rem + 4vw, 40px); }
+    --font-size: var(--ms-2);
+    font-size: var(--final-font-size); }
   .container {
     margin: calc(1rem * 2.1) auto 0;
-    max-width: 85%;
+    max-width: 90%;
     width: fit-content;
     grid-column-gap: 0;
     line-height: 1.5; }
@@ -277,21 +324,27 @@ footer {
   .nav-header {
     margin-right: 0; }
     .nav-header .headerlink h1 {
-      font-size: 1.8rem;
+      --font-size: var(--ms-5);
+      font-size: var(--final-font-size);
       letter-spacing: 0;
-      word-spacing: .8rem; }
+      word-spacing: .4rem; }
+    .nav-header .links {
+      letter-spacing: .035rem; }
     .nav-header a span {
-      font-size: 1.3rem; }
-  h2 {
-    font-size: 1.3rem; } }
+      --font-size: var(--ms-3);
+      font-size: var(--final-font-size); }
+  .post .post-title,
+  .summary-post .summary-post-title {
+    --font-size: var(--ms-3);
+    font-size: var(--final-font-size); } }
 
 @media (max-width: 599px) {
   html {
-    font-size: clamp(12px, -2rem + 9vw, 22px); }
+    --font-size: var(--ms-2);
+    font-size: var(--final-font-size); }
   .container {
     margin: calc(1rem * 1.4) auto 0 auto;
     max-width: 92%;
-    width: fit-content;
     line-height: 1.5; }
     .container footer img {
       display: inline-block;
@@ -299,15 +352,35 @@ footer {
       height: auto;
       transform: none;
       vertical-align: text-bottom; }
-  .nav-header .headerlink h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0;
-    word-spacing: 0; }
-  .nav-header .header-menu {
-    gap: 1rem; }
-  .nav-header a span {
-    font-size: 1.3rem; } }
+  .nav-header {
+    margin: 0 auto; }
+    .nav-header .headerlink h1 {
+      --font-size: var(--ms-6);
+      font-size: var(--final-font-size);
+      font-weight: 600;
+      letter-spacing: .01rem;
+      word-spacing: 0;
+      max-width: 15ch; }
+    .nav-header a span {
+      --font-size: var(--ms-3);
+      font-size: var(--final-font-size); }
+    .nav-header .links {
+      letter-spacing: 0.01rem; }
+  .post .post-title,
+  .summary-post .summary-post-title {
+    --font-size: var(--ms-3);
+    font-size: var(--final-font-size); }
+  .post .post-info,
+  .summary-post .summary-post-info {
+    --font-size: var(--ms-1);
+    font-size: var(--final-font-size); }
+  footer .grid-left {
+    grid-column: 1/-1; }
+  footer .mammoth-hcard {
+    grid-column: 1/-1;
+    grid-row: 1/1; }
+  footer .credits {
+    grid-row: 3/3; } }
 
 /* Background */
 .chroma {
@@ -696,7 +769,7 @@ pre code {
 .nav-header {
   grid-column: 1 / -1; }
 
-.header-menu {
+.header-menu, .header-menu-small-res {
   display: grid;
   grid-auto-flow: column;
   justify-content: start;

@@ -8,8 +8,6 @@ tags:
 - lists
 ---
 
-[annoying](annoying-guy-music.md)
-
 Things I saw, listened to, read, or otherwise happened to me in 2020. Well, the things I liked.
 
 <!--more-->
@@ -119,3 +117,5 @@ And then there's *Read Dead Redemption 2,* which is best played as *Animal Cross
 Well, that's... the tea, that on that, all she wrote. 2020 is in the books. Hard to say we really learned anything from it, given that if we could take everything we know now and rewind back to February, 2020, things would probably play out worse, somehow. 
 
 Cheers!
+
+[annoying](annoying-guy-music.md)

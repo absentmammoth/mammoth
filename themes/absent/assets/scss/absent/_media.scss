@@ -1,13 +1,24 @@
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
 
+
+@media screen and (min-width:600px) {
+  .menu, .header-menu-small-res {
+  display: none;
+  visibility: hidden;
+  }
+}
+
+
 @media (max-width: 899px) {
+
   html {
-    font-size: #{'clamp(16px, -1rem + 4vw, 40px)'};
+    --font-size: var(--ms-2);
+    font-size: var(--final-font-size);
   }
 
   .container {
     margin: $margin-large auto 0;
-    max-width: 85%;
+    max-width: 90%;
     width: fit-content;
     grid-column-gap: 0;
     line-height: 1.5;
@@ -24,29 +35,39 @@
     margin-right: 0;
     .headerlink {
       h1 {
-        font-size: 1.8rem;
+        --font-size: var(--ms-5);
+        font-size: var(--final-font-size);
         letter-spacing: 0;
-        word-spacing: .8rem;
+        word-spacing: .4rem;
       }
     }
-    a span {
-      font-size: 1.3rem;
+
+    .links {
+      letter-spacing: .035rem;
+    }
+
+      a span {
+      --font-size: var(--ms-3);
+      font-size: var(--final-font-size);
     }
   }
-  h2 {
-    font-size: 1.3rem;
+
+  .post .post-title,
+  .summary-post .summary-post-title {
+    --font-size: var(--ms-3);
+    font-size: var(--final-font-size);
   }
 }
 
 @media (max-width: 599px) {
   html {
-    font-size: #{'clamp(12px, -2rem + 9vw, 22px)'};
+    --font-size: var(--ms-2);
+    font-size: var(--final-font-size);
   }
 
   .container {
     margin: $margin-medium auto 0 auto;
     max-width: 92%;
-    width: fit-content;
     line-height: 1.5;
     footer img {
       display: inline-block;
@@ -58,19 +79,103 @@
   }
 
   .nav-header {
+    margin: 0 auto;
     .headerlink {
       h1 {
-        font-size: 1.5rem;
+        --font-size: var(--ms-6);
+        font-size: var(--final-font-size);
         font-weight: 600;
-        letter-spacing: 0;
+        letter-spacing: .01rem;
         word-spacing: 0;
+        max-width: 15ch;
       }
     }
-    .header-menu {
-      gap: $gap;
-    }
+
     a span {
-      font-size: 1.3rem;
+      --font-size: var(--ms-3);
+      font-size: var(--final-font-size);
+    }
+
+    .links {
+      letter-spacing: 0.01rem;
+    }
+
+    // to use a dropdown menu on low res screens:
+    // .header-menu {
+    //   display: none;
+    //   visibility: hidden;
+    // }
+
+    // .header-menu-small-res {
+    //   display: none;
+    //   visibility: hidden;
+    //   list-style-type: none;
+    //   padding: 0;
+    //   margin: 0;
+    // }
+
+    // .menu {
+    //   list-style-type: none;
+    //   padding: 0;
+    //   position: fixed;
+    //   top: 5%;
+    //   right: 8%;
+    //   width: fit-content;
+    // }
+
+    // .menu:hover, .menu:focus-within {
+    //   .header-menu-small-res {
+    //     display: flex;
+    //     visibility: visible;
+    //     position: fixed;
+    //     right: 8%;
+    //     width: fit-content;
+    //     border-radius: 4px;
+    //     padding: $pad-small;
+    //     z-index: 100000;
+    //     background-color: $grey-1;
+    //     box-shadow: 0 0 2px $default-color;
+    //   }
+    // }
+
+    // to hide header menu on mobile:
+
+    // .header-menu {
+    //   visibility: hidden;
+    //   opacity: 0;
+    //   transition: all .5s ease;
+    //   display: none;
+    //   &:hover {
+    //     visibility: visible;
+    //     opacity: 1;
+    //   }
+    // }
+  }
+
+  .post .post-title,
+  .summary-post .summary-post-title {
+    --font-size: var(--ms-3);
+    font-size: var(--final-font-size);
+  }
+
+  .post .post-info,
+  .summary-post .summary-post-info {
+    --font-size: var(--ms-1);
+    font-size: var(--final-font-size);
+  }
+
+  footer {
+    .grid-left {
+      grid-column: 1/-1;
+
+    }
+    .mammoth-hcard {
+      grid-column: 1/-1;
+      grid-row: 1/1;
+
+    }
+    .credits {
+      grid-row: 3/3;
     }
   }
 }

@@ -4,7 +4,7 @@
     margin: 0 0 $margin-medium 0;
   }
 
-  h1, h2, h3, h4,h5 {
+  h1, h2, h3, h4, h5 {
     margin-bottom: $margin-small;
   }
 
@@ -19,6 +19,10 @@
 
   ol {
     padding-left: 0;
+  }
+
+  ol li {
+    margin-bottom: $margin-medium;
   }
 
   ul li {

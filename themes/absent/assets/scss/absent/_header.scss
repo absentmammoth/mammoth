@@ -4,10 +4,11 @@
   .headerlink {
     text-decoration: none;
     > h1 {
-      word-spacing: .2rem;
+      --font-size: var(--ms-6);
+      font-size: var(--final-font-size);
+      word-spacing: .01em;
       color: $default-color;
-      letter-spacing: .2rem;
-      font-size: 2.1rem;
+      letter-spacing: .02em;
     }
   }
 }
@@ -17,10 +18,11 @@
   padding: 0;
 
   .links {
-    letter-spacing: .1rem;
+    letter-spacing: .07rem;
   }
 
   a span {
-    font-size: 1.4rem;
+  --font-size: var(--ms-4);
+  font-size: var(--final-font-size);
   }
 }

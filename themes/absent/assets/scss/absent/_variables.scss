@@ -7,9 +7,29 @@ $blue: #4a9ae1;
 $purple: hsl(271, 27%, 55%);
 $code-color-link: #e8afda;
 
-$font-body: 1.2rem;
-$font-header: 2rem;
-$font-headings: 1.8rem;
+/* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
+
+:root {
+  --font-size-min: 16;
+  --font-size-min-breakpoint: 320;
+  --font-size-slope: .5;
+  --font-size-breakpoint: 899;
+  --addon-multiplier: .6;
+
+  @media only screen and (min-width: 900px) {
+  --font-size-slope: .2;
+  --addon-multiplier: .5;
+  }
+
+  --addon-unit: #{'calc(1vw - var(--font-size-breakpoint) * 1px / 100)'};
+  --addon: #{'calc(var(--addon-unit) * var(--addon-multiplier))'};
+  --ms-ratio: 1.2;
+  --ms-0: 16;
+
+  @for $i from 1 through 8 {
+    --ms-#{$i}: #{'calc(var(--ms-#{$i - 1}) * var(--ms-ratio))'};
+  }
+}
 
 $spacing-small: 0.04rem;
 $spacing-medium: 0.1rem;
@@ -33,3 +53,4 @@ $smallcaps: 'Vollkorn SC', serif;
 $monospaced: 'Mononoki Nerd Font Mono', 'Source Code Pro', Menlo, Inconsolata,
   monospace;
 $serif: 'Vollkorn';
+

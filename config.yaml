@@ -10,7 +10,7 @@ pygmentsUseClasses: true
 canonifyURLs: true
 enableEmoji: true
 enableRobotsTXT: true
-paginate: "5"
+paginate: 5
 # get info about the Git repo
 # enableGitInfo: true
 

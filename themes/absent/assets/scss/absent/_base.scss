@@ -7,10 +7,23 @@
 
 * {
   margin: 0;
+  --x0: var(--font-size-min-breakpoint);
+  --y0: var(--font-size-min);
+  --x1: var(--font-size-breakpoint);
+
+  --y1: var(--font-size);
+  --y0-new: #{'calc(var(--y1) - (var(--y1) - var(--y0)) * var(--font-size-slope))'};
+
+  --a: #{'calc((var(--y1) - var(--y0-new)) / (var(--x1) - var(--x0)))'};
+  --b: #{'calc(var(--y0-new) - var(--a) * var(--x0))'};
+
+  --y2: #{'calc(var(--a) * 100vw + var(--b) * 1px)'};
+  --final-font-size: #{'calc(var(--y2) + var(--addon))'};
 }
 
 html {
-  font-size: #{'clamp(12px, .1rem + 2vw, 36px)'};
+  --font-size: var(--ms-2);
+  font-size: var(--final-font-size);
 }
 
 html,
@@ -29,10 +42,10 @@ body {
 .container {
   display: grid;
   grid-template-columns:
-    minmax(auto, 55ch)
+    minmax(auto, 45ch)
     minmax(0.2rem, 1fr);
   grid-gap: $gap;
-  margin-left: 4rem;
+  margin-left: 3rem;
   margin-top: $margin-large;
 }
 
@@ -41,7 +54,6 @@ body {
 
 span, p, a {
   font-family: $serif;
-  font-size: $font-body;
 }
 
 img,

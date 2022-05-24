@@ -1,5 +1,5 @@
 {{ define "main" }} {{ partial "index/introduction.html" . }} {{ range where
-(.Paginate .Site.RegularPages).Pages.ByLastmod.Reverse "Section" "posts" }} {{
+(.Paginator).Pages.ByLastmod.Reverse "Section" "posts" }} {{
 partial "summary.html" . }} {{ end }}
 <div class="pagination">
   {{ if .Paginator.HasPrev }}
