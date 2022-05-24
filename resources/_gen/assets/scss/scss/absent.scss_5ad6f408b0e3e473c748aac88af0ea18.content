@@ -352,21 +352,19 @@ footer {
       height: auto;
       transform: none;
       vertical-align: text-bottom; }
-  .nav-header {
-    margin-left: auto;
-    margin-right: auto; }
-    .nav-header .headerlink h1 {
-      --font-size: var(--ms-6);
-      font-size: var(--final-font-size);
-      font-weight: 600;
-      letter-spacing: .01rem;
-      word-spacing: 0;
-      max-width: 15ch; }
-    .nav-header a span {
-      --font-size: var(--ms-3);
-      font-size: var(--final-font-size); }
-    .nav-header .links {
-      letter-spacing: 0.01rem; }
+  .nav-header .headerlink h1 {
+    --font-size: var(--ms-6);
+    font-size: var(--final-font-size);
+    font-weight: 600;
+    letter-spacing: .01rem;
+    word-spacing: 0;
+    max-width: 15ch;
+    line-height: 1.25; }
+  .nav-header a span {
+    --font-size: var(--ms-3);
+    font-size: var(--final-font-size); }
+  .nav-header .links {
+    letter-spacing: 0.01rem; }
   .post .post-title,
   .summary-post .summary-post-title {
     --font-size: var(--ms-3);

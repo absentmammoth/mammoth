@@ -79,8 +79,6 @@
   }
 
   .nav-header {
-    margin-left: auto;
-    margin-right: auto;
     .headerlink {
       h1 {
         --font-size: var(--ms-6);
@@ -89,6 +87,7 @@
         letter-spacing: .01rem;
         word-spacing: 0;
         max-width: 15ch;
+        line-height: 1.25;
       }
     }
 
