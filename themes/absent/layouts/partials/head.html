@@ -25,7 +25,9 @@
 
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
-  <link rel="preload" href=""
+  <link rel="preload" href="fonts/vollkorn-v20-latin-regular.woff2" as="font" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/vollkorn-v20-latin-700.woff2" as="font" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/vollkorn-v20-latin-600.woff2" as="font" as="font" type="font/woff2" crossorigin />
 
   {{ range .Site.Params.css -}}
   <link rel="stylesheet" href="{{ . | relURL }}" />
