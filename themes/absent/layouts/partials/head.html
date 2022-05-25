@@ -15,17 +15,15 @@
   </title>
 
   <!-- CSS -->
-  {{- $inServerMode := .Site.IsServer }} {{- $cssTarget := "css/style.css" }}
+  {{- $inServerMode := .Site.IsServer }}
+  {{- $cssTarget := "css/style.css" }}
   {{- $cssOptions := cond ($inServerMode) (dict "targetPath" $cssTarget
   "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle"
-  "compressed") }} {{- $style := resources.Get "scss/absent.scss" | toCSS
+  "compressed") }}
+  {{- $style := resources.Get "scss/absent.scss" | toCSS
   $cssOptions }}
+
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
 
   {{ range .Site.Params.css -}}
   <link rel="stylesheet" href="{{ . | relURL }}" />
