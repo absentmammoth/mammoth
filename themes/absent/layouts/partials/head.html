@@ -25,6 +25,8 @@
 
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
+  <link rel="preload" href=""
+
   {{ range .Site.Params.css -}}
   <link rel="stylesheet" href="{{ . | relURL }}" />
   {{ end -}}
