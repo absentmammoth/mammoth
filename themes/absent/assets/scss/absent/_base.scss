@@ -33,10 +33,10 @@ body {
 
 body {
   line-height: 1.5;
-  font-family: $serif;
-  font-weight: 400;
+  font-family: $serif, "system";
   color: $default-color;
   background-color: $grey-1;
+
 }
 
 .container {
@@ -51,10 +51,6 @@ body {
 
 /* https://mastery.games/post/article-grid-layout/ */
 /* Grid layout */
-
-span, p, a {
-  font-family: $serif;
-}
 
 img,
 picture,

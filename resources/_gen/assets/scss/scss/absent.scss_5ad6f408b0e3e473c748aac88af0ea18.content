@@ -89,6 +89,12 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap; }
 
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
+
 /* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
 :root {
   --font-size-min: 16;
@@ -149,8 +155,7 @@ body {
 
 body {
   line-height: 1.5;
-  font-family: "Vollkorn";
-  font-weight: 400;
+  font-family: "Vollkorn", "system";
   color: #534c5d;
   background-color: #fbfbfb; }
 
@@ -163,9 +168,6 @@ body {
 
 /* https://mastery.games/post/article-grid-layout/ */
 /* Grid layout */
-span, p, a {
-  font-family: "Vollkorn"; }
-
 img,
 picture,
 video,
