@@ -1,3 +1,40 @@
+/* from https://google-webfonts-helper.herokuapp.com/ */
+/* vollkorn-regular - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/vollkorn-v20-latin-regular.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-700 - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/vollkorn-v20-latin-700.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/vollkorn-v20-latin-italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-700italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url("../fonts/vollkorn-v20-latin-700italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
 /* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
 :root {
   --font-size-min: 16;
@@ -163,12 +200,12 @@ img + em {
     aspect-ratio: 1/1; }
 
 .h-card-intro {
-  margin-bottom: calc(1rem * 2.1);
-  min-height: 207px; }
+  margin-bottom: calc(1rem * 2.1); }
   .h-card-intro > .u-photo {
     width: 4.5em;
     max-width: 100%;
     height: auto;
+    min-height: 72px;
     float: right;
     shape-outside: url(/images/me.png);
     aspect-ratio: 1/1; }
@@ -337,15 +374,12 @@ footer {
       --font-size: var(--ms-5);
       font-size: var(--final-font-size);
       letter-spacing: 0;
-      word-spacing: .4rem;
-      min-height: 47px; }
+      word-spacing: .4rem; }
     .nav-header .links {
       letter-spacing: .035rem; }
     .nav-header a span {
       --font-size: var(--ms-3);
       font-size: var(--final-font-size); }
-  .h-card-intro {
-    min-height: 147px; }
   .post .post-title,
   .summary-post .summary-post-title {
     --font-size: var(--ms-3);
@@ -371,15 +405,12 @@ footer {
     letter-spacing: .01rem;
     word-spacing: 0;
     max-width: 15ch;
-    line-height: 1.25;
-    min-height: 71px; }
+    line-height: 1.25; }
   .nav-header a span {
     --font-size: var(--ms-3);
     font-size: var(--final-font-size); }
   .nav-header .links {
     letter-spacing: 0.01rem; }
-  .h-card-intro {
-    min-height: 192px; }
   .post .post-title,
   .summary-post .summary-post-title {
     --font-size: var(--ms-3);
