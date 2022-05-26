@@ -1,5 +1,3 @@
-/* from https://google-webfonts-helper.herokuapp.com/ */
-/* vollkorn-regular - latin */
 /* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
 :root {
   --font-size-min: 16;
@@ -170,8 +168,6 @@ img + em {
     width: 4.5em;
     max-width: 100%;
     height: auto;
-    float: right;
-    shape-outside: url(/images/me.png);
     aspect-ratio: 1/1; }
 
 .post {
@@ -303,7 +299,8 @@ footer {
       font-size: var(--final-font-size);
       word-spacing: .01em;
       color: #534c5d;
-      letter-spacing: .02em; }
+      letter-spacing: .02em;
+      min-height: 71px; }
 
 .header-menu {
   list-style-type: none;
@@ -337,7 +334,8 @@ footer {
       --font-size: var(--ms-5);
       font-size: var(--final-font-size);
       letter-spacing: 0;
-      word-spacing: .4rem; }
+      word-spacing: .4rem;
+      min-height: 47px; }
     .nav-header .links {
       letter-spacing: .035rem; }
     .nav-header a span {
@@ -368,7 +366,8 @@ footer {
     letter-spacing: .01rem;
     word-spacing: 0;
     max-width: 15ch;
-    line-height: 1.25; }
+    line-height: 1.25;
+    min-height: 71px; }
   .nav-header a span {
     --font-size: var(--ms-3);
     font-size: var(--final-font-size); }
