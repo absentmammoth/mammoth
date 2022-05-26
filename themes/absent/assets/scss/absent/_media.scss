@@ -1,13 +1,6 @@
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
 
 
-@media screen and (min-width:600px) {
-  .menu, .header-menu-small-res {
-  display: none;
-  visibility: hidden;
-  }
-}
-
 @media (max-width: 899px) {
 
   html {

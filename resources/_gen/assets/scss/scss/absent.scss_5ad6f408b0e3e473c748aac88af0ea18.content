@@ -1,3 +1,94 @@
+/* from https://google-webfonts-helper.herokuapp.com/ */
+/* vollkorn-regular - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/vollkorn-v20-latin-regular.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-600 - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/vollkorn-v20-latin-600.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-700 - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/vollkorn-v20-latin-700.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-800 - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/vollkorn-v20-latin-800.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-800.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-900 - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/vollkorn-v20-latin-900.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/vollkorn-v20-latin-italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-600italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 600;
+  src: local(""), url("../fonts/vollkorn-v20-latin-600italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-600italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-700italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url("../fonts/vollkorn-v20-latin-700italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-800italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 800;
+  src: local(""), url("../fonts/vollkorn-v20-latin-800italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-800italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+/* vollkorn-900italic - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 900;
+  src: local(""), url("../fonts/vollkorn-v20-latin-900italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-900italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
 /* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
 :root {
   --font-size-min: 16;
@@ -21,134 +112,6 @@
     :root {
       --font-size-slope: .2;
       --addon-multiplier: .5; } }
-/* vollkorn-sc-regular - latin */
-@font-face {
-  font-family: 'Vollkorn SC';
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/vollkorn-sc-v11-latin-regular.woff2") format("woff2"), url("../fonts/vollkorn-sc-v11-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-sc-600 - latin */
-@font-face {
-  font-family: 'Vollkorn SC';
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("../fonts/vollkorn-sc-v11-latin-600.woff2") format("woff2"), url("../fonts/vollkorn-sc-v11-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-sc-700 - latin */
-@font-face {
-  font-family: 'Vollkorn SC';
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/vollkorn-sc-v11-latin-700.woff2") format("woff2"), url("../fonts/vollkorn-sc-v11-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-sc-900 - latin */
-@font-face {
-  font-family: 'Vollkorn SC';
-  font-style: normal;
-  font-weight: 900;
-  src: local(""), url("../fonts/vollkorn-sc-v11-latin-900.woff2") format("woff2"), url("../fonts/vollkorn-sc-v11-latin-900.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-regular - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/vollkorn-v20-latin-regular.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-500 - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/vollkorn-v20-latin-500.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-500.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-600 - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("../fonts/vollkorn-v20-latin-600.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-700 - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/vollkorn-v20-latin-700.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-800 - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 800;
-  src: local(""), url("../fonts/vollkorn-v20-latin-800.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-800.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-900 - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 900;
-  src: local(""), url("../fonts/vollkorn-v20-latin-900.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-900.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-500italic - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 500;
-  src: local(""), url("../fonts/vollkorn-v20-latin-500italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-500italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-italic - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 400;
-  src: local(""), url("../fonts/vollkorn-v20-latin-italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-600italic - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 600;
-  src: local(""), url("../fonts/vollkorn-v20-latin-600italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-600italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-700italic - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 700;
-  src: local(""), url("../fonts/vollkorn-v20-latin-700italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-800italic - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 800;
-  src: local(""), url("../fonts/vollkorn-v20-latin-800italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-800italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* vollkorn-900italic - latin */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 900;
-  src: local(""), url("../fonts/vollkorn-v20-latin-900italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-900italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
 .bl-section {
   background: rgba(142, 77, 203, 0.1);
   border-radius: 8px;
@@ -284,19 +247,25 @@ img + em {
   margin-right: .4rem;
   vertical-align: middle; }
 
-.h-card > .u-photo {
-  display: inline-block;
-  height: 4.5em;
-  width: auto;
-  margin-top: .2rem; }
+.h-card {
+  min-height: 100px; }
+  .h-card > .u-photo {
+    display: inline-block;
+    width: 4.5em;
+    max-width: 100%;
+    height: auto;
+    margin-top: .35rem;
+    aspect-ratio: 1/1; }
 
 .h-card-intro {
   margin-bottom: calc(1rem * 2.1); }
   .h-card-intro > .u-photo {
-    height: 4.5em;
-    width: auto;
+    width: 4.5em;
+    max-width: 100%;
+    height: auto;
     float: right;
-    shape-outside: url(/images/me.png); }
+    shape-outside: url(/images/me.png);
+    aspect-ratio: 1/1; }
 
 .post {
   margin-bottom: calc(1rem * 2.1); }
@@ -439,11 +408,6 @@ footer {
     font-size: var(--final-font-size); }
 
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
-@media screen and (min-width: 600px) {
-  .menu, .header-menu-small-res {
-    display: none;
-    visibility: hidden; } }
-
 @media (max-width: 899px) {
   html {
     --font-size: var(--ms-2);
@@ -891,7 +855,7 @@ pre code {
   .credits-style > ul sup:after {
     content: ']'; }
   .credits-style > ul sup {
-    font: 100 0.7rem "Vollkorn", sans-serif; }
+    font: 100 0.7rem "Vollkorn"; }
 
 .credits-style > ul > li {
   margin-bottom: calc(1rem * .7); }

@@ -1,18 +1,23 @@
 .h-card {
+  min-height: 100px;
   > .u-photo {
     display: inline-block;
-    height: 4.5em;
-    width: auto;
-    margin-top: .2rem;
+    width: 4.5em;
+    max-width: 100%;
+    height: auto;
+    margin-top: .35rem;
+    aspect-ratio: 1/1;
   }
 }
 
 .h-card-intro {
   margin-bottom: $margin-large;
       > .u-photo {
-        height: 4.5em;
-        width: auto;
+        width: 4.5em;
+        max-width: 100%;
+        height: auto;
         float: right;
-        shape-outside: url(/images/me.png)
+        shape-outside: url(/images/me.png);
+        aspect-ratio: 1/1;
   }
 }
