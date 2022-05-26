@@ -14,6 +14,19 @@
     .Site.Title }}{{- end }}
   </title>
 
+  <!-- CSS -->
+  {{- $inServerMode := .Site.IsServer }}
+  {{- $cssTarget := "css/style.css" }}
+  {{- $cssOptions := cond ($inServerMode) (dict "targetPath" $cssTarget
+  "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle"
+  "compressed") }}
+  {{- $style := resources.Get "scss/absent.scss" | toCSS
+  $cssOptions }}
+
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+  <link rel="preload" href="./fonts/vollkorn-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
   <style>
     @font-face {
   font-family: 'Vollkorn';
@@ -56,21 +69,7 @@
        url('../fonts/vollkorn-v20-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/vollkorn-v20-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
-}
-    </style>
-
-  <!-- CSS -->
-  {{- $inServerMode := .Site.IsServer }}
-  {{- $cssTarget := "css/style.css" }}
-  {{- $cssOptions := cond ($inServerMode) (dict "targetPath" $cssTarget
-  "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle"
-  "compressed") }}
-  {{- $style := resources.Get "scss/absent.scss" | toCSS
-  $cssOptions }}
-
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-
-  <link rel="preload" href="./fonts/vollkorn-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+}</style>
 
   {{ range .Site.Params.css -}}
   <link rel="stylesheet" href="{{ . | relURL }}" />
