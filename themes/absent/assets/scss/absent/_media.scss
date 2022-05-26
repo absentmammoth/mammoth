@@ -31,7 +31,6 @@
         font-size: var(--final-font-size);
         letter-spacing: 0;
         word-spacing: .4rem;
-        min-height: 47px;
       }
     }
 
@@ -43,10 +42,6 @@
       --font-size: var(--ms-3);
       font-size: var(--final-font-size);
     }
-  }
-
-  .h-card .h-card-intro {
-    min-height: 147px;
   }
 
   .post .post-title,
@@ -84,7 +79,6 @@
         word-spacing: 0;
         max-width: 15ch;
         line-height: 1.25;
-        min-height: 71px;
       }
     }
 
@@ -147,10 +141,6 @@
     //     opacity: 1;
     //   }
     // }
-  }
-
-  .h-card .h-card-intro {
-    min-height: 192px;
   }
 
   .post .post-title,
