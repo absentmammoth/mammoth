@@ -12,10 +12,13 @@
 
 .h-card-intro {
   margin-bottom: $margin-large;
+  min-height: 207px;
       > .u-photo {
         width: 4.5em;
         max-width: 100%;
         height: auto;
+        float: right;
+        shape-outside: url(/images/me.png);
         aspect-ratio: 1/1;
   }
 }

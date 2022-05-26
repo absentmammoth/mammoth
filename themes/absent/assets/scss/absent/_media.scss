@@ -45,6 +45,10 @@
     }
   }
 
+  .h-card-intro {
+    min-height: 147px;
+  }
+
   .post .post-title,
   .summary-post .summary-post-title {
     --font-size: var(--ms-3);
@@ -143,6 +147,10 @@
     //     opacity: 1;
     //   }
     // }
+  }
+
+  .h-card-intro {
+    min-height: 192px;
   }
 
   .post .post-title,

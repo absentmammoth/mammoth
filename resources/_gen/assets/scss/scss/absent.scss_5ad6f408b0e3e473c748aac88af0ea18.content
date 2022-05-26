@@ -163,11 +163,14 @@ img + em {
     aspect-ratio: 1/1; }
 
 .h-card-intro {
-  margin-bottom: calc(1rem * 2.1); }
+  margin-bottom: calc(1rem * 2.1);
+  min-height: 207px; }
   .h-card-intro > .u-photo {
     width: 4.5em;
     max-width: 100%;
     height: auto;
+    float: right;
+    shape-outside: url(/images/me.png);
     aspect-ratio: 1/1; }
 
 .post {
@@ -341,6 +344,8 @@ footer {
     .nav-header a span {
       --font-size: var(--ms-3);
       font-size: var(--final-font-size); }
+  .h-card-intro {
+    min-height: 147px; }
   .post .post-title,
   .summary-post .summary-post-title {
     --font-size: var(--ms-3);
@@ -373,6 +378,8 @@ footer {
     font-size: var(--final-font-size); }
   .nav-header .links {
     letter-spacing: 0.01rem; }
+  .h-card-intro {
+    min-height: 192px; }
   .post .post-title,
   .summary-post .summary-post-title {
     --font-size: var(--ms-3);
