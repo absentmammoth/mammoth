@@ -36,9 +36,10 @@
 
 .footnotes {
   background: hsla(271, 55%, 55%, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: $pad-small $pad-medium;
-  font-size: 90%;
+  --font-size: var(--ms-1);
+  font-size: var(--final-font-size);
   margin: auto;
   > hr {
     margin: 0;
