@@ -1,4 +1,0 @@
-[submodule "public"]
-	path = public
-	url = https://github.com/absentmammoth/absentmammoth.github.io.git
-	branch = master
