@@ -238,7 +238,7 @@ img + em {
     margin-bottom: calc(1rem * 1.4); }
   .post ul li,
   .e-content ul li {
-    margin-bottom: .2rem; }
+    margin-bottom: .4rem; }
   .post ul:not(ul li ul),
   .e-content ul:not(ul li ul) {
     margin-bottom: calc(1rem * 1.4); }
