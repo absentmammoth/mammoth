@@ -2,22 +2,24 @@
 
 <article class="post h-entry">
     <div class="post-meta">
-    <a href="{{ .Permalink }}">
+    <a class="u-url" href="{{ .Permalink }}">
         <div class="post-info">
-            {{ .Date.Format "Mon, January 2, 2006 | 03:04PM" | lower | }} {{ if ne .Date .Lastmod}}
+            <time class="dt-published">{{ .Date.Format "Mon, January 2, 2006 | 03:04PM" | lower | }} </time> {{ if ne .Date .Lastmod}}
             <br>
             <span>updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
             </br>
             {{ end }}
         </div>
-        <h2 class="post-title">{{ .Title | markdownify }}</h2>
+        <h2 class="post-title p-name">{{ .Title | markdownify }}</h2>
     </a>
 </div>
+<div class="e-content">
     {{ .Content }}
     {{ if (eq .Section "posts") }}
     {{ partial "partials/backlinks" . }}
     {{ else }}
     {{ end }}
+</div>
 </article>
 
 {{ end }}

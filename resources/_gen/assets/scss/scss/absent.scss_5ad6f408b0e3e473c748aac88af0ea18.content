@@ -6,7 +6,7 @@
   font-weight: 400;
   src: local(""), url("../fonts/vollkorn-v20-latin-regular.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block; }
+  font-display: optional; }
 
 /* vollkorn-700 - latin */
 @font-face {
@@ -15,7 +15,7 @@
   font-weight: 700;
   src: local(""), url("../fonts/vollkorn-v20-latin-700.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block; }
+  font-display: optional; }
 
 /* vollkorn-italic - latin */
 @font-face {
@@ -24,7 +24,7 @@
   font-weight: 400;
   src: local(""), url("../fonts/vollkorn-v20-latin-italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block; }
+  font-display: optional; }
 
 /* vollkorn-700italic - latin */
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 700;
   src: local(""), url("../fonts/vollkorn-v20-latin-700italic.woff2") format("woff2"), url("../fonts/vollkorn-v20-latin-700italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block; }
+  font-display: optional; }
 
 /* font math from https://pixelgrade.com/upstairs/creating-true-fluid-web-typography/#boundaries */
 :root {
@@ -210,31 +210,45 @@ img + em {
     shape-outside: url(/images/me.png);
     aspect-ratio: 1/1; }
 
-.post {
+.post,
+.e-content {
   margin-bottom: calc(1rem * 2.1); }
-  .post > p {
+  .post > p,
+  .e-content > p {
     margin: 0 0 calc(1rem * 1.4) 0; }
-  .post h1, .post h2, .post h3, .post h4, .post h5 {
+  .post h1, .post h2, .post h3, .post h4, .post h5,
+  .e-content h1,
+  .e-content h2,
+  .e-content h3,
+  .e-content h4,
+  .e-content h5 {
     margin-bottom: calc(1rem * .7); }
-  .post h6:first-of-type {
+  .post h6:first-of-type,
+  .e-content h6:first-of-type {
     margin: 0 0 calc(1rem * .7) 0; }
-  .post h6 {
+  .post h6,
+  .e-content h6 {
     font-variant: all-small-caps;
     margin: 0 0 calc(1rem * .7) 0; }
-  .post ol {
+  .post ol,
+  .e-content ol {
     padding-left: 0; }
-  .post ol li {
+  .post ol li,
+  .e-content ol li {
     margin-bottom: calc(1rem * 1.4); }
-  .post ul li {
+  .post ul li,
+  .e-content ul li {
     margin-bottom: .2rem; }
-  .post ul:not(ul li ul) {
+  .post ul:not(ul li ul),
+  .e-content ul:not(ul li ul) {
     margin-bottom: calc(1rem * 1.4); }
 
 .footnotes {
   background: rgba(142, 77, 203, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: calc(1rem * .7) calc(1rem * 1.4);
-  font-size: 90%;
+  --font-size: var(--ms-1);
+  font-size: var(--final-font-size);
   margin: auto; }
   .footnotes > hr {
     margin: 0;
