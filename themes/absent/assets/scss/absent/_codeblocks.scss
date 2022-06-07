@@ -1,8 +1,10 @@
 pre {
-  margin: 0 auto;
+  margin: $margin-medium auto;
   padding: $pad-small;
-  border-radius: 8px;
+  border-radius: 4px;
   line-height: 1;
+  background-color: hsla(271, 55%, 55%, 0.1);
+
 }
 
 code {
@@ -16,7 +18,7 @@ code {
 p code {
   background: hsla(271, 55%, 55%, 0.1);
   padding: 3px 0;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 pre code {

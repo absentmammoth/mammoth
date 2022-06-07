@@ -99,7 +99,7 @@ body {
   color: #534c5d;
   background-color: #fbfbfb; }
 
-.container {
+body {
   display: grid;
   grid-template-columns: minmax(auto, 45ch) minmax(0.2rem, 1fr);
   grid-gap: 1rem;
@@ -189,9 +189,9 @@ img + em {
   margin-right: .4rem;
   vertical-align: middle; }
 
-.h-card {
+.h-card-footer {
   min-height: 100px; }
-  .h-card > .u-photo {
+  .h-card-footer > .u-photo {
     display: inline-block;
     width: 4.5em;
     max-width: 100%;
@@ -370,13 +370,13 @@ footer {
   html {
     --font-size: var(--ms-2);
     font-size: var(--final-font-size); }
-  .container {
+  body {
     margin: calc(1rem * 2.1) auto 0;
     max-width: 90%;
     width: fit-content;
     grid-column-gap: 0;
     line-height: 1.5; }
-    .container footer img {
+    body footer img {
       display: inline-block;
       width: 3.125rem;
       height: auto;
@@ -403,11 +403,11 @@ footer {
   html {
     --font-size: var(--ms-2);
     font-size: var(--final-font-size); }
-  .container {
+  body {
     margin: calc(1rem * 1.4) auto 0 auto;
     max-width: 92%;
     line-height: 1.5; }
-    .container footer img {
+    body footer img {
       display: inline-block;
       width: 4em;
       height: auto;
@@ -766,10 +766,11 @@ footer {
   color: #bbbbbb; }
 
 pre {
-  margin: 0 auto;
+  margin: calc(1rem * 1.4) auto;
   padding: calc(1rem * .7);
-  border-radius: 8px;
-  line-height: 1; }
+  border-radius: 4px;
+  line-height: 1;
+  background-color: rgba(142, 77, 203, 0.1); }
 
 code {
   padding: 0;
@@ -780,7 +781,7 @@ code {
 p code {
   background: rgba(142, 77, 203, 0.1);
   padding: 3px 0;
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 pre code {
   white-space: pre-wrap; }
@@ -834,7 +835,7 @@ pre code {
   justify-content: start;
   gap: 2rem; }
 
-.h-card {
+.h-card-intro {
   grid-column: 1 / 1; }
 
 .summary-post {

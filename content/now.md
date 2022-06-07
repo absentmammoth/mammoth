@@ -7,7 +7,10 @@ tags:
 - now
 ---
 
-<style type = "text/css" rel="stylesheet">
+<style 
+type="text/css" 
+rel="stylesheet"
+>
 article img:first-of-type {
     height: 3rem;
     width: auto;

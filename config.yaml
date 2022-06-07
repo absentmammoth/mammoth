@@ -72,17 +72,6 @@ outputFormats:
     notAlternative: true
 
 markup:
-  highlight:
-    codeFences: true
-    guessSyntax: false
-    hl_Lines: ""
-    lineAnchors: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: true
-    style: dracula
-    tabWidth: 4
   tableOfContents:
     endLevel: 4
     ordered: false
@@ -97,6 +86,17 @@ markup:
       typographer: false
     renderer:
       unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: true
+    style: dracula
+    tabWidth: 4
 
 menu:
   main:

@@ -5,9 +5,7 @@
     <a class="u-url" href="{{ .Permalink }}">
         <div class="post-info">
             <time class="dt-published">{{ .Date.Format "Mon, January 2, 2006 | 03:04PM" | lower | }} </time> {{ if ne .Date .Lastmod}}
-            <br>
             <span>updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
-            </br>
             {{ end }}
         </div>
         <h2 class="post-title p-name">{{ .Title | markdownify }}</h2>

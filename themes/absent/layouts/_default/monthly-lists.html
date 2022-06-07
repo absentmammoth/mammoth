@@ -9,9 +9,7 @@
 
         <div class="summary-post-info">
             {{ .Date.Format "Mon, January 2, 2006 | 03:04PM" | lower | }} {{ if ne .Date .Lastmod}}
-            <br>
             <span>updated</span>&nbsp;{{ .Lastmod.Format "Mon, January 2, 2006 | 03:04PM" | lower }}
-            </br>
             {{ end }}
         </div>
         <h2 class="summary-post-title">{{ .Title | markdownify }}</h2>

@@ -6,10 +6,6 @@ tags:
 - personal
 description: "This is a post about self-deprecation."
 ---
-<style>
-    ol {margin-bottom: .8rem;
-    }
-    </style>
 This is a post about self-deprecation. This is me thinking through thoughts. It is a 'web log.'
 
 <!--more-->

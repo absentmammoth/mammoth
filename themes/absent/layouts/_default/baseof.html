@@ -2,10 +2,8 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
 
-  <body>
-    <div class="container">
+  <body class="h-card">
       {{ partial "header.html" . }} {{ block "main" . }}{{ end }} {{ partial
       "footer.html" . }}
-    </div>
   </body>
 </html>

@@ -28,11 +28,11 @@ Have not liked Hum in the past, despite multiple attempts. A fuzzy guitar post-h
 #### [Roy Montgomery - In Our Own Time](https://www.youtube.com/watch?v=uHjMRi7lu9s)
 Speaking of 'guitar music that sounds like water,' the OG of the style's track 'In Our Own Time' from the album *‌And Now The Rain Sounds Like Life Is Falling Down Through It* is wonderful. The rest of the album has its ups and downs, but this song stands out so well with its nod to Julian Cope's weird wise druidic hermit character. 
 
-> You in your own time will come to regard me as someone you sadly must overthrow </br>
-> I won't see it coming, but pray that within me the grace will be found and I'll just let go </br>
-> Caught in our own time, oh how very different to think of the worlds we all have known </br>
-> A conscious collective, somewhat ironic out here in the West where we both have grown</br>
-> How strange to stand beside you peering at the stars, arranged without a meaning other than they are</br>
+> You in your own time will come to regard me as someone you sadly must overthrow <br />
+> I won't see it coming, but pray that within me the grace will be found and I'll just let go <br />
+> Caught in our own time, oh how very different to think of the worlds we all have known <br />
+> A conscious collective, somewhat ironic out here in the West where we both have grown<br />
+> How strange to stand beside you peering at the stars, arranged without a meaning other than they are<br />
 
 #### [Self Defense Family - Jesus of Nazareth](https://selfdefensefamily.bandcamp.com/album/jesus-of-nazareth)
 My favorite Self Defense song in a while, maybe because, despite being officially released this year, it was originally recorded in 2011. Patrick redid his vocals for this release, and they are, at least to my ear, much better than the original's likely were. He's nailed whatever he is doing with his voice lately, and I genuinely love it on their newer stuff even if I find his lyrics now less my speed. 
