@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: https://www.absentmammoth.org
 publishdir: public
 theme: absent
 title: wooly mammoth's mighty absence
@@ -33,7 +33,6 @@ params:
   hCardTumblr: "moretherapy"
   hCardTwitter: "absntmammoth"
   hCardEmail: ""
-  liveSiteURL: "https://www.absentmammoth.org"
 
 frontmatter:
   date:
