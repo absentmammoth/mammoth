@@ -33,6 +33,7 @@ params:
   hCardTumblr: "moretherapy"
   hCardTwitter: "absntmammoth"
   hCardEmail: ""
+  liveSiteURL: "https://www.absentmammoth.org"
 
 frontmatter:
   date:
