@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: ""
 publishdir: public
 theme: absent
 title: wooly mammoth's mighty absence
