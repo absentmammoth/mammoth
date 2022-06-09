@@ -38,6 +38,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href='{{ "/img/favicon16.png" | relURL }}' /> -->
 
   <!-- RSS -->
-  <link href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="alternate"
-    type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 </head>
