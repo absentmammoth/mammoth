@@ -1,0 +1,99 @@
+baseURL = "https://www.absentmammoth.org"
+publishdir = "public"
+theme = "absent"
+title = "wooly mammoth's mighty absence"
+languageCode = "en-US"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+canonifyURLs = true
+enableEmoji = true
+enableRobotsTXT = true
+paginate = 5
+
+[params]
+author = "marshall"
+image = "/images/me.png"
+mainSections = "posts"
+hCardName = "marshall"
+hCardJobTitle = "freelancer"
+hCardLocality = "colorado springs"
+hCardRegion = "colorado"
+hCardNominativePronoun = "he"
+hCardObliquePronoun = "him"
+hCardPossessivePronoun = "his"
+hCardGithub = "absentmammoth"
+hCardInstagram = "absentmammoth"
+hCardLastFM = "absentmammoth"
+hCardTumblr = "moretherapy"
+hCardTwitter = "absntmammoth"
+hCardEmail = ""
+
+[frontmatter]
+date = [ "date", "publishDate", "lastmod" ]
+expiryDate = [ "expiryDate" ]
+lastmod = [ ":git", "lastmod", "date", "publishDate" ]
+publishDate = [ "publishDate", "date" ]
+
+[permalinks]
+posts = "/posts/:slug/"
+tags = "/tags/:title/"
+
+[outputs]
+home = [ "HTML", "RSS" ]
+page = [ "HTML" ]
+section = [ "HTML", "RSS" ]
+
+[outputFormats.RSS]
+baseName = "feed"
+isPlainText = true
+mediatype = "application/rss"
+notAlternative = true
+
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 3
+
+[markup.goldmark.extensions]
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = false
+noClasses = true
+style = "dracula"
+tabWidth = 4
+
+[[menu.main]]
+identifier = "now"
+name = "/now"
+title = "/now"
+url = "/now/"
+weight = 1
+
+[[menu.main]]
+identifier = "monthly-lists"
+name = "last month's stuff"
+title = "monthly-lists"
+url = "/monthly-lists/"
+weight = 2
+
+[[menu.main]]
+identifier = "rss"
+name = "rss"
+title = "rss"
+url = "/feed.xml"
+weight = 3
