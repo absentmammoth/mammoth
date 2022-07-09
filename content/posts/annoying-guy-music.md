@@ -53,4 +53,4 @@ In the [original version](https://www.youtube.com/watch?v=gA-vD5pyuS4), Prine's 
 
 Brutal, but that's what love is, and somehow this song -- the original and the cover -- captures that. It never comes right out and says it exactly, but maybe it's the echo of Iris and Amy's voices or the false cheer of Prine's guitar putting a brave face on things that lets the listener connect with the secret: love can be really fuckin' sad even when it has you at your happiest. That reminder is so beyond annoying as to break your heart.
 
-[^1]: ADHD
+[^1]: via ADHD
