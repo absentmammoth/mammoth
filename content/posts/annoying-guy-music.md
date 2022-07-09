@@ -4,6 +4,16 @@ date: 2021-05-10T22:41:23-06:00
 lastmod: 2021-05-10T22:41:23-06:00
 
 ---
+
+<style
+type="text/css" 
+rel="stylesheet"
+>
+li p img {
+  margin: .8rem 0;
+}
+</style>
+
 There's Taking Up Space, and then there's being a band called Viagra Boys.
 <!--more-->
 
@@ -53,4 +63,5 @@ In the [original version](https://www.youtube.com/watch?v=gA-vD5pyuS4), Prine's 
 
 Brutal, but that's what love is, and somehow this song -- the original and the cover -- captures that. It never comes right out and says it exactly, but maybe it's the echo of Iris and Amy's voices or the false cheer of Prine's guitar putting a brave face on things that lets the listener connect with the secret: love can be really fuckin' sad even when it has you at your happiest. That reminder is so beyond annoying as to break your heart.
 
-[^1]: via ADHD
+[^1]: 6/9/22: When I wrote this in May, 2021, I tried hard to avoid outright saying Sebastian Murphy has ADHD. I hinted at it with the Larry Davidson reference and, obviously, the entire concept of a band making annoying loud noises and frequently referencing amphetamines feels like real "show, don't tell" business. Plus, 2021, or maybe late 2020, is when the internet started its backlash against people talking about ADHD. I felt self-conscious mentioning it at the time. However, with the release of *Cave World* this week, which contains a song called "ADD" ("I cannot function without my amphetamine / I can see you talking but I cannot hear a thing / I'm staring out the window thinking about the future / I hope they replace my brain with a computer") I think it's okay to bring up the topic. Murphy describes the song like so: ![add quote](/imgs/annoying-guy-music/add.png)
+
