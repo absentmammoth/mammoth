@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>housekeeping on wooly mammoth's mighty absence</title><link>https://www.absentmammoth.org/tags/housekeeping/</link><description>Recent content in housekeeping on wooly mammoth's mighty absence</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Fri, 06 Nov 2020 21:56:05 -0600</lastBuildDate><atom:link href="https://www.absentmammoth.org/tags/housekeeping/feed.xml" rel="self" type="application/rss+xml"/><item><title>How to See Through Fog: A Project</title><link>https://www.absentmammoth.org/posts/how-to-see-through-fog-a-project/</link><pubDate>Fri, 06 Nov 2020 21:56:05 -0600</pubDate><guid>https://www.absentmammoth.org/posts/how-to-see-through-fog-a-project/</guid><description>&lt;p>&lt;a href="https://www.absentmammoth.org">https://www.absentmammoth.org&lt;/a> began in a much different form all the way back in January. Getting it to where it is today took dozens of hours and occupied most of my free time for several months. Making this website gave me something positive to focus on and has been a sick learning experience. I pushed myself more while working on it than I have with anything else in ages.&lt;/p></description></item><item><title>site changes &amp; updates</title><link>https://www.absentmammoth.org/posts/site-changes-updates/</link><pubDate>Wed, 15 Jul 2020 22:11:00 -0600</pubDate><guid>https://www.absentmammoth.org/posts/site-changes-updates/</guid><description>&lt;p>I have made additions and adjustments to the site in a few places. Why?! Well,&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>housekeeping on wooly mammoth&#39;s mighty absence</title>
+    <link>https://www.absentmammoth.org/tags/housekeeping/</link>
+    <description>Recent content in housekeeping on wooly mammoth&#39;s mighty absence</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 06 Nov 2020 21:56:05 -0600</lastBuildDate><atom:link href="https://www.absentmammoth.org/tags/housekeeping/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to See Through Fog: A Project</title>
+      <link>https://www.absentmammoth.org/posts/how-to-see-through-fog-a-project/</link>
+      <pubDate>Fri, 06 Nov 2020 21:56:05 -0600</pubDate>
+      
+      <guid>https://www.absentmammoth.org/posts/how-to-see-through-fog-a-project/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.absentmammoth.org&#34;&gt;https://www.absentmammoth.org&lt;/a&gt; began in a much different form all the way back in January. Getting it to where it is today took dozens of hours and occupied most of my free time for several months. Making this website gave me something positive to focus on and has been a sick learning experience. I pushed myself more while working on it than I have with anything else in ages.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>site changes &amp; updates</title>
+      <link>https://www.absentmammoth.org/posts/site-changes-updates/</link>
+      <pubDate>Wed, 15 Jul 2020 22:11:00 -0600</pubDate>
+      
+      <guid>https://www.absentmammoth.org/posts/site-changes-updates/</guid>
+      <description>&lt;p&gt;I have made additions and adjustments to the site in a few places. Why?! Well,&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
